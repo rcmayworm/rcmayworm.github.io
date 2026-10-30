@@ -58,6 +58,15 @@ css_text = (ROOT / 'styles.css').read_text(encoding='utf-8') if (ROOT / 'styles.
 if '.academic-hero h1.hero-title' not in css_text:
     errors.append('CSS do hero deve atingir apenas o título H1')
 
+# A foto do bloco principal deve estar versionada, sem depender de hospedagem externa.
+photo = ROOT / 'assets/images/ruan-mayworm.jpg'
+if not photo.is_file():
+    errors.append('Retrato da página inicial não localizado')
+if 'src="assets/images/ruan-mayworm.jpg"' not in home:
+    errors.append('Página inicial não referencia a foto profissional')
+if 'alt="Retrato de Ruan Mayworm' not in home:
+    errors.append('Texto alternativo do retrato ausente')
+
 post = ROOT / 'blog/posts/modelo-de-post/index.qmd'
 if post.is_file() and 'draft: true' not in post.read_text(encoding='utf-8'):
     errors.append('Postagem demonstrativa deve permanecer rascunho')
