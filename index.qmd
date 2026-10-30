@@ -21,7 +21,7 @@ toc: false
 <div class="cta-row"><a class="hero-btn hero-btn-primary" href="publications.html">Ver publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Conheça meu trabalho</a></div>
 :::
 ::: {.hero-photo}
-<img class="hero-portrait" src="assets/images/ruan-mayworm.jpg" alt="Retrato de Ruan Mayworm em ambiente de laboratório" width="200" height="250" loading="eager" decoding="async">
+<img class="hero-portrait" src="assets/images/ruan-mayworm-alta.jpg" alt="Retrato de Ruan Mayworm em ambiente de laboratório" width="200" height="250" loading="eager" decoding="async">
 :::
 :::
 :::
