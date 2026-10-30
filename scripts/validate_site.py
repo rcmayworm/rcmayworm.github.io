@@ -59,11 +59,13 @@ if '.academic-hero h1.hero-title' not in css_text:
     errors.append('CSS do hero deve atingir apenas o título H1')
 
 # A foto do bloco principal deve estar versionada, sem depender de hospedagem externa.
-photo = ROOT / 'assets/images/ruan-mayworm.jpg'
-if not photo.is_file():
-    errors.append('Retrato da página inicial não localizado')
-if 'src="assets/images/ruan-mayworm.jpg"' not in home:
-    errors.append('Página inicial não referencia a foto profissional')
+photo_match = re.search(r'<img class="hero-portrait" src="(assets/images/[^"]+)"', home)
+if not photo_match:
+    errors.append('Página inicial não referencia uma foto profissional local')
+else:
+    photo = ROOT / photo_match.group(1)
+    if not photo.is_file():
+        errors.append(f'Retrato referenciado não localizado: {photo_match.group(1)}')
 if 'alt="Retrato de Ruan Mayworm' not in home:
     errors.append('Texto alternativo do retrato ausente')
 
