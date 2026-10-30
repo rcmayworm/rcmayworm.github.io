@@ -10,7 +10,7 @@ toc: false
 ::: {}
 <div class="hero-kicker">Pesquisa · Engenharia · Computação científica</div>
 
-# Ruan Mayworm {.hero-title}
+<h1 class="hero-title">Ruan Mayworm</h1>
 
 <p class="hero-subtitle">Engenheiro mecânico · Mestre e doutor em Metrologia</p>
 

@@ -48,6 +48,16 @@ for relative in PAGES + ["blog/posts/modelo-de-post/index.qmd"]:
         if not (p.parent / target.replace('.html', '.qmd')).is_file():
             errors.append(f"Link HTML sem fonte .qmd: {relative} -> {target}")
 
+# Evita aplicar classes de título a uma <section> gerada pelo Quarto.
+home = (ROOT / 'index.qmd').read_text(encoding='utf-8')
+if '# Ruan Mayworm {.hero-title}' in home:
+    errors.append('Título no hero não pode ser Markdown H1: Quarto cria section com a classe hero-title')
+if '<h1 class="hero-title">Ruan Mayworm</h1>' not in home:
+    errors.append('H1 semântico do hero não localizado')
+css_text = (ROOT / 'styles.css').read_text(encoding='utf-8') if (ROOT / 'styles.css').is_file() else ''
+if '.academic-hero h1.hero-title' not in css_text:
+    errors.append('CSS do hero deve atingir apenas o título H1')
+
 post = ROOT / 'blog/posts/modelo-de-post/index.qmd'
 if post.is_file() and 'draft: true' not in post.read_text(encoding='utf-8'):
     errors.append('Postagem demonstrativa deve permanecer rascunho')
