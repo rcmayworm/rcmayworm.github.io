@@ -14,12 +14,11 @@ listing:
 
 <div class="section-eyebrow">Notas técnicas e divulgação científica</div>
 
-O blog será um espaço para publicar tutoriais, análises, comentários metodológicos e materiais de aprendizagem, sempre distinguindo resultados científicos publicados de exemplos didáticos.
+Neste blog compartilho artigos de divulgação científica, textos técnicos, tutoriais e materiais de aprendizagem. Cada conteúdo distingue referências históricas, explicações didáticas e resultados científicos publicados.
 
 ::: {.blog-intro}
-**Temas previstos:** metrologia e incerteza de medição, Python para experimentos, estatística, ultrassom, processamento de sinais e aprendizado de máquina aplicado.
+**Temas:** história da metrologia, incerteza de medição, instrumentação, Python, estatística, ultrassom, processamento de sinais e análise de dados.
 :::
 
 ## Publicações
 
-<div class="empty-state">Ainda não há postagens públicas nesta versão. Há um arquivo-modelo em rascunho no projeto para orientar as futuras publicações. Quando um post for aprovado, o Quarto o incluirá automaticamente na listagem por data e categoria.</div>
