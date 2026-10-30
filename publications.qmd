@@ -1,0 +1,39 @@
+---
+title: "Publicações"
+description: "Artigos científicos sobre metrologia, ultrassom, ToFD e instrumentação."
+---
+
+Seleção de trabalhos científicos em ordem cronológica inversa. Consulte os DOI para verificar os metadados editoriais e acessar as publicações.
+
+## Artigos e trabalhos com DOI
+
+- **2025.** *The Kibble balance of the Ultrasound Laboratory of Inmetro*. **Acta IMEKO**, 14(2). [DOI: 10.21014/actaimeko.v14i2.1946](https://doi.org/10.21014/actaimeko.v14i2.1946).
+
+- **2023.** *Polymer blocks homogeneity concerning the speed of sound for in vitro studies in implant dentistry*. **Journal of Physics: Conference Series**, 2606, 012014. [DOI: 10.1088/1742-6596/2606/1/012014](https://doi.org/10.1088/1742-6596/2606/1/012014).
+
+- **2023.** *Mimicking dam upstream slope scenarios in acrylic tanks for ultrasonic evaluation*. **Research and Review Journal of Nondestructive Testing**, 1(1). [DOI: 10.58286/28224](https://doi.org/10.58286/28224).
+
+- **2023.** *Metrological characterization of the longitudinal ultrasonic velocity of cylindrical rock cores*. **Research and Review Journal of Nondestructive Testing**, 1(1). [DOI: 10.58286/28091](https://doi.org/10.58286/28091).
+
+- **2022.** *Ultrasonic power measurement by Kibble balance*. **Measurement**, 203, 111788. [DOI: 10.1016/j.measurement.2022.111788](https://doi.org/10.1016/j.measurement.2022.111788).
+
+- **2021.** *A metrological approach to the time of flight diffraction method (ToFD)*. **Measurement**, 167, 108298. [DOI: 10.1016/j.measurement.2020.108298](https://doi.org/10.1016/j.measurement.2020.108298).
+
+- **2019.** *Tempo de Voo da Onda Difratada (ToFD) Auxilia na Garantia da Qualidade da Produção de Peças e Estruturas Mecânicas*. **Soldagem & Inspeção**, 24, e2427. [DOI: 10.1590/0104-9224/SI24.27](https://doi.org/10.1590/0104-9224/SI24.27).
+
+- **2016.** *Aspectos Metrológicos da Técnica Tempo de Voo da Onda Difratada (ToFD) para Utilização em Ensaios Não Destrutivos (ENDs) por Ultrassom*. **Soldagem & Inspeção**, 21(4), 406–416. [DOI: 10.1590/0104-9224/SI2104.02](https://doi.org/10.1590/0104-9224/SI2104.02).
+
+- **2016.** *Metrological evaluation of a flaw detector used in non-destructive testing by ultrasound*. **Journal of Physics: Conference Series**, 733, 012051. [DOI: 10.1088/1742-6596/733/1/012051](https://doi.org/10.1088/1742-6596/733/1/012051).
+
+- **2016.** *Experimental findings on the underwater measurements uncertainty of speed of sound and the alignment system*. **Journal of Physics: Conference Series**, 733, 012053. [DOI: 10.1088/1742-6596/733/1/012053](https://doi.org/10.1088/1742-6596/733/1/012053).
+
+- **2015.** *A Metrological Based Realization of Time-of-Flight Diffraction Technique*. **Physics Procedia**, 70, 590–593. [DOI: 10.1016/j.phpro.2015.08.029](https://doi.org/10.1016/j.phpro.2015.08.029).
+
+## Identificadores e currículo
+
+- [ORCID](https://orcid.org/0000-0001-9518-4049)
+- [Lattes](http://lattes.cnpq.br/5951712664292058)
+
+::: {.callout-note}
+Trabalhos em preparação, propostas submetidas e artigos sem publicação final confirmada **não** estão relacionados como publicações concluídas. Esta lista ainda não é exaustiva.
+:::

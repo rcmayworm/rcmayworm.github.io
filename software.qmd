@@ -1,0 +1,21 @@
+---
+title: "Software"
+description: "Computação científica, repositórios e planejamento de código reprodutível."
+---
+
+## Repositórios e ferramentas
+
+O código científico e os materiais computacionais públicos serão relacionados nesta página quando houver versões revisadas e autorizadas para divulgação.
+
+**Perfil existente:** [github.com/rcmayworm](https://github.com/rcmayworm). Atualmente, o repositório de destaque documentado neste Projeto é o [README do perfil](https://github.com/rcmayworm/rcmayworm).
+
+## Linhas de desenvolvimento computacional
+
+As categorias abaixo representam áreas de trabalho ou **possíveis projetos futuros**, e não repositórios já publicados:
+
+- Análise estatística de resultados de medições e avaliação de incerteza.
+- Processamento de sinais ultrassônicos com dados abertos ou sintéticos.
+- Simulação de Monte Carlo e análise de sensibilidade.
+- Exemplos de automação de instrumentação com interfaces simuladas.
+
+Para cada software publicado, a documentação deverá indicar objetivo, ambiente, instruções de execução, dados usados, licença e limitações.

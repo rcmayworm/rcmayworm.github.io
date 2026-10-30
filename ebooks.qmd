@@ -1,0 +1,38 @@
+---
+title: "E-books"
+description: "Catálogo de e-books técnicos de metrologia, estatística e programação científica de Ruan Mayworm."
+toc: false
+---
+
+<div class="section-eyebrow">Biblioteca digital</div>
+
+Livros técnicos em desenvolvimento e materiais de estudo. A proposta é disponibilizar obras em formato HTML navegável (Quarto Book) e, quando concluídas e revisadas, também em PDF e EPUB.
+
+::: {.book-feature}
+::: {.book-cover aria-label="Representação tipográfica provisória do livro, ainda não publicado"}
+<div class="book-monogram">M</div>
+<div class="book-cover-title">Metrologia e Incerteza de Medição com Python</div>
+<div class="book-cover-foot">Projeto editorial · Ruan Mayworm</div>
+:::
+::: {.book-details}
+<span class="status-label">Livro em planejamento — não publicado</span>
+
+### Metrologia e Incerteza de Medição com Python
+
+Público previsto: estudantes de engenharia, pesquisadores e profissionais de metrologia. Abordará fundamentos de medição, estatística aplicada, avaliação e propagação de incerteza, Monte Carlo, calibração e estudos de caso com Python.
+
+**Disponibilidade:** sem versão pública ou download neste momento. O título e sumário são provisórios.
+:::
+:::
+
+## Como será a biblioteca
+
+Quando houver livros aprovados e publicados, cada obra terá uma página de catálogo com apresentação, edição, versão, licença e links para **ler on-line**, **baixar PDF** e **baixar EPUB**, somente para os formatos existentes. Os capítulos e exemplos de código ficarão em repositórios independentes.
+
+## Projetos editoriais futuros
+
+- Estatística aplicada à metrologia com Python.
+- Instrumentação e sistemas de medição com Python.
+- Metrologia ultrassônica e processamento de sinais.
+
+*Os itens acima são ideias editoriais, não livros publicados.*

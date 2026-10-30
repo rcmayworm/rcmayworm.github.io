@@ -1,0 +1,14 @@
+---
+title: "Contato"
+description: "Canais de contato profissional e perfis acadêmicos de Ruan Mayworm."
+---
+
+Para contato acadêmico e profissional, utilize:
+
+- **E-mail:** [rcmayworm@gmail.com](mailto:rcmayworm@gmail.com)
+- **LinkedIn:** [Perfil profissional](https://www.linkedin.com/in/ruanmayworm/)
+- **ORCID:** [0000-0001-9518-4049](https://orcid.org/0000-0001-9518-4049)
+- **Currículo Lattes:** [Acessar currículo](http://lattes.cnpq.br/5951712664292058)
+- **GitHub:** [@rcmayworm](https://github.com/rcmayworm)
+
+Não há formulário de contato nesta versão inicial; o e-mail é o canal principal.

@@ -1,0 +1,34 @@
+---
+title: "Modelo de postagem técnica — não publicar"
+description: "Estrutura editorial de exemplo para novos textos do blog; conteúdo de demonstração."
+draft: true
+date: 2026-10-30
+categories:
+  - Metrologia
+  - Python
+  - Tutorial
+execute:
+  eval: false
+---
+
+> **Rascunho demonstrativo.** Este arquivo é um modelo editorial, não é uma postagem autoral aprovada para publicação.
+
+## Questão abordada
+
+Descreva o problema técnico em termos verificáveis e indique o público-alvo. Evite apresentar hipóteses como resultados publicados.
+
+## Método
+
+Defina mensurando, modelos, unidades SI, condições experimentais e critérios de qualidade dos dados quando forem pertinentes.
+
+## Exemplo computacional
+
+Use dados abertos ou sintéticos identificados, ambiente reprodutível e verificações numéricas explícitas.
+
+## Interpretação e limitações
+
+Explique hipóteses de validade, limites do procedimento e consequências práticas.
+
+## Referências
+
+Inclua literatura verificável com DOI ou URLs oficiais, respeitando direitos autorais.

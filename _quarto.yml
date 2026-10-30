@@ -1,0 +1,56 @@
+project:
+  type: website
+  output-dir: _site
+
+lang: pt-BR
+
+website:
+  title: "Ruan Mayworm"
+  site-url: "https://rcmayworm.github.io/"
+  repo-url: "https://github.com/rcmayworm/rcmayworm.github.io"
+  description: "Pesquisa em metrologia, ultrassom, instrumentação e métodos computacionais. Artigos, blog técnico e livros digitais."
+  page-navigation: true
+  navbar:
+    background: "#112C41"
+    foreground: "#FFFFFF"
+    search: true
+    collapse: true
+    left:
+      - text: "Início"
+        href: index.qmd
+      - text: "Pesquisa"
+        href: research.qmd
+      - text: "Publicações"
+        href: publications.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "E-books"
+        href: ebooks.qmd
+      - text: "Mais"
+        menu:
+          - text: "Sobre"
+            href: about.qmd
+          - text: "Software"
+            href: software.qmd
+          - text: "Contato"
+            href: contact.qmd
+    right:
+      - text: "GitHub"
+        href: https://github.com/rcmayworm
+  page-footer:
+    border: true
+    left: "© 2026 Ruan Mayworm · Site acadêmico"
+    right: "[Lattes](http://lattes.cnpq.br/5951712664292058) · [ORCID](https://orcid.org/0000-0001-9518-4049) · [GitHub](https://github.com/rcmayworm)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-icon: false
+    code-copy: true
+
+execute:
+  freeze: auto

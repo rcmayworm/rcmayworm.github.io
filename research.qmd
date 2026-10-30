@@ -1,0 +1,24 @@
+---
+title: "Pesquisa"
+description: "Linhas de pesquisa em metrologia ultrassônica, instrumentação e avaliação de incerteza."
+---
+
+## Metrologia ultrassônica e potência acústica
+
+Pesquisa experimental sobre medição de potência ultrassônica por força de radiação, incluindo o desenvolvimento e o estudo de uma balança de Kibble. A abordagem combina mecânica, instrumentação, controle e tratamento de resultados de medição.
+
+**Resultados publicados:** [*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) e [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946).
+
+## Ensaios não destrutivos por ultrassom — ToFD
+
+Estudos metrológicos da técnica *Time-of-Flight Diffraction* (ToFD), incluindo configuração de transdutores, espaçamento entre sondas e avaliação da incerteza associada aos resultados.
+
+**Resultados publicados:** [*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298), [*Soldagem & Inspeção* (2019)](https://doi.org/10.1590/0104-9224/SI24.27) e [*Soldagem & Inspeção* (2016)](https://doi.org/10.1590/0104-9224/SI2104.02).
+
+## Calibração de hidrofones e caracterização de campos
+
+Linha de pesquisa relacionada à caracterização de hidrofones, aquisição de sinais e análise de campos ultrassônicos. O perfil acadêmico do Projeto registra pesquisa em calibração baseada em geração de harmônicos; resultados experimentais inéditos não serão divulgados sem autorização.
+
+## Instrumentação e métodos computacionais
+
+Desenvolvimento e uso de rotinas de automação de medições, processamento de sinais e avaliação estatística de resultados experimentais. A aplicação de otimização e aprendizado de máquina é descrita como área de pesquisa e aperfeiçoamento, não como resultado universalmente validado.

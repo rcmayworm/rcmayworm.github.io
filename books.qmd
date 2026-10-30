@@ -1,0 +1,7 @@
+---
+title: "Livros digitais"
+description: "A seção de livros digitais está organizada na página E-books."
+toc: false
+---
+
+O catálogo de livros foi reorganizado na seção **[E-books](ebooks.qmd)**. Esta página é mantida para preservar eventuais links usados na versão inicial do projeto.

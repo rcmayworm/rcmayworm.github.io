@@ -1,0 +1,35 @@
+---
+title: "Sobre"
+description: "Formação acadêmica, experiência e interesses científicos de Ruan Mayworm."
+---
+
+## Apresentação
+
+Sou engenheiro mecânico, mestre em Metrologia e Qualidade e doutor em Metrologia, com atuação em pesquisa aplicada em ultrassom, instrumentação, calibração e automação de medições. Minha experiência integra sistemas experimentais, processamento de sinais, estatística e programação científica.
+
+Também tenho experiência profissional em sistemas de gestão da qualidade, análise de sistemas de medição, auditorias e formação técnica. Atualmente, mantenho interesse de pesquisa e aperfeiçoamento em inteligência artificial e *machine learning* aplicados a problemas de medição.
+
+## Formação
+
+| Formação | Instituição | Conclusão / situação |
+|---|---|---|
+| Doutorado em Metrologia | Inmetro | 2022 |
+| Mestrado em Metrologia e Qualidade | Inmetro | 2016 |
+| Especialização em Gerenciamento de Projetos | Universidade Católica de Petrópolis | 2015 |
+| Graduação em Engenharia Mecânica | Universidade Católica de Petrópolis | 2013 |
+| Pós-graduação em Inteligência Artificial e Machine Learning | PUC Minas | Em andamento |
+
+## Experiência e competências
+
+- Metrologia aplicada a sistemas ultrassônicos, calibração e rastreabilidade.
+- Projeto e integração de sistemas experimentais e aquisição de dados.
+- Avaliação da incerteza de medição e métodos estatísticos.
+- Programação em Python, MATLAB e LabVIEW para aplicações científicas.
+- Experiência complementar em análise de sistemas de medição, gestão da qualidade e auditorias.
+
+## Perfis acadêmicos
+
+- [Currículo Lattes](http://lattes.cnpq.br/5951712664292058)
+- [ORCID](https://orcid.org/0000-0001-9518-4049)
+- [LinkedIn](https://www.linkedin.com/in/ruanmayworm/)
+- [GitHub](https://github.com/rcmayworm)

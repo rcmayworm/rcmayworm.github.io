@@ -1,0 +1,25 @@
+---
+title: "Blog"
+description: "Artigos técnicos, notas de pesquisa e tutoriais em metrologia, Python, estatística e instrumentação."
+toc: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  page-size: 10
+---
+
+<div class="section-eyebrow">Notas técnicas e divulgação científica</div>
+
+O blog será um espaço para publicar tutoriais, análises, comentários metodológicos e materiais de aprendizagem, sempre distinguindo resultados científicos publicados de exemplos didáticos.
+
+::: {.blog-intro}
+**Temas previstos:** metrologia e incerteza de medição, Python para experimentos, estatística, ultrassom, processamento de sinais e aprendizado de máquina aplicado.
+:::
+
+## Publicações
+
+<div class="empty-state">Ainda não há postagens públicas nesta versão. Há um arquivo-modelo em rascunho no projeto para orientar as futuras publicações. Quando um post for aprovado, o Quarto o incluirá automaticamente na listagem por data e categoria.</div>

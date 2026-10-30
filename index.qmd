@@ -1,0 +1,109 @@
+---
+title: "Ruan Mayworm"
+description: "Ruan Mayworm — pesquisa em metrologia e ultrassom, publicações, blog técnico e futuros e-books."
+title-block-style: none
+toc: false
+---
+
+::: {.academic-hero}
+::: {.hero-grid}
+::: {}
+<div class="hero-kicker">Pesquisa · Engenharia · Computação científica</div>
+
+# Ruan Mayworm {.hero-title}
+
+<p class="hero-subtitle">Engenheiro mecânico · Mestre e doutor em Metrologia</p>
+
+<p class="hero-bio">Pesquisa em metrologia ultrassônica, instrumentação científica, processamento de sinais e avaliação da incerteza de medição. Métodos experimentais apoiados por análise quantitativa e programação.</p>
+
+<div class="hero-tags"><span class="hero-tag">Metrologia</span><span class="hero-tag">Ultrassom</span><span class="hero-tag">Python</span><span class="hero-tag">Análise de dados</span></div>
+
+<div class="cta-row"><a class="hero-btn hero-btn-primary" href="publications.html">Ver publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Conheça meu trabalho</a></div>
+:::
+::: {.hero-monogram aria-label="Monograma tipográfico RM"}
+RM
+:::
+:::
+:::
+
+<div class="section-eyebrow">Produção científica</div>
+
+## Pesquisa e publicações em destaque
+
+Conheça projetos e artigos já documentados, com acesso às referências originais e seus identificadores DOI.
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="card-label">Metrologia ultrassônica</div>
+
+### Balança de Kibble e potência ultrassônica
+
+Desenvolvimento experimental para medição de potência ultrassônica por força de radiação.
+
+[*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) · [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946)
+:::
+::: {.feature-card}
+<div class="card-label">Ensaios não destrutivos</div>
+
+### Técnica ToFD
+
+Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avaliação de descontinuidades por ultrassom.
+
+[*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298) · [Pesquisa](research.qmd)
+:::
+:::
+
+<div class="section-eyebrow">Materiais abertos</div>
+
+## E-books e conteúdo técnico
+
+::: {.book-feature}
+::: {.book-cover aria-label="Representação tipográfica provisória do livro, ainda não publicado"}
+<div class="book-monogram">M</div>
+<div class="book-cover-title">Metrologia e Incerteza de Medição com Python</div>
+<div class="book-cover-foot">Projeto editorial · Ruan Mayworm</div>
+:::
+::: {.book-details}
+<span class="status-label">Em planejamento editorial</span>
+
+### Metrologia e Incerteza de Medição com Python
+
+Livro técnico proposto, com teoria metrológica, exemplos numéricos, simulações e exercícios reprodutíveis. O conteúdo ainda não está disponível para leitura ou download.
+
+[Explorar a seção E-books](ebooks.qmd){.inline-link}
+:::
+:::
+
+<div class="section-eyebrow">Compartilhamento de conhecimento</div>
+
+## Blog e recursos acadêmicos
+
+::: {.feature-grid .three}
+::: {.feature-card}
+<div class="card-label">Blog</div>
+
+### Artigos e tutoriais
+
+Espaço reservado para publicações sobre metrologia, Python, estatística e instrumentação.
+
+[Ir para o Blog](blog/index.qmd)
+:::
+::: {.feature-card}
+<div class="card-label">Software</div>
+
+### Código científico
+
+Projetos, notebooks e ferramentas reprodutíveis, quando estiverem revisados e autorizados para divulgação.
+
+[Ver Software](software.qmd)
+:::
+::: {.feature-card}
+<div class="card-label">Perfil acadêmico</div>
+
+### Trajetória e currículo
+
+Formação, competências, artigos publicados e links para identificadores acadêmicos.
+
+[Sobre](about.qmd) · [Lattes](http://lattes.cnpq.br/5951712664292058)
+:::
+:::
