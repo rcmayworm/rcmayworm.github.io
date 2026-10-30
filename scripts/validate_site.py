@@ -67,6 +67,36 @@ if 'src="assets/images/ruan-mayworm.jpg"' not in home:
 if 'alt="Retrato de Ruan Mayworm' not in home:
     errors.append('Texto alternativo do retrato ausente')
 
+# Post autoral publicado: conferir arquivos, referências e figuras independentes de terceiros.
+article_dir = ROOT / 'blog/posts/a-fascinante-jornada-da-metrologia'
+article = article_dir / 'index.qmd'
+if not article.is_file():
+    errors.append('Postagem histórica de metrologia ausente')
+else:
+    article_text = article.read_text(encoding='utf-8')
+    if 'draft: false' not in article_text:
+        errors.append('Artigo histórico ainda marcado como rascunho')
+    if yaml:
+        try:
+            article_frontmatter = yaml.safe_load(article_text.split('---', 2)[1])
+            assert article_frontmatter['author'] == 'Ruan Mayworm'
+            assert article_frontmatter['image'] == 'images/capa-historia.svg'
+        except Exception as ex:
+            errors.append(f'Metadados do artigo histórico inválidos: {ex}')
+    figures = ['capa-historia.svg', 'covado-real.svg', 'quebra-quilos.svg', 'padroes-si.svg']
+    for figure in figures:
+        asset = article_dir / 'images' / figure
+        if not asset.is_file():
+            errors.append(f'Ilustração ausente: {figure}')
+        elif f'images/{figure}' not in article_text:
+            errors.append(f'Ilustração não referenciada: {figure}')
+        else:
+            from xml.etree import ElementTree
+            try:
+                ElementTree.parse(asset)
+            except Exception as ex:
+                errors.append(f'SVG inválido {figure}: {ex}')
+
 post = ROOT / 'blog/posts/modelo-de-post/index.qmd'
 if post.is_file() and 'draft: true' not in post.read_text(encoding='utf-8'):
     errors.append('Postagem demonstrativa deve permanecer rascunho')
