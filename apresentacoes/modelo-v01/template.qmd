@@ -177,9 +177,51 @@ Gráfico SVG de uma onda modulada, produzido a partir de dados artificiais.
 A figura é sintética e serve apenas à demonstração da composição visual.
 :::
 
+## Apresentação de código Python
+
+[05 · CÓDIGO]{.etiqueta-topo}
+
+:::: {.columns}
+::: {.column width="65%"}
+::: {.codigo-cientifico}
+[EXEMPLO SINTÉTICO · PYTHON 3]{.etiqueta-codigo}
+
+```{.python code-line-numbers="true"}
+from math import sqrt
+from statistics import mean, stdev
+
+leituras_mm = [10.012, 10.018, 10.015, 10.011]
+n = len(leituras_mm)
+media_mm = mean(leituras_mm)
+u_media_mm = stdev(leituras_mm) / sqrt(n)
+
+print(f"{media_mm:.3f} ± {u_media_mm:.3f} mm")
+```
+:::
+:::
+::: {.column width="35%"}
+::: {.painel-codigo}
+<div class="titulo-codigo">Do dado ao resultado</div>
+
+**Entrada:** quatro leituras sintéticas de comprimento (mm).
+
+**Processamento:** média e incerteza-padrão tipo A da média.
+
+**Hipótese:** leituras independentes e da mesma distribuição.
+:::
+:::
+::::
+
+::: {.faixa-codigo}
+**Exemplo demonstrativo:** sem bibliotecas externas. Uma avaliação completa pode exigir outras contribuições de incerteza.
+:::
+
+::: {.notes}
+Bloco estático para apresentação de código; não é executado pelo Quarto. Dados sintéticos. Hipóteses de independência e mesma distribuição.
+:::
 ## Resultados numéricos e rastreabilidade
 
-[05 · TABELAS]{.etiqueta-topo}
+[06 · TABELAS]{.etiqueta-topo}
 
 | Grandeza | Estimativa | Incerteza-padrão |
 |:--|--:|--:|
@@ -197,7 +239,7 @@ Demonstração de tabela. As grandezas não pertencem ao mesmo modelo de mediç�
 
 ## Uma sequência visual para explicar métodos
 
-[06 · FLUXOGRAMAS]{.etiqueta-topo}
+[07 · FLUXOGRAMAS]{.etiqueta-topo}
 
 :::: {.fluxo-metodo}
 ::: {.etapa-metodo}
@@ -239,7 +281,7 @@ A comunicação visual complementa o argumento técnico; não substitui a docume
 
 ## Referências
 
-[07 · REFERÊNCIAS]{.etiqueta-topo}
+[08 · REFERÊNCIAS]{.etiqueta-topo}
 
 ::: {.lista-referencias}
 
@@ -286,27 +328,19 @@ Este slide ilustra um padrão bibliográfico. Conferir edição, ano, identifica
 :::: {.grade-contatos}
 
 ::: {.contato-item}
-[E-MAIL]{.tipo-contato}
-
-[rcmayworm@gmail.com](mailto:rcmayworm@gmail.com)
+**E-mail:** [rcmayworm@gmail.com](mailto:rcmayworm@gmail.com)
 :::
 
 ::: {.contato-item}
-[SITE PESSOAL]{.tipo-contato}
-
-[rcmayworm.github.io](https://rcmayworm.github.io/)
+**Site pessoal:** [rcmayworm.github.io](https://rcmayworm.github.io/)
 :::
 
 ::: {.contato-item}
-[CURRÍCULO LATTES]{.tipo-contato}
-
-[Acessar currículo](http://lattes.cnpq.br/5951712664292058)
+**Currículo Lattes:** [Acessar currículo](http://lattes.cnpq.br/5951712664292058)
 :::
 
 ::: {.contato-item}
-[LINKEDIN]{.tipo-contato}
-
-[linkedin.com/in/ruanmayworm](https://www.linkedin.com/in/ruanmayworm/)
+**LinkedIn:** [linkedin.com/in/ruanmayworm](https://www.linkedin.com/in/ruanmayworm/)
 :::
 
 ::::

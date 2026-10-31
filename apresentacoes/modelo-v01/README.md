@@ -1,4 +1,4 @@
-# Apresentações científicas — versão de avaliação v0.4
+# Apresentações científicas — versão de avaliação v0.6
 
 Modelo original Quarto + Reveal.js, com identidade visual própria do site acadêmico.
 A referência visual do professor Jodavid Ferreira foi utilizada como inspiração; nenhum SCSS, gráfico ou ativo de terceiros foi copiado.
@@ -36,6 +36,8 @@ recursos necessários à navegação e às anotações.
 caso o requisito seja entregar um único arquivo.
 
 ## Revisões
+
+v0.6: acrescenta slide para apresentação de código Python; no encerramento, os contatos aparecem em linhas com rótulo e dois pontos, mais compactos e afastados do link da apresentação.
 
 v0.5: simplifica o slide final, remove o rótulo ENCERRAMENTO e o GitHub,
 amplia o título CONTATO e organiza e-mail, site, Lattes e LinkedIn
