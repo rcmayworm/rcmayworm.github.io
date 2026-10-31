@@ -38,7 +38,7 @@ caso o requisito seja entregar um único arquivo.
 ## Revisões
 
 v0.2: remove slides em branco gerados pelo conteúdo anterior à capa, fixa
-`slide-level: 2`, identifica capa e encerramento, ajusta a largura da capa
+`slide-level: 2`, elimina subtítulos interpretados como slides extras, identifica capa e encerramento e ajusta a largura da capa
 e adiciona ferramentas de anotação e quadro branco.
 
 O repositório não recebeu uma licença de distribuição de software.

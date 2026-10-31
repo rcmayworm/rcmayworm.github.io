@@ -79,7 +79,7 @@ Slide demonstrativo para apresentar uma mensagem principal.
 ::: {.cartao-pilar}
 [01]{.numero-pilar}
 
-### Contexto
+<div class="titulo-pilar">Contexto</div>
 
 Qual problema de medição estamos tentando resolver?
 
@@ -89,7 +89,7 @@ Qual problema de medição estamos tentando resolver?
 ::: {.cartao-pilar}
 [02]{.numero-pilar}
 
-### Método
+<div class="titulo-pilar">Método</div>
 
 Quais modelos, dados e hipóteses sustentam a análise?
 
@@ -99,7 +99,7 @@ Quais modelos, dados e hipóteses sustentam a análise?
 ::: {.cartao-pilar}
 [03]{.numero-pilar}
 
-### Resultado
+<div class="titulo-pilar">Resultado</div>
 
 O que a evidência permite concluir — e com qual limitação?
 
@@ -126,7 +126,7 @@ $$u_c(y)=\sqrt{\sum_{i=1}^{N}\left(\frac{\partial f}{\partial x_i}\right)^2u^2(x
 ::: {.column width="43%"}
 
 ::: {.painel-lateral}
-### Ao apresentar uma equação
+<div class="titulo-painel">Ao apresentar uma equação</div>
 
 - Definir símbolos e unidades.
 - Explicitar hipóteses.
@@ -158,7 +158,7 @@ A expressão assume ausência de correlações e linearização de primeira orde
 ::: {.painel-resultado}
 [EXEMPLO DIDÁTICO]{.selo-exemplo}
 
-### Sinal simulado
+<div class="titulo-resultado">Sinal simulado</div>
 
 Gráfico SVG de uma onda modulada, produzido a partir de dados artificiais.
 
