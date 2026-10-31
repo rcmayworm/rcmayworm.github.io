@@ -58,11 +58,13 @@ Vejamos os dados do certificado simulado:
 
 -   No ponto de $110~^\circ C$: $MD = |1,2| + 0,6 = 1,8~^\circ C$ (Aprovado).
 
+
+
+**Veredito e Ação Corretiva:** O instrumento **não pode ser utilizado** na estufa conforme planejado. Como o erro no ponto central de operação ($100~^\circ C$) somado à incerteza ultrapassou o EMP, o engenheiro deve: (1) Retirar o equipamento de serviço e etiquetá-lo como "Fora de Uso"; (2) Solicitar ajuste e recalibração; e (3) Realizar uma Análise de Impacto para verificar se os lotes secos desde a última calibração foram afetados.
+
 ::: {.callout-warning title="Alerta de auditoria"}
 Auditores de Sistemas de Gestão exigem que a análise crítica seja evidenciada. Não basta o cálculo estar certo na sua cabeça, o certificado ou o registro de aprovação deve estar **datado e assinado** pelo responsável técnico, declarando explicitamente a adequação ao uso.
 :::
-
-**Veredito e Ação Corretiva:** O instrumento **não pode ser utilizado** na estufa conforme planejado. Como o erro no ponto central de operação ($100~^\circ C$) somado à incerteza ultrapassou o EMP, o engenheiro deve: (1) Retirar o equipamento de serviço e etiquetá-lo como "Fora de Uso"; (2) Solicitar ajuste e recalibração; e (3) Realizar uma Análise de Impacto para verificar se os lotes secos desde a última calibração foram afetados.
 
 ## Caso Prático 3: Avaliando um Manômetro Digital
 
@@ -81,7 +83,8 @@ Um dos maiores dilemas do chão de fábrica ocorre quando o seu processo trabalh
 
 Como avaliar se o instrumento está aprovado para uso em 5,0 bar, se esse ponto não existe na tabela? A metrologia nos oferece dois caminhos práticos e aceitos em auditorias:
 
-**1. A Abordagem Conservadora (A Regra do Pior Caso):**\
+**1. A Abordagem Conservadora (A Regra do Pior Caso):**
+
 ::: {.callout-tip title="Dica prática"}
 Pare de sofrer com matemáticas complexas! A ISO/IEC 17025 diz que o laboratório deve atender aos requisitos do cliente. Quando for enviar seus instrumentos para calibração no próximo ano, envie junto uma ordem de compra exigindo: *"Favor incluir o ponto de 5,0 bar, pois é o nosso ponto crítico de processo"*. Laboratórios RBC cobram pouco (ou nada) por um ponto extra, e você elimina a necessidade de fazer interpolações matemáticas na aprovação.
 :::
@@ -96,7 +99,8 @@ Esta é a regra mais usada na indústria pela sua segurança e facilidade em pla
 
 -   **Veredito:** Como $0,23 \leq 0,30$ (EMP), o manômetro está **Aprovado** com segurança.
 
-**2. A Interpolação Linear:**\
+**2. A Interpolação Linear:**
+
 ::: {.callout-warning title="Alerta de auditoria"}
 Nunca confunda Interpolação com **Extrapolação**! A interpolação só é válida para valores **dentro** da faixa testada pelo laboratório. Se o seu certificado vai de 0 a 8,0 bar, você jamais deve tentar "adivinhar" o erro em 9,0 bar. Auditores consideram isso uma falha grave, pois o comportamento do sensor fora da faixa calibrada é desconhecido.
 :::
