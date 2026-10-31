@@ -12,7 +12,7 @@
   <svg x="0" y="607" width="1010" height="516" viewBox="0 595 1010 516">
     <use href="#grafico-original"/>
   </svg>
-  <g font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600" text-anchor="middle" fill="#244958">
+  <g font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600" text-anchor="middle" fill="#244958">
     <text x="505" y="582">(a) Deriva constante</text>
     <text x="505" y="1162">(b) Tendência/offset</text>
   </g>
