@@ -119,8 +119,10 @@ if not theme_path.is_file() or "width: 100%; max-width: 100%;" not in theme_path
 theme_css = theme_path.read_text(encoding="utf-8") if theme_path.is_file() else ""
 if "grid-template-columns: minmax(0, 1fr);" not in theme_css or "width: 62%;" not in theme_css or "row-gap: 0.12em;" not in theme_css:
     errors.append("Contatos não configurados em coluna única à esquerda.")
-if ".reveal .titulo-contato" not in theme_css or "margin-top: 1.75em;" not in theme_css:
+if ".reveal .titulo-contato" not in theme_css or "margin-top: 3.0em;" not in theme_css:
     errors.append("Destaque do título CONTATO ausente.")
+if ".reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 5.0em; }" not in theme_css:
+    errors.append("Espaçamento da identificação na capa não atualizado.")
 if not (html_path.parent / "template_files").is_dir():
     errors.append("Pasta template_files de recursos não gerada.")
 

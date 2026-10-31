@@ -81,7 +81,7 @@ $presentation-line-height: 1.38;
   display: block; background: #6eafc3; height: 5px;
   width: 100%; max-width: 100%; margin: 0.62em 0 0.75em; border-radius: 3px;
 }
-.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 3.4em; }
+.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 5.0em; }
 .reveal .fecho-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 2.2em; }
 .reveal .fecho-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
 .reveal .fecho-identificacao strong { color: #fff; font-size: 1.22em; }
@@ -288,7 +288,7 @@ $presentation-line-height: 1.38;
 }
 
 /* v0.6: contatos em linhas compactas e afastados do link de apresentação. */
-.reveal .bloco-contatos { margin-top: 1.75em; }
+.reveal .bloco-contatos { margin-top: 3.0em; }
 .reveal .grade-contatos {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
