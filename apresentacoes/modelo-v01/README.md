@@ -37,6 +37,10 @@ caso o requisito seja entregar um único arquivo.
 
 ## Revisões
 
+v0.5: simplifica o slide final, remove o rótulo ENCERRAMENTO e o GitHub,
+amplia o título CONTATO e organiza e-mail, site, Lattes e LinkedIn
+verticalmente na coluna esquerda.
+
 v0.4: afasta o nome da capa do subtítulo, acrescenta um slide com referências
 exemplificativas e substitui o encerramento por um slide Obrigado! com
 link da apresentação e contatos profissionais. O link mostrado no modelo

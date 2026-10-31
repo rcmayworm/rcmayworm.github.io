@@ -79,11 +79,17 @@ if len(slides) >= 9:
     if "referências" not in reference_text or "jcgm 100:2008" not in reference_text:
         errors.append("Penúltimo slide não contém referências.")
     for marker in ["obrigado!", "link da apresentação", "contato", "rcmayworm@gmail.com",
-                   "github.com/rcmayworm", "lattes", "linkedin"]:
+                   "site pessoal", "lattes", "linkedin"]:
         if marker not in final_text:
             errors.append(f"Slide final não contém: {marker}.")
+    if "github.com/rcmayworm" in final_text or "github" in final_text:
+        errors.append("Slide final ainda contém GitHub.")
+    if "encerramento" in final_text:
+        errors.append("Slide final ainda contém o rótulo ENCERRAMENTO.")
+    if final_text.count("e-mail") != 1 or final_text.count("site pessoal") != 1:
+        errors.append("Os contatos não foram apresentados uma única vez.")
     for link in ["mailto:rcmayworm@gmail.com", "https://www.linkedin.com/in/ruanmayworm/",
-                 "http://lattes.cnpq.br/5951712664292058", "https://github.com/rcmayworm"]:
+                 "http://lattes.cnpq.br/5951712664292058", "https://rcmayworm.github.io/"]:
         if link not in html:
             errors.append(f"Link de contato ausente: {link}.")
 if any(r["characters"] < 40 for r in report):
@@ -101,6 +107,11 @@ if 'class="footer footer-default"' not in html or "Metrologia, dados e decisões
 theme_path = html_path.parent / "tema.scss"
 if not theme_path.is_file() or "width: 100%; max-width: 100%;" not in theme_path.read_text(encoding="utf-8"):
     errors.append("Linha horizontal de capa/encerramento não atualizada.")
+theme_css = theme_path.read_text(encoding="utf-8") if theme_path.is_file() else ""
+if "grid-template-columns: minmax(0, 1fr);" not in theme_css or "width: 54%;" not in theme_css:
+    errors.append("Contatos não configurados em coluna única à esquerda.")
+if ".reveal .titulo-contato" not in theme_css:
+    errors.append("Destaque do título CONTATO ausente.")
 if not (html_path.parent / "template_files").is_dir():
     errors.append("Pasta template_files de recursos não gerada.")
 

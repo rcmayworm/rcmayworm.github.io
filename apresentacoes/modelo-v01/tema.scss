@@ -251,10 +251,17 @@ $presentation-line-height: 1.38;
 }
 .reveal .grade-contatos {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  column-gap: 1.20em;
+  grid-template-columns: minmax(0, 1fr);
   row-gap: 0.42em;
+  width: 54%;
+  max-width: 100%;
   margin-top: 0.54em;
+}
+/* O título CONTATO tem uma hierarquia visual própria, sem ampliar o rótulo do link. */
+.reveal .titulo-contato {
+  font-size: 0.78em;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.16em;
 }
 .reveal .contato-item {
   min-width: 0;

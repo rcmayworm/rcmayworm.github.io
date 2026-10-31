@@ -269,8 +269,6 @@ Este slide ilustra um padrão bibliográfico. Conferir edição, ano, identifica
 
 ::: {.fecho-conteudo}
 
-[ENCERRAMENTO]{.sobretitulo-capa}
-
 [Obrigado!]{.titulo-fecho .titulo-obrigado}
 
 ::: {.capa-linha}
@@ -283,7 +281,7 @@ Este slide ilustra um padrão bibliográfico. Conferir edição, ano, identifica
 :::
 
 ::: {.bloco-contatos}
-[CONTATO]{.rotulo-contato}
+[CONTATO]{.rotulo-contato .titulo-contato}
 
 :::: {.grade-contatos}
 
@@ -297,12 +295,6 @@ Este slide ilustra um padrão bibliográfico. Conferir edição, ano, identifica
 [SITE PESSOAL]{.tipo-contato}
 
 [rcmayworm.github.io](https://rcmayworm.github.io/)
-:::
-
-::: {.contato-item}
-[GITHUB]{.tipo-contato}
-
-[github.com/rcmayworm](https://github.com/rcmayworm)
 :::
 
 ::: {.contato-item}
