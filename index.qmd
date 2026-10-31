@@ -57,22 +57,9 @@ Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avali
 
 ## E-books e conteúdo técnico
 
-::: {.book-feature}
-::: {.book-cover aria-label="Representação tipográfica provisória do livro, ainda não publicado"}
-<div class="book-monogram">M</div>
-<div class="book-cover-title">Metrologia e Incerteza de Medição com Python</div>
-<div class="book-cover-foot">Projeto editorial · Ruan Mayworm</div>
-:::
-::: {.book-details}
-<span class="status-label">Em planejamento editorial</span>
+O livro **Análise Crítica de Certificados de Calibração**, de Ruan Carvalho Mayworm, já possui uma edição em PDF. A versão para leitura online está em preparação e ainda não foi publicada.
 
-### Metrologia e Incerteza de Medição com Python
-
-Livro técnico proposto, com teoria metrológica, exemplos numéricos, simulações e exercícios reprodutíveis. O conteúdo ainda não está disponível para leitura ou download.
-
-[Explorar a seção E-books](ebooks.qmd){.inline-link}
-:::
-:::
+[Conhecer o livro](ebooks.qmd){.inline-link} · [Adquirir a edição PDF na Hotmart](https://go.hotmart.com/F105183714N)
 
 <div class="section-eyebrow">Compartilhamento de conhecimento</div>
 
