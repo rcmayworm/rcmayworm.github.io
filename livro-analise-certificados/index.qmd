@@ -2,10 +2,19 @@
 title: "Introdução"
 ---
 
+<div class="book-opening" aria-label="Apresentação do livro">
+  <h1 class="book-opening-title">Análise Crítica de Certificados de Calibração</h1>
+  <p class="book-opening-subtitle">Como ler, interpretar e aprovar equipamentos com segurança.</p>
+  <img class="book-opening-cover" src="assets/capa.webp" alt="Capa do livro Análise Crítica de Certificados de Calibração" width="1241" height="1754" loading="eager" decoding="async">
+  <p class="book-opening-author"><strong>Autor:</strong> Ruan Carvalho Mayworm</p>
+  <p class="book-opening-date"><strong>Publicação:</strong> 2026 · 1ª edição</p>
+</div>
 
-**Leitura online gratuita.** A edição em PDF é comercializada separadamente. [Adquirir a edição em PDF na Hotmart](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}.
+**Leitura online gratuita.**
 
-*1ª edição, 2026. © Ruan Carvalho Mayworm. Direitos reservados. Acesso gratuito para leitura, sem autorização automática para redistribuição ou comercialização.*
+[Adquirir edição em PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+
+*© Ruan Carvalho Mayworm. Direitos reservados. Acesso gratuito para leitura, sem autorização automática para redistribuição ou comercialização.*
 
 ::: {.callout-note title="Nota editorial da versão online"}
 Este livro disponibiliza gratuitamente o conteúdo da primeira edição, adaptado para leitura em HTML. Algumas afirmações técnicas receberam esclarecimentos para evitar interpretações normativas universais. Consulte a [nota de revisão editorial](revisao-editorial.qmd) antes de aplicar critérios em processos críticos. As figuras são ilustrativas.

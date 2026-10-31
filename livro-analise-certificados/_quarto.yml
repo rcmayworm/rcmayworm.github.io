@@ -1,6 +1,8 @@
 project:
   type: book
   output-dir: _book
+  resources:
+    - assets/capa.webp
 
 book:
   title: "Análise Crítica de Certificados de Calibração"
@@ -8,8 +10,7 @@ book:
   author: "Ruan Carvalho Mayworm"
   date: "2026"
   description: "Guia introdutório de análise crítica de certificados de calibração e decisões metrológicas."
-  cover-image: assets/capa.webp
-  cover-image-alt: "Capa da primeira edição do livro"
+  image: assets/capa.webp
   page-navigation: true
   search: true
   site-url: "https://rcmayworm.github.io/livro-analise-certificados/"

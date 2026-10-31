@@ -14,3 +14,35 @@ figcaption, .figure-caption { color: #455b66; font-size: .91rem; }
   main { overflow-wrap: anywhere; }
   table { font-size: .85rem; }
 }
+
+/* Abertura editorial do livro: capa grande à esquerda, sem miniatura automática */
+body:has(.book-opening) #title-block-header,
+body:has(.book-opening) .quarto-title-block {
+  display: none;
+}
+.book-opening {
+  max-width: 47rem;
+  margin: 0 0 1.5rem;
+}
+.book-opening-title {
+  color: var(--azul-capa);
+  font-size: clamp(1.85rem, 3.3vw, 2.6rem);
+  line-height: 1.19;
+  margin: 0 0 0.45rem;
+}
+.book-opening-subtitle {
+  font-size: clamp(1.1rem, 2.1vw, 1.38rem);
+  color: #455b66;
+  margin: 0 0 1rem;
+}
+.book-opening-cover {
+  display: block;
+  width: min(100%, 430px);
+  height: auto;
+  margin: 1.25rem 0 1rem;
+}
+.book-opening-author,
+.book-opening-date {
+  margin: 0.12rem 0;
+  font-size: 0.98rem;
+}
