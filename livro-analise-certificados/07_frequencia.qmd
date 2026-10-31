@@ -40,7 +40,7 @@ Se o seu paquímetro é calibrado a cada 12 meses e teve 3 resultados "Conforme"
 
 ### Passo 2: Aplique a Regra de Decisão {.unnumbered}
 
-Com base na sequência de resultados (ex: CCC, FCC), você define o ajuste do próximo prazo:
+Com base na sequência de resultados (ex: CCC, FCC), você define o ajuste do próximo prazo conforme a Tabela @tbl-schumacher:
 
 | Sequência histórica | Decisão estratégica | Ajuste sugerido |
 |:--|:--|:--|
@@ -49,9 +49,9 @@ Com base na sequência de resultados (ex: CCC, FCC), você define o ajuste do pr
 | **CFF ou FFF** | M (Máxima redução) | −35% do tempo atual |
 | **Outras (CFC, ACC)** | P (Permanecer) | Manter o prazo atual |
 
-*Os percentuais exemplificam uma política interna de gestão de intervalos; não são imposições normativas nem autorização automática de extensão.*
-
 : Matriz de decisão Schumacher para ciclo de três calibrações. {#tbl-schumacher}
+
+*Os percentuais exemplificam uma política interna de gestão de intervalos; não são imposições normativas nem autorização automática de extensão.*
 
 ## Técnica 2: Análise de Tendências (Cartas de Controle)
 
