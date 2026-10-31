@@ -28,6 +28,8 @@ jobs:
           python scripts/validate_site.py
       - name: Renderizar site
         run: quarto render
+      - name: Validar carrossel do blog no HTML renderizado
+        run: python scripts/validate_rendered_carousel.py
       - name: Renderizar livro Quarto Book
         run: |
           quarto render livro-analise-certificados --to html

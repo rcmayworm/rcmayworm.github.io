@@ -8,10 +8,17 @@
 .blog-carousel-arrow[hidden] { display: none !important; }
 .blog-carousel-arrow:focus-visible { outline: 3px solid #2583a5; outline-offset: 2px; }
 
-/* Os itens são gerados automaticamente pelo Quarto: manter todos em uma só linha.
-   A seletorização cobre tanto um ID no contêiner quanto no próprio grid. */
+/* Compatibilidade com o identificador gerado pelo Quarto para a listagem da home.
+   O Quarto pode renomear o placeholder #home-blog-listing para #listing-home-blog-listing.
+   Os seletores abaixo funcionam em ambas as estruturas, sem afetar o Blog completo. */
+#listing-home-blog-listing .list.grid,
+#listing-home-blog-listing .quarto-listing-grid,
+#listing-home-blog-listing.list.grid,
 #home-blog-listing .list.grid,
-#home-blog-listing.list.grid {
+#home-blog-listing .quarto-listing-grid,
+#home-blog-listing.list.grid,
+body:has(.academic-hero) .quarto-listing-grid,
+.js-blog-carousel {
   --blog-card-gap: 1rem;
   display: flex !important;
   flex-flow: row nowrap !important;
@@ -22,15 +29,20 @@
   overflow-x: auto !important;
   overflow-y: hidden !important;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: 0;
   overscroll-behavior-x: contain;
   -webkit-overflow-scrolling: touch;
   padding: .25rem 0 1rem !important;
   margin: 0 !important;
   scrollbar-width: thin;
 }
+#listing-home-blog-listing .list.grid > *,
+#listing-home-blog-listing .quarto-listing-grid > *,
+#listing-home-blog-listing.list.grid > *,
 #home-blog-listing .list.grid > *,
-#home-blog-listing.list.grid > * {
+#home-blog-listing .quarto-listing-grid > *,
+#home-blog-listing.list.grid > *,
+body:has(.academic-hero) .quarto-listing-grid > *,
+.js-blog-carousel > * {
   flex: 0 0 calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
   width: calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
   max-width: calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
@@ -38,30 +50,41 @@
   box-sizing: border-box;
   scroll-snap-align: start;
 }
-#home-blog-listing .quarto-grid-item { height: 100%; }
-#home-blog-listing .card { height: 100%; box-shadow: none; border: 1px solid var(--line); }
-#home-blog-listing .card:hover { border-color: #a4bdc6; }
-
 @media (max-width: 900px) {
+  #listing-home-blog-listing .list.grid > *,
+  #listing-home-blog-listing .quarto-listing-grid > *,
+  #listing-home-blog-listing.list.grid > *,
   #home-blog-listing .list.grid > *,
-  #home-blog-listing.list.grid > * {
+  #home-blog-listing .quarto-listing-grid > *,
+  #home-blog-listing.list.grid > *,
+  body:has(.academic-hero) .quarto-listing-grid > *,
+  .js-blog-carousel > * {
     flex-basis: calc((100% - var(--blog-card-gap)) / 2) !important;
     width: calc((100% - var(--blog-card-gap)) / 2) !important;
     max-width: calc((100% - var(--blog-card-gap)) / 2) !important;
   }
 }
 @media (max-width: 620px) {
+  #listing-home-blog-listing .list.grid > *,
+  #listing-home-blog-listing .quarto-listing-grid > *,
+  #listing-home-blog-listing.list.grid > *,
   #home-blog-listing .list.grid > *,
-  #home-blog-listing.list.grid > * {
+  #home-blog-listing .quarto-listing-grid > *,
+  #home-blog-listing.list.grid > *,
+  body:has(.academic-hero) .quarto-listing-grid > *,
+  .js-blog-carousel > * {
     flex-basis: 100% !important;
     width: 100% !important;
     max-width: 100% !important;
   }
+}
+@media (max-width: 620px) {
   .academic-hero .hero-btn { flex: 1 1 calc(50% - .6rem); }
 }
 @media (prefers-reduced-motion: reduce) {
+  #listing-home-blog-listing .list.grid,
   #home-blog-listing .list.grid,
-  #home-blog-listing.list.grid { scroll-behavior: auto; }
+  .js-blog-carousel { scroll-behavior: auto; }
 }
 
 /* Títulos da home: manter a cor e tipografia de H2 mesmo como hiperlink. */

@@ -1,42 +1,51 @@
-/* Vitrine horizontal dos artigos publicados na página inicial.
-   Quarto mantém a listagem automática; esta camada controla apenas a navegação. */
+/* Carrossel de postagens na home. Localiza a listagem mesmo após Quarto
+   renomear o contêiner para #listing-home-blog-listing. */
 (() => {
+  const candidates = [
+    '#listing-home-blog-listing .quarto-listing-grid',
+    '#listing-home-blog-listing .list.grid',
+    '#home-blog-listing .quarto-listing-grid',
+    '#home-blog-listing .list.grid',
+    '#listing-home-blog-listing.list.grid',
+    '#home-blog-listing.list.grid',
+    'body:has(.academic-hero) .quarto-listing-grid'
+  ];
   const init = () => {
-    const root = document.getElementById('home-blog-listing');
     const prev = document.getElementById('blog-prev');
     const next = document.getElementById('blog-next');
-    if (!root || !prev || !next) return false;
-
-    const track = root.matches('.list.grid') ? root : root.querySelector('.list.grid');
+    if (!prev || !next) return false;
+    const tracks = document.querySelectorAll(candidates.join(','));
+    const track = [...tracks].find(el => el.querySelector('a[href*="blog/posts/"]'));
     if (!track) return false;
     if (track.dataset.carouselInitialized === 'true') return true;
     track.dataset.carouselInitialized = 'true';
     track.classList.add('js-blog-carousel');
+    if (!track.id) track.id = 'home-blog-carousel-track';
+    prev.setAttribute('aria-controls', track.id);
+    next.setAttribute('aria-controls', track.id);
     track.tabIndex = 0;
     track.setAttribute('role', 'region');
-    track.setAttribute('aria-label', 'Artigos do blog: use as setas para navegar horizontalmente');
+    track.setAttribute('aria-label', 'Artigos do blog: navegação horizontal');
 
     const update = () => {
       const max = Math.max(0, track.scrollWidth - track.clientWidth);
-      const canSlide = max > 4;
-      prev.hidden = !canSlide;
-      next.hidden = !canSlide;
-      prev.disabled = !canSlide || track.scrollLeft <= 4;
-      next.disabled = !canSlide || track.scrollLeft >= max - 4;
+      const overflow = max > 4;
+      prev.hidden = !overflow;
+      next.hidden = !overflow;
+      prev.disabled = !overflow || track.scrollLeft <= 4;
+      next.disabled = !overflow || track.scrollLeft >= max - 4;
     };
-
-    const slide = (direction) => {
-      const item = track.firstElementChild;
-      if (!item) return;
+    const slide = direction => {
+      const first = track.firstElementChild;
+      if (!first) return;
       const gap = parseFloat(getComputedStyle(track).columnGap) || 0;
-      const stride = item.getBoundingClientRect().width + gap;
+      const stride = first.getBoundingClientRect().width + gap;
       const max = Math.max(0, track.scrollWidth - track.clientWidth);
-      const current = Math.round(track.scrollLeft / stride);
-      const target = Math.min(max, Math.max(0, (current + direction) * stride));
-      const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
-      track.scrollTo({left: target, behavior: reduced ? 'auto' : 'smooth'});
+      const step = Math.round(track.scrollLeft / stride) + direction;
+      const destination = Math.max(0, Math.min(max, step * stride));
+      const behavior = matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+      track.scrollTo({left: destination, behavior});
     };
-
     prev.addEventListener('click', () => slide(-1));
     next.addEventListener('click', () => slide(1));
     track.addEventListener('scroll', update, {passive: true});
@@ -46,10 +55,8 @@
     requestAnimationFrame(update);
     return true;
   };
-
   const start = () => {
     if (init()) return;
-    // Segurança caso uma versão do Quarto insira a listagem após DOMContentLoaded.
     const observer = new MutationObserver(() => {
       if (init()) observer.disconnect();
     });
