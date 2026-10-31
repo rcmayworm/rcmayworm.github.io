@@ -16,6 +16,10 @@ Como ilustrado na @fig-selos-rbc, as marcas de acreditação oferecem evidência
 
 ## Muito além do Selo: Analisando a CMC
 
+Contratar um laboratório apenas por ele "ser RBC" também é um erro comum que pode invalidar a análise crítica. Antes de enviar o instrumento, você deve consultar o escopo de acreditação no site do Inmetro e analisar a **CMC (Capacidade de Medição e Calibração)**.
+
+A CMC representa a menor incerteza de medição que o laboratório consegue entregar sob condições ideais. Se a incerteza do laboratório (CMC) for muito alta em relação à sua necessidade, ela "comerá" toda a sua margem de tolerância, levando à reprovação injusta de equipamentos que ainda poderiam ser utilizados.
+
 ::: {.callout-tip title="Dica prática"}
 Sempre confira o *escopo de acreditação* no site do Inmetro antes da contratação. Um laboratório pode ser acreditado para calibrar balanças, mas não possuir competência reconhecida para o termômetro específico que sua fábrica utiliza.
 :::
@@ -24,47 +28,43 @@ Sempre confira o *escopo de acreditação* no site do Inmetro antes da contrata�
 Contratar um laboratório cuja CMC seja maior ou muito próxima ao seu Erro Máximo Permitido (EMP) tornará o certificado inútil para a tomada de decisão. Recomenda-se que a incerteza do laboratório seja, no mínimo, de 3 a 10 vezes menor que a tolerância do seu processo.
 :::
 
-Contratar um laboratório apenas por ele "ser RBC" também é um erro comum que pode invalidar a análise crítica. Antes de enviar o instrumento, você deve consultar o escopo de acreditação no site do Inmetro e analisar a **CMC (Capacidade de Medição e Calibração)**.
-
-A CMC representa a menor incerteza de medição que o laboratório consegue entregar sob condições ideais. Se a incerteza do laboratório (CMC) for muito alta em relação à sua necessidade, ela "comerá" toda a sua margem de tolerância, levando à reprovação injusta de equipamentos que ainda poderiam ser utilizados.
-
 ## O Checklist Obrigatório da ISO/IEC 17025
 
 Para que um certificado de calibração tenha validade jurídica e técnica em auditorias, ele não pode ser apenas um "papel assinado". O requisito 7.8 da norma ISO/IEC 17025 estabelece o que chamamos de relato de resultados, garantindo que todas as informações necessárias para a interpretação dos dados estejam presentes [@iso17025].
 
 De acordo com o item 7.8.2.1 da norma, cada relatório deve incluir, no mínimo, as seguintes informações para minimizar mal-entendidos:
 
--   **Título:** Por exemplo, "Certificado de Calibração".
+A.  **Título:** Por exemplo, "Certificado de Calibração".
 
--   **Identificação do Laboratório:** Nome e endereço do laboratório que realizou o serviço.
+B.  **Identificação do Laboratório:** Nome e endereço do laboratório que realizou o serviço.
 
--   **Local das Atividades:** Endereço onde a calibração foi executada.
+C.  **Local das Atividades:** Endereço onde a calibração foi executada.
 
--   **Identificação Unívoca:** Número do certificado em todas as suas páginas e indicação clara do final do documento.
+D.  **Identificação Unívoca:** Número do certificado em todas as suas páginas e indicação clara do final do documento.
 
--   **Dados do Cliente:** Nome e informações de contato do solicitante.
+E.  **Dados do Cliente:** Nome e informações de contato do solicitante.
 
--   **Método Utilizado:** Identificação do procedimento de calibração.
+F.  **Método Utilizado:** Identificação do procedimento de calibração.
 
--   **Descrição do Item:** Identificação clara e condição do objeto calibrado.
+G.  **Descrição do Item:** Identificação clara e condição do objeto calibrado.
 
--   **Datas Críticas:** Data do recebimento do item.
+H.  **Datas Críticas:** Data do recebimento do item.
 
--   **Data da Atividade:** Data(s) em que a calibração foi efetivamente realizada.
+I.  **Data da Atividade:** Data(s) em que a calibração foi efetivamente realizada.
 
--   **Data de Emissão:** Data em que o relatório foi liberado.
+J.  **Data de Emissão:** Data em que o relatório foi liberado.
 
--   **Plano de Amostragem:** Referência ao método, se o laboratório for responsável por esta etapa.
+K.  **Plano de Amostragem:** Referência ao método, se o laboratório for responsável por esta etapa.
 
--   **Declaração de Escopo:** Nota afirmando que os resultados referem-se apenas aos itens calibrados.
+L.  **Declaração de Escopo:** Nota afirmando que os resultados referem-se apenas aos itens calibrados.
 
--   **Resultados:** Apresentação dos dados com as respectivas unidades de medida.
+M.  **Resultados:** Apresentação dos dados com as respectivas unidades de medida.
 
--   **Desvios do Método:** Registro de adições, exclusões ou desvios em relação ao procedimento.
+N.  **Desvios do Método:** Registro de adições, exclusões ou desvios em relação ao procedimento.
 
--   **Autorização:** Identificação da(s) pessoa(s) que autoriza(m) o relatório.
+O.  **Autorização:** Identificação da(s) pessoa(s) que autoriza(m) o relatório.
 
--   **Provedores Externos:** Identificação clara caso algum resultado tenha sido obtido por terceiros.
+P.  **Provedores Externos:** Identificação clara caso algum resultado tenha sido obtido por terceiros.
 
 ::: {.callout-warning title="Alerta de auditoria"}
 Além destes itens, certificados de calibração devem obrigatoriamente declarar a **incerteza de medição** e a **rastreabilidade metrológica**. Certificados que omitem a incerteza são tecnicamente nulos para fins de comprovação metrológica, pois o resultado de uma medição só é considerado completo quando acompanhado de sua dúvida associada.
