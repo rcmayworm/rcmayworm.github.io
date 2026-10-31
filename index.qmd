@@ -112,11 +112,9 @@ Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avali
 
 ::: {.feature-grid}
 ::: {.feature-card .feature-card-clickable}
-<div class="card-label">Software</div>
-
 ### [Código científico](software.qmd){.feature-card-link}
 
-Repositórios, programas e ferramentas para análise de dados, automação e pesquisa, conforme disponibilidade de versões públicas.
+Repositórios, programas e ferramentas para análise de dados, automação e pesquisa.
 :::
 ::: {.feature-card .feature-card-clickable}
 <div class="card-label">Apresentações</div>

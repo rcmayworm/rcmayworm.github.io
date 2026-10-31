@@ -31,7 +31,7 @@ website:
         href: about.qmd
       - text: "Mais"
         menu:
-          - text: "Software"
+          - text: "Código"
             href: software.qmd
           - text: "Apresentações"
             href: presentations.qmd
