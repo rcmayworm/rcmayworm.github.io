@@ -3,11 +3,6 @@ title: "Introdução"
 ---
 
 
-![](assets/capa.webp){fig-alt="Capa do livro Análise Crítica de Certificados de Calibração" width="38%"}
-
-**Análise Crítica de Certificados de Calibração**  
-*Como ler, interpretar e aprovar equipamentos com segurança.*
-
 **Leitura online gratuita.** A edição em PDF é comercializada separadamente. [Adquirir a edição em PDF na Hotmart](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}.
 
 *1ª edição, 2026. © Ruan Carvalho Mayworm. Direitos reservados. Acesso gratuito para leitura, sem autorização automática para redistribuição ou comercialização.*
