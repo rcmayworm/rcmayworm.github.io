@@ -55,13 +55,13 @@ Com base na sequência de resultados (ex: CCC, FCC), você define o ajuste do pr
 
 ## Técnica 2: Análise de Tendências (Cartas de Controle)
 
-::: {.callout-tip title="Dica prática"}
-Crie um gráfico de linhas no Excel: no eixo horizontal (X) coloque a data das calibrações e no eixo vertical (Y) coloque o valor da Tendência (Erro) relatado no certificado. Adicione linhas horizontais fixas representando o seu EMP superior e inferior.
-:::
-
 Para ativos de alta criticidade, a ISO 10012 e a ISO/IEC 17025 recomendam o monitoramento da **Deriva Instrumental** via gráficos. Aqui, você não olha apenas se o instrumento "passou", mas sim para *onde* o erro está caminhando. O cenário ideal é um instrumento com variações aleatórias contidas, conforme ilustrado na Figura @fig-carta-ideal.
 
 ![Carta de controle com comportamento estável ao longo de doze calibrações.](assets/figuras/controle_estavel.webp){#fig-carta-ideal fig-alt="Erros de medição variam dentro dos limites horizontais estabelecidos"}
+
+::: {.callout-tip title="Dica prática"}
+Crie um gráfico de linhas no Excel: no eixo horizontal (X) coloque a data das calibrações e no eixo vertical (Y) coloque o valor da Tendência (Erro) relatado no certificado. Adicione linhas horizontais fixas representando o seu EMP superior e inferior.
+:::
 
 ### O que o gráfico te diz (A "Regra dos 7"): {.unnumbered}
 
@@ -71,7 +71,7 @@ Fique atento a desvios que indicam que o instrumento está perdendo a estabilida
 
 2.  **Vício de Medição (Vide Figura @fig-cartas-problema (b)):** Se houver 7 pontos sucessivos acima ou abaixo da linha média (zero), o instrumento possui um erro sistemático que pode ser compensado via correção no seu processo, aumentando a exatidão da sua medição sem necessidade de ajuste físico.
 
-![Cartas ilustrativas de deriva constante e de tendência/offset no histórico de calibrações.](assets/figuras/cartas_compostas.webp){#fig-cartas-problema fig-alt="Dois gráficos de controle: um com tendência ascendente e outro com erro sistemático"}
+![Cartas ilustrativas de deriva constante e de tendência/offset no histórico de calibrações.](assets/figuras/cartas_legendas_centralizadas.svg){#fig-cartas-problema fig-alt="Dois gráficos de controle: um com tendência ascendente e outro com erro sistemático"}
 
 ## A Base Normativa da Flexibilização
 
