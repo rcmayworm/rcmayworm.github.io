@@ -24,7 +24,7 @@ Este livro disponibiliza gratuitamente o conteúdo da primeira edição, adaptad
 
 # Introdução: O Fim do Achismo na Metrologia {.unnumbered}
 ::: {.callout-note title="O que é a RBC"}
-A Rede Brasileira de Calibração (RBC) congrega laboratórios cuja competência técnica é avaliada e acreditada pela Cgcre/Inmetro. A indicação de acreditação aplicável é uma evidência de competência técnica para o escopo acreditado; a rastreabilidade metrológica deve ser avaliada com base nas informações e nos requisitos aplicáveis ao resultado.
+A Rede Brasileira de Calibração (RBC) congrega laboratórios cuja competência técnica é avaliada e acreditada pela Cgcre/Inmetro. O selo no certificado é a garantia de que as medições possuem rastreabilidade metrológica ininterrupta até o Sistema Internacional de Unidades (SI).
 :::
 
 O recebimento de um certificado de calibração é, muitas vezes, o início de uma insegurança técnica silenciosa. Para muitos engenheiros e gestores da qualidade, a "análise" do documento resume-se a verificar a presença do selo da RBC e arquivar o PDF, torcendo para que um auditor não aprofunde os questionamentos. No entanto, essa prática esconde um risco severo: a calibração, por si só, não atesta que o instrumento é adequado. Ela apenas descreve o comportamento do equipamento em um dado momento. Sem uma análise técnica, não é possível saber se o processo está gerando produtos defeituosos "dentro da tolerância" ou se está descartando lotes bons por erro do sistema de medição.
