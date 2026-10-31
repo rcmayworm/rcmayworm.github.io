@@ -37,6 +37,14 @@ jobs:
           mkdir -p _site/livro-analise-certificados
           cp -a livro-analise-certificados/_book/. _site/livro-analise-certificados/
           test -f _site/livro-analise-certificados/index.html
+      - name: Renderizar prévia do modelo de apresentações
+        run: |
+          (cd apresentacoes/modelo-v01 && quarto render template.qmd --to revealjs)
+          test -f apresentacoes/modelo-v01/template.html
+          grep -q 'class="reveal"' apresentacoes/modelo-v01/template.html
+          mkdir -p _site/previas/modelo-apresentacoes-v01
+          cp apresentacoes/modelo-v01/template.html _site/previas/modelo-apresentacoes-v01/index.html
+          test -f _site/previas/modelo-apresentacoes-v01/index.html
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
       - name: Enviar site renderizado

@@ -1,0 +1,253 @@
+---
+pagetitle: "Modelo de apresentações científicas | Ruan Carvalho Mayworm"
+author-meta: "Ruan Carvalho Mayworm"
+lang: pt-BR
+format:
+  revealjs:
+    theme: [default, tema.scss]
+    embed-resources: true
+    html-math-method: mathml
+    width: 1280
+    height: 720
+    margin: 0.06
+    slide-number: c/t
+    show-slide-number: all
+    progress: true
+    hash: true
+    transition: none
+    background-transition: none
+    center: false
+    menu:
+      side: left
+      numbers: true
+    preview-links: false
+    pdf-separate-fragments: false
+---
+
+<!-- PROTÓTIPO VISUAL v0.1 — exemplos numéricos e sinal inteiramente sintéticos. -->
+
+## {.slide-capa data-background-color="#112c41"}
+
+::: {.capa-conteudo}
+[MODELO DE APRESENTAÇÃO CIENTÍFICA]{.sobretitulo-capa}
+
+[Metrologia, dados e decisões confiáveis]{.titulo-capa}
+
+[Uma demonstração de estilos para palestras, aulas e apresentações de resultados]{.subtitulo-capa}
+
+::: {.capa-linha}
+:::
+
+::: {.capa-identificacao}
+**Ruan Carvalho Mayworm**
+
+Engenharia · Metrologia · Métodos computacionais
+
+*Apresentação demonstrativa — v0.1 · 2026*
+:::
+:::
+
+::: {.notes}
+Esta capa demonstra a identidade visual. Substituir título, evento e data em apresentações reais.
+:::
+
+## Uma apresentação científica deve facilitar decisões
+
+[01 · CONCEITO]{.etiqueta-topo}
+
+::: {.frase-destaque}
+A comunicação técnica deve separar claramente **evidências**, **hipóteses** e **conclusões**.
+:::
+
+::: {.faixa-sintese}
+Design editorial discreto · informação legível · rastreabilidade científica
+:::
+
+::: {.notes}
+Slide demonstrativo para apresentar uma mensagem principal.
+:::
+
+## Três níveis de informação
+
+[02 · ESTRUTURA]{.etiqueta-topo}
+
+:::: {.grade-tres}
+::: {.cartao-pilar}
+[01]{.numero-pilar}
+
+### Contexto
+
+Qual problema de medição estamos tentando resolver?
+
+[JUSTIFICATIVA]{.rodape-pilar}
+:::
+
+::: {.cartao-pilar}
+[02]{.numero-pilar}
+
+### Método
+
+Quais modelos, dados e hipóteses sustentam a análise?
+
+[PROCEDIMENTO]{.rodape-pilar}
+:::
+
+::: {.cartao-pilar}
+[03]{.numero-pilar}
+
+### Resultado
+
+O que a evidência permite concluir — e com qual limitação?
+
+[INTERPRETAÇÃO]{.rodape-pilar}
+:::
+::::
+
+## Equações com contexto metrológico
+
+[03 · EQUAÇÕES]{.etiqueta-topo}
+
+:::: {.columns}
+::: {.column width="57%"}
+
+::: {.caixa-equacao}
+**Incerteza-padrão combinada**
+
+$$u_c(y)=\sqrt{\sum_{i=1}^{N}\left(\frac{\partial f}{\partial x_i}\right)^2u^2(x_i)}$$
+
+[Expressão para componentes não correlacionadas e aproximação linear.]{.nota-equacao}
+:::
+
+:::
+::: {.column width="43%"}
+
+::: {.painel-lateral}
+### Ao apresentar uma equação
+
+- Definir símbolos e unidades.
+- Explicitar hipóteses.
+- Separar o modelo matemático de sua aplicação.
+- Identificar simplificações e limitações.
+:::
+
+:::
+::::
+
+::: {.notes}
+A expressão assume ausência de correlações e linearização de primeira ordem.
+:::
+
+## Visualização com Python
+
+[04 · GRÁFICOS]{.etiqueta-topo}
+
+:::: {.columns}
+::: {.column width="66%"}
+
+::: {.moldura-grafico}
+![](assets/sinal-sintetico.svg){fig-alt="Sinal ultrassônico sintético com envoltória gaussiana em função do tempo normalizado."}
+:::
+
+:::
+::: {.column width="34%"}
+
+::: {.painel-resultado}
+[EXEMPLO DIDÁTICO]{.selo-exemplo}
+
+### Sinal simulado
+
+Gráfico SVG de uma onda modulada, produzido a partir de dados artificiais.
+
+::: {.divisor-fino}
+:::
+
+**Observação:** os dados são sintéticos e não representam resultados experimentais.
+:::
+
+:::
+::::
+
+::: {.notes}
+A figura é sintética e serve apenas à demonstração da composição visual.
+:::
+
+## Resultados numéricos e rastreabilidade
+
+[05 · TABELAS]{.etiqueta-topo}
+
+| Grandeza | Estimativa | Incerteza-padrão |
+|:--|--:|--:|
+| Comprimento | 10,020 mm | 0,006 mm |
+| Temperatura | 22,4 °C | 0,2 °C |
+| Velocidade | 1 480 m/s | 3 m/s |
+
+::: {.faixa-observacao}
+**Dados sintéticos.** Os valores são ilustrativos, não compõem um orçamento de incerteza e não devem ser interpretados como resultados rastreáveis.
+:::
+
+::: {.notes}
+Demonstração de tabela. As grandezas não pertencem ao mesmo modelo de medição.
+:::
+
+## Uma sequência visual para explicar métodos
+
+[06 · FLUXOGRAMAS]{.etiqueta-topo}
+
+:::: {.fluxo-metodo}
+::: {.etapa-metodo}
+[1]{.indice-etapa}
+
+**Definir**
+
+Mensurando e modelo
+:::
+
+::: {.etapa-metodo}
+[2]{.indice-etapa}
+
+**Medir**
+
+Aquisição e controle
+:::
+
+::: {.etapa-metodo}
+[3]{.indice-etapa}
+
+**Avaliar**
+
+Qualidade e incerteza
+:::
+
+::: {.etapa-metodo}
+[4]{.indice-etapa}
+
+**Decidir**
+
+Critério e interpretação
+:::
+::::
+
+::: {.faixa-sintese}
+A comunicação visual complementa o argumento técnico; não substitui a documentação do método.
+:::
+
+## {.slide-fecho data-background-color="#112c41"}
+
+::: {.fecho-conteudo}
+[ENCERRAMENTO]{.sobretitulo-capa}
+
+[Conclusões claras. Métodos verificáveis.]{.titulo-fecho}
+
+[Modelo visual de apresentações científicas · versão de avaliação]{.subtitulo-fecho}
+
+::: {.capa-linha}
+:::
+
+**Ruan Carvalho Mayworm**
+
+[rcmayworm.github.io](https://rcmayworm.github.io/)
+:::
+
+::: {.notes}
+Exemplo de slide de encerramento.
+:::

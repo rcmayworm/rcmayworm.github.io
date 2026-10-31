@@ -1,0 +1,178 @@
+/*
+  Modelo visual de apresentação científica, versão 0.1.
+  Tema original, inspirado nas cores do site rcmayworm.github.io.
+  Não utiliza fontes ou estilos copiados de terceiros.
+*/
+/*-- scss:defaults --*/
+$body-bg: #ffffff;
+$body-color: #253849;
+$link-color: #176c85;
+$presentation-heading-color: #112c41;
+$presentation-heading-font: Georgia, "Times New Roman", serif;
+$font-family-sans-serif: "Segoe UI", Arial, Helvetica, sans-serif;
+$presentation-font-size-root: 30px;
+$presentation-heading-font-weight: 600;
+$presentation-h2-font-size: 1.47em;
+$presentation-line-height: 1.38;
+
+/*-- scss:rules --*/
+:root {
+  --rm-ink: #112c41;
+  --rm-ink-soft: #263b48;
+  --rm-teal: #1b6983;
+  --rm-mist: #eff5f7;
+  --rm-muted: #58707e;
+  --rm-rule: #d9e6ea;
+}
+.reveal .slides section { text-align: left; }
+.reveal .slides section > h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--rm-ink);
+  font-weight: 600;
+  font-size: 1.44em;
+  letter-spacing: -0.025em;
+  line-height: 1.12;
+  border-bottom: 3px solid var(--rm-teal);
+  padding-bottom: 0.27em;
+  margin-bottom: 0.67em;
+}
+.reveal p, .reveal li { line-height: 1.43; }
+.reveal strong { color: var(--rm-ink); font-weight: 650; }
+.reveal a { color: var(--rm-teal); text-underline-offset: 0.13em; }
+.reveal .slide-number {
+  background: transparent;
+  color: var(--rm-muted);
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  right: 20px;
+  bottom: 13px;
+}
+.reveal .progress { height: 5px; color: var(--rm-teal); }
+.reveal .controls { color: var(--rm-teal); }
+.reveal .etiqueta-topo {
+  display: inline-block; margin-bottom: 0.8em;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--rm-teal); font-size: 0.55em; font-weight: 750;
+  letter-spacing: 0.14em; text-transform: uppercase;
+}
+.reveal .slides section.slide-capa,
+.reveal .slides section.slide-fecho { color: #eaf3f7; }
+.reveal .slides section.slide-capa > h2,
+.reveal .slides section.slide-fecho > h2 { display: none; }
+.reveal .capa-conteudo, .reveal .fecho-conteudo {
+  padding: 1.1em 0.1em 0.2em;
+  max-width: 92%; color: #eaf3f7;
+}
+.reveal .sobretitulo-capa {
+  color: #aad2df; letter-spacing: 0.18em; font-weight: 750;
+  font-size: 0.58em; text-transform: uppercase;
+}
+.reveal .titulo-capa, .reveal .titulo-fecho {
+  display: block; max-width: 18ch;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #ffffff; font-size: 2.3em; font-weight: 600;
+  line-height: 1.08; letter-spacing: -0.035em;
+  margin: 0.55em 0 0.34em;
+}
+.reveal .subtitulo-capa, .reveal .subtitulo-fecho {
+  display: block; color: #d6e7ed; font-size: 0.89em; max-width: 29em;
+}
+.reveal .capa-linha {
+  display: block; background: #6eafc3; height: 5px;
+  width: 94px; margin: 1.2em 0 1em; border-radius: 3px;
+}
+.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; }
+.reveal .capa-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
+.reveal .capa-identificacao strong { color: #fff; font-size: 1.22em; }
+.reveal .capa-identificacao em { font-size: 0.86em; color: #a7cad7; }
+.reveal .slide-fecho a { color: #b4deea; }
+.reveal .slide-fecho strong { color: #fff; }
+.reveal .titulo-fecho { max-width: 19ch; font-size: 2.15em; }
+.reveal .frase-destaque {
+  border-left: 6px solid var(--rm-teal);
+  padding: 0.45em 0 0.46em 0.8em;
+  margin: 1em 0 1.18em;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4em; line-height: 1.29; color: var(--rm-ink);
+}
+.reveal .frase-destaque p { margin: 0; }
+.reveal .faixa-sintese {
+  padding: 0.68em 0.9em; border-radius: 8px;
+  background: var(--rm-mist); color: var(--rm-ink);
+  font-size: 0.72em; font-weight: 550; border: 1px solid var(--rm-rule);
+}
+.reveal .faixa-sintese p { margin: 0; }
+.reveal .grade-tres {
+  display: grid; grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 0.6em; margin-top: 0.55em;
+}
+.reveal .cartao-pilar {
+  background: #f4f8f9; border: 1px solid var(--rm-rule);
+  border-top: 5px solid var(--rm-teal); border-radius: 9px;
+  padding: 0.75em 0.68em; min-height: 8em;
+  display: flex; flex-direction: column;
+}
+.reveal .numero-pilar { color: var(--rm-teal); font-size: 0.72em; font-weight: 800; }
+.reveal .cartao-pilar h3 { color: var(--rm-ink); font-size: 1.06em; margin: 0.55em 0 0.25em; }
+.reveal .cartao-pilar p { color: var(--rm-ink-soft); font-size: 0.69em; line-height: 1.45; margin: 0.2em 0; }
+.reveal .rodape-pilar {
+  margin-top: auto; padding-top: 1em; font-size: 0.49em;
+  font-weight: 750; color: var(--rm-muted); letter-spacing: 0.08em;
+}
+.reveal .caixa-equacao {
+  border: 1px solid var(--rm-rule); border-radius: 10px;
+  padding: 0.65em 0.7em 0.45em; background: #f4f8f9; min-height: 6.8em;
+}
+.reveal .caixa-equacao strong { font-size: 0.79em; }
+.reveal .caixa-equacao .math.display { font-size: 0.88em; margin: 0.45em 0; }
+.reveal .nota-equacao { color: var(--rm-muted); font-size: 0.54em; }
+.reveal .painel-lateral, .reveal .painel-resultado {
+  border-left: 4px solid var(--rm-teal); background: var(--rm-mist);
+  padding: 0.7em 0.8em; border-radius: 0 8px 8px 0; font-size: 0.74em;
+}
+.reveal .painel-lateral h3, .reveal .painel-resultado h3 {
+  color: var(--rm-ink); font-size: 1.05em; margin: 0 0 0.35em;
+}
+.reveal .painel-lateral li { margin: 0.18em 0; }
+.reveal .painel-lateral ul { margin: 0.4em 0; }
+.reveal .moldura-grafico {
+  border: 1px solid var(--rm-rule); border-radius: 10px;
+  padding: 0.3em; background: #fff;
+}
+.reveal .moldura-grafico img {
+  display: block; width: 100%; max-width: 100%; height: auto; margin: 0;
+}
+.reveal .selo-exemplo {
+  display: block; color: var(--rm-teal); letter-spacing: 0.07em;
+  font-weight: 750; font-size: 0.61em;
+}
+.reveal .painel-resultado p { line-height: 1.55; }
+.reveal .divisor-fino { height: 1px; background: #c5dbe1; margin: 0.6em 0; }
+.reveal table {
+  border-collapse: collapse; width: 100%;
+  margin: 0.7em 0 0.6em; font-size: 0.79em;
+}
+.reveal table thead { background: var(--rm-ink); color: white; }
+.reveal table th { color: white; padding: 0.55em 0.65em; border: none; font-weight: 650; }
+.reveal table td { padding: 0.5em 0.65em; border-bottom: 1px solid var(--rm-rule); }
+.reveal table tbody tr:nth-child(even) { background: #f3f7f8; }
+.reveal .faixa-observacao {
+  font-size: 0.68em; border-left: 4px solid var(--rm-teal);
+  padding: 0.55em 0.8em; background: var(--rm-mist);
+}
+.reveal .faixa-observacao p { margin: 0; }
+.reveal .fluxo-metodo {
+  display: grid; grid-template-columns: repeat(4,minmax(0,1fr));
+  gap: 0.45em; margin: 1.15em 0 1.2em;
+}
+.reveal .etapa-metodo {
+  min-height: 7.1em; padding: 0.75em 0.58em;
+  border: 1px solid var(--rm-rule); border-radius: 8px; background: #f4f8f9;
+}
+.reveal .etapa-metodo .indice-etapa {
+  display: block; width: 1.8em; height: 1.8em; line-height: 1.8em;
+  text-align: center; border-radius: 50%; background: var(--rm-ink);
+  color: white; font-weight: 700; font-size: 0.68em; margin-bottom: 0.8em;
+}
+.reveal .etapa-metodo strong { display: block; margin-bottom: 0.45em; }
+.reveal .etapa-metodo p { font-size: 0.68em; margin: 0.2em 0; }

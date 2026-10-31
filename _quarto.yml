@@ -4,6 +4,7 @@ project:
   render:
     - "**/*.qmd"
     - "!livro-analise-certificados/**"
+    - "!apresentacoes/modelo-v01/**"
 
 lang: pt-BR
 
