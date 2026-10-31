@@ -1,6 +1,6 @@
 ---
 title: "Publicações"
-description: "Artigos científicos sobre metrologia, ultrassom, ToFD e instrumentação."
+description: "Artigos e trabalhos científicos relacionados à metrologia, gestão da qualidade, instrumentação, estatística, métodos computacionais, análise de dados, acústica, ultrassom e machine learning."
 ---
 
 Seleção de trabalhos científicos em ordem cronológica inversa. Consulte os DOI para verificar os metadados editoriais e acessar as publicações.
@@ -29,11 +29,3 @@ Seleção de trabalhos científicos em ordem cronológica inversa. Consulte os D
 
 - **2015.** *A Metrological Based Realization of Time-of-Flight Diffraction Technique*. **Physics Procedia**, 70, 590–593. [DOI: 10.1016/j.phpro.2015.08.029](https://doi.org/10.1016/j.phpro.2015.08.029).
 
-## Identificadores e currículo
-
-- [ORCID](https://orcid.org/0000-0001-9518-4049)
-- [Lattes](http://lattes.cnpq.br/5951712664292058)
-
-::: {.callout-note}
-Trabalhos em preparação, propostas submetidas e artigos sem publicação final confirmada **não** estão relacionados como publicações concluídas. Esta lista ainda não é exaustiva.
-:::
