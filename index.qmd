@@ -8,15 +8,15 @@ toc: false
 ::: {.academic-hero}
 ::: {.hero-grid}
 ::: {}
-<div class="hero-kicker">Pesquisa · Engenharia · Computação científica</div>
+<div class="hero-kicker">Metrologia · Qualidade · Análise de Dados</div>
 
 <h1 class="hero-title">Ruan Mayworm</h1>
 
 <p class="hero-subtitle">Engenheiro mecânico · Mestre e doutor em Metrologia</p>
 
-<p class="hero-bio">Pesquisa em metrologia ultrassônica, instrumentação científica, processamento de sinais e avaliação da incerteza de medição. Métodos experimentais apoiados por análise quantitativa e programação.</p>
+<p class="hero-bio">Atuo na interface entre metrologia, estatística e análise de dados, com experiência em instrumentação científica, processamento de sinais, avaliação da incerteza de medição e gestão da qualidade. Desenvolvo aplicações em Python e investigo o uso de machine learning e otimização em sistemas de medição, especialmente em acústica e ultrassom.</p>
 
-<div class="hero-tags"><span class="hero-tag">Metrologia</span><span class="hero-tag">Ultrassom</span><span class="hero-tag">Python</span><span class="hero-tag">Análise de dados</span></div>
+<div class="hero-tags"><span class="hero-tag">Metrologia</span><span class="hero-tag">Estatística</span><span class="hero-tag">Machine Learning</span><span class="hero-tag">Análise de dados</span><span class="hero-tag">Qualidade</span></div>
 
 <div class="cta-row"><a class="hero-btn hero-btn-primary" href="publications.html">Ver publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Conheça meu trabalho</a></div>
 :::
