@@ -1,6 +1,6 @@
 ---
 title: "E-books"
-description: "Catálogo de livros técnicos de Ruan Mayworm, com leitura online e edições em PDF."
+description: "Catálogo de livros técnicos com leitura online e edições em PDF."
 toc: false
 ---
 
@@ -21,8 +21,8 @@ toc: false
 
 Guia técnico sobre leitura e interpretação de certificados de calibração, rastreabilidade, critérios de aceitação, regras de decisão, frequência de calibração e avaliação da adequação de instrumentos ao uso pretendido. Inclui exemplos aplicados e orientações para gestão metrológica.
 
-**Leitura online gratuita:** [abrir o livro e navegar pelos capítulos](https://rcmayworm.github.io/livro-analise-certificados/). Esta edição HTML inclui notas editoriais de revisão e referências.
+**Leitura online gratuita:** [abrir o livro e navegar pelos capítulos](https://rcmayworm.github.io/livro-analise-certificados/).
 
-**Edição PDF comercial:** [Adquirir na Hotmart](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+**Edição PDF comercial:** [Adquirir versão em PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
 :::
 :::

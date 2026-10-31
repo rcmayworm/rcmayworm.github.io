@@ -59,9 +59,7 @@ listing:
 
 Um guia prático para interpretar certificados de calibração, estabelecer critérios de aceitação e fundamentar decisões sobre equipamentos de medição.
 
-**Leitura online gratuita:** [ler os capítulos no site](https://rcmayworm.github.io/livro-analise-certificados/). **Edição PDF:** disponível para aquisição na Hotmart.
-
-[Conhecer o livro](ebooks.qmd){.inline-link} · [Ler gratuitamente](https://rcmayworm.github.io/livro-analise-certificados/) · [Comprar edição PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+[Ler gratuitamente](https://rcmayworm.github.io/livro-analise-certificados/) · [Comprar edição PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
 :::
 :::
 
