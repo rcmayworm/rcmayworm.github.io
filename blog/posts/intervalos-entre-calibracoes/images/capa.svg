@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-label="Linha do tempo de calibrações e revisão do intervalo">
+<rect width="900" height="390" fill="#f4f8fa"/><text x="42" y="58" font-size="29" font-weight="bold" fill="#244d62">Gestão dos intervalos de calibração</text>
+<line x1="72" y1="210" x2="815" y2="210" stroke="#527788" stroke-width="8"/>
+<g fill="#1d617d"><circle cx="120" cy="210" r="22"/><circle cx="380" cy="210" r="22"/><circle cx="640" cy="210" r="22"/></g>
+<g font-size="21" fill="#244d62" text-anchor="middle"><text x="120" y="165">Calibração</text><text x="120" y="272">Inicial</text><text x="380" y="165">Histórico</text><text x="380" y="272">+ análise</text><text x="640" y="165">Revisão</text><text x="640" y="272">do prazo</text></g>
+<path d="M770 192 L815 210 L770 228" fill="none" stroke="#527788" stroke-width="7"/>
+<text x="42" y="340" fill="#456d7f" font-size="20">Risco • uso • ambiente • tendência • custo</text>
+</svg>

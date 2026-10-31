@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-label="Diagrama: certificado, erro e incerteza, decisão técnica">
+<rect width="900" height="390" fill="#f5f8fa"/>
+<rect x="45" y="45" rx="15" width="245" height="295" fill="white" stroke="#2b6176" stroke-width="3"/>
+<text x="68" y="86" fill="#214456" font-size="25" font-weight="bold">Certificado</text>
+<line x1="68" x2="267" y1="108" y2="108" stroke="#7fa0ae"/>
+<g fill="#6d8b9a"><rect x="68" y="134" width="170" height="12" rx="4"/><rect x="68" y="162" width="125" height="12" rx="4"/><rect x="68" y="190" width="148" height="12" rx="4"/></g>
+<text x="68" y="255" fill="#184b61" font-size="20">Erro  E</text><text x="68" y="284" fill="#184b61" font-size="20">Incerteza  U</text>
+<path d="M330 195 H400" stroke="#356e84" stroke-width="5" fill="none"/><path d="M390 182 L412 195 L390 208" fill="none" stroke="#356e84" stroke-width="5"/>
+<rect x="432" y="95" width="200" height="200" rx="17" fill="#e5eff3" stroke="#527e90" stroke-width="3"/>
+<text x="457" y="150" fill="#214456" font-size="22" font-weight="bold">Avaliação</text><text x="455" y="193" fill="#214456" font-size="19">E, U, tolerância</text><text x="455" y="224" fill="#214456" font-size="18">e regra de</text><text x="455" y="252" fill="#214456" font-size="18">decisão</text>
+<path d="M655 195 H712" stroke="#356e84" stroke-width="5" fill="none"/><path d="M704 182 L722 195 L704 208" fill="none" stroke="#356e84" stroke-width="5"/>
+<rect x="738" y="115" width="128" height="160" rx="14" fill="#1d536a"/>
+<text x="753" y="180" fill="white" font-size="19" font-weight="bold">Decisão</text><text x="754" y="211" fill="white" font-size="17">técnica</text>
+</svg>
