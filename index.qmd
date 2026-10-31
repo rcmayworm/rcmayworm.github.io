@@ -1,6 +1,6 @@
 ---
 title: "Ruan Mayworm"
-description: "Ruan Mayworm — pesquisa em metrologia e ultrassom, publicações, blog técnico e futuros e-books."
+description: "Ruan Mayworm — pesquisa em metrologia e ultrassom, publicações, blog técnico e e-books."
 title-block-style: none
 toc: false
 ---
@@ -26,40 +26,28 @@ toc: false
 :::
 :::
 
-<div class="section-eyebrow">Produção científica</div>
-
-## Pesquisa e publicações em destaque
-
-Conheça projetos e artigos já documentados, com acesso às referências originais e seus identificadores DOI.
-
-::: {.feature-grid}
-::: {.feature-card}
-<div class="card-label">Metrologia ultrassônica</div>
-
-### Balança de Kibble e potência ultrassônica
-
-Desenvolvimento experimental para medição de potência ultrassônica por força de radiação.
-
-[*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) · [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946)
-:::
-::: {.feature-card}
-<div class="card-label">Ensaios não destrutivos</div>
-
-### Técnica ToFD
-
-Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avaliação de descontinuidades por ultrassom.
-
-[*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298) · [Pesquisa](research.qmd)
-:::
-:::
-
-<div class="section-eyebrow">Materiais abertos</div>
+<div class="section-eyebrow">Biblioteca digital</div>
 
 ## E-books e conteúdo técnico
 
-O livro **Análise Crítica de Certificados de Calibração**, de Ruan Carvalho Mayworm, já possui uma edição em PDF. A versão para leitura online está em preparação e ainda não foi publicada.
+::: {.book-feature .ebook-feature}
+::: {.ebook-cover-wrap}
+<a href="ebooks.html" aria-label="Conhecer o livro Análise Crítica de Certificados de Calibração"><img class="ebook-cover-image" src="assets/images/capa-analise-certificados.webp" alt="Capa do livro Análise Crítica de Certificados de Calibração, de Ruan Carvalho Mayworm" width="210" height="297" loading="lazy" decoding="async"></a>
+:::
+::: {.book-details}
+<span class="status-label">1ª edição · 2026</span>
 
-[Conhecer o livro](ebooks.qmd){.inline-link} · [Adquirir a edição PDF na Hotmart](https://go.hotmart.com/F105183714N)
+### Análise Crítica de Certificados de Calibração
+
+*Como ler, interpretar e aprovar equipamentos com segurança.*
+
+Um guia prático para interpretar certificados de calibração, estabelecer critérios de aceitação e fundamentar decisões sobre equipamentos de medição.
+
+**Leitura online gratuita:** versão HTML em preparação. **Edição PDF:** disponível para aquisição na Hotmart.
+
+[Conhecer o livro](ebooks.qmd){.inline-link} · [Comprar edição PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+:::
+:::
 
 <div class="section-eyebrow">Compartilhamento de conhecimento</div>
 
@@ -92,5 +80,32 @@ Projetos, notebooks e ferramentas reprodutíveis, quando estiverem revisados e a
 Formação, competências, artigos publicados e links para identificadores acadêmicos.
 
 [Sobre](about.qmd) · [Lattes](http://lattes.cnpq.br/5951712664292058)
+:::
+:::
+
+<div class="section-eyebrow">Produção científica</div>
+
+## Pesquisa e publicações em destaque
+
+Conheça projetos e artigos já documentados, com acesso às referências originais e seus identificadores DOI.
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="card-label">Metrologia ultrassônica</div>
+
+### Balança de Kibble e potência ultrassônica
+
+Desenvolvimento experimental para medição de potência ultrassônica por força de radiação.
+
+[*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) · [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946)
+:::
+::: {.feature-card}
+<div class="card-label">Ensaios não destrutivos</div>
+
+### Técnica ToFD
+
+Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avaliação de descontinuidades por ultrassom.
+
+[*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298) · [Pesquisa](research.qmd)
 :::
 :::

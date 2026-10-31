@@ -1,31 +1,28 @@
 ---
 title: "E-books"
-description: "Livros técnicos de Ruan Mayworm: análise crítica de certificados de calibração e publicações futuras."
+description: "Catálogo de livros técnicos de Ruan Mayworm, com leitura online e edições em PDF."
 toc: false
 ---
 
 <div class="section-eyebrow">Biblioteca digital</div>
 
-Livros técnicos e materiais de estudo. As edições disponíveis e os projetos em preparação são identificados separadamente, com seus respectivos formatos de acesso.
-
 ## Análise Crítica de Certificados de Calibração
 
-**Autor:** Ruan Carvalho Mayworm · **1ª edição:** 2026
+::: {.book-feature .ebook-feature}
+::: {.ebook-cover-wrap}
+<img class="ebook-cover-image" src="assets/images/capa-analise-certificados.webp" alt="Capa da primeira edição de Análise Crítica de Certificados de Calibração" width="210" height="297" loading="lazy" decoding="async">
+:::
+::: {.book-details}
+<span class="status-label">1ª edição · 2026</span>
 
-Manual técnico sobre interpretação de certificados, critérios de aceitação, regras de decisão e gestão de equipamentos de medição.
+**Ruan Carvalho Mayworm**
 
-**Edição PDF:** acesso à página de vendas na Hotmart. **Leitura online:** em preparação; ainda não disponível no site.
+*Como ler, interpretar e aprovar equipamentos com segurança.*
 
-[Adquirir a edição PDF na Hotmart](https://go.hotmart.com/F105183714N)
+Guia técnico sobre leitura e interpretação de certificados de calibração, rastreabilidade, critérios de aceitação, regras de decisão, frequência de calibração e avaliação da adequação de instrumentos ao uso pretendido. Inclui exemplos aplicados e orientações para gestão metrológica.
 
-## Como será a biblioteca
+**Leitura online gratuita:** versão HTML em preparação. O acesso aos capítulos será ativado nesta página após a publicação e a revisão técnico-científica.
 
-Os livros terão indicação explícita dos formatos disponíveis. As versões HTML serão publicadas em projetos Quarto Book independentes, após revisão e aprovação do conteúdo. A edição PDF comercial não será disponibilizada para download direto neste site.
-
-## Projetos editoriais futuros
-
-- Estatística aplicada à metrologia com Python.
-- Instrumentação e sistemas de medição com Python.
-- Metrologia ultrassônica e processamento de sinais.
-
-*Os itens acima são ideias editoriais, não livros publicados.*
+**Edição PDF comercial:** [Adquirir na Hotmart](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+:::
+:::

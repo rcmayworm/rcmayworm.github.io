@@ -1,0 +1,29 @@
+/* Complemento editorial: cards de e-books com capa real. */
+.ebook-feature {
+  align-items: start;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: clamp(1.2rem, 3vw, 2rem);
+}
+.ebook-cover-wrap { max-width: 210px; }
+.ebook-cover-wrap a { display: block; border-radius: 4px; }
+.ebook-cover-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 210px;
+  aspect-ratio: 1241 / 1754;
+  object-fit: contain;
+  border-radius: 4px;
+  box-shadow: 0 5px 18px rgba(8, 31, 44, .13);
+  border: 1px solid #e7eaed;
+}
+.ebook-cover-wrap a:focus-visible {
+  outline: 3px solid #2583a5;
+  outline-offset: 5px;
+}
+.ebook-feature .book-details h3 { margin-top: .6rem; }
+.ebook-feature .book-details p:last-child { margin-bottom: 0; }
+@media (max-width: 700px) {
+  .ebook-feature { grid-template-columns: 1fr; gap: 1rem; }
+  .ebook-cover-wrap { max-width: 150px; }
+}
