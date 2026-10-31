@@ -1,6 +1,6 @@
 ---
-title: "Apresentações"
-description: "Apresentações acadêmicas, palestras e materiais técnicos de Ruan Mayworm."
+title: "Apresentações e palestras"
+description: "Apresentações acadêmicas, palestras e materiais técnicos."
 toc: false
 ---
 

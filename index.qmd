@@ -117,11 +117,9 @@ Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avali
 Repositórios, programas e ferramentas para análise de dados, automação e pesquisa.
 :::
 ::: {.feature-card .feature-card-clickable}
-<div class="card-label">Apresentações</div>
+### [Apresentações e palestras](presentations.qmd){.feature-card-link}
 
-### [Palestras e materiais técnicos](presentations.qmd){.feature-card-link}
-
-Espaço para disponibilizar apresentações acadêmicas e materiais de palestras, após revisão e autorização.
+Espaço para disponibilizar apresentações acadêmicas e materiais de palestras.
 :::
 :::
 
