@@ -20,8 +20,10 @@ format:
     show-slide-number: all
     progress: true
     hash: true
-    transition: none
-    background-transition: none
+    transition: concave
+    background-transition: convex
+    transition-speed: default
+    footer: "Metrologia, dados e decisões confiáveis"
     center: false
     menu:
       side: left
@@ -242,14 +244,16 @@ A comunicação visual complementa o argumento técnico; não substitui a docume
 
 [Conclusões claras. Métodos verificáveis.]{.titulo-fecho}
 
-[Modelo visual de apresentações científicas · versão de avaliação]{.subtitulo-fecho}
-
 ::: {.capa-linha}
 :::
 
+[Modelo visual de apresentações científicas · versão de avaliação]{.subtitulo-fecho}
+
+::: {.fecho-identificacao}
 **Ruan Carvalho Mayworm**
 
 [rcmayworm.github.io](https://rcmayworm.github.io/)
+:::
 :::
 
 ::: {.notes}

@@ -79,9 +79,12 @@ $presentation-line-height: 1.38;
 }
 .reveal .capa-linha {
   display: block; background: #6eafc3; height: 5px;
-  width: 125px; margin: 0.60em 0 0.7em; border-radius: 3px;
+  width: 100%; max-width: 100%; margin: 0.62em 0 0.75em; border-radius: 3px;
 }
-.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 1.35em; }
+.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 2.2em; }
+.reveal .fecho-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 2.2em; }
+.reveal .fecho-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
+.reveal .fecho-identificacao strong { color: #fff; font-size: 1.22em; }
 .reveal .capa-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
 .reveal .capa-identificacao strong { color: #fff; font-size: 1.22em; }
 .reveal .capa-identificacao em { font-size: 0.86em; color: #a7cad7; }
@@ -176,3 +179,18 @@ $presentation-line-height: 1.38;
 }
 .reveal .etapa-metodo strong { display: block; margin-bottom: 0.45em; }
 .reveal .etapa-metodo p { font-size: 0.68em; margin: 0.2em 0; }
+
+/* Rodapé discreto com o título da palestra, inspirado funcionalmente no Reveal.js. */
+.reveal .footer,
+.reveal .footer.footer-default {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 0.43em !important;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  color: #546b79;
+}
+.reveal .slides section.slide-capa .footer,
+.reveal .slides section.slide-fecho .footer {
+  color: #d2e3e9;
+}

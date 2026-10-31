@@ -5,6 +5,7 @@ slide vazio, além de checar os controles de anotações e os arquivos auxiliare
 """
 from html.parser import HTMLParser
 from pathlib import Path
+import re
 import sys
 
 
@@ -78,6 +79,15 @@ if "chalkboard" not in html.lower():
     errors.append("Plugin de anotações/chalkboard ausente do HTML.")
 if "menu" not in html.lower():
     errors.append("Menu Reveal.js ausente do HTML.")
+if not re.search(r"""transition:\s*['"]concave['"]""", html):
+    errors.append("Efeito de transição concave ausente.")
+if not re.search(r"""backgroundTransition:\s*['"]convex['"]""", html):
+    errors.append("Efeito de fundo convex ausente.")
+if 'class="footer footer-default"' not in html or "Metrologia, dados e decisões confiáveis" not in html:
+    errors.append("Título discreto no rodapé ausente.")
+theme_path = html_path.parent / "tema.scss"
+if not theme_path.is_file() or "width: 100%; max-width: 100%;" not in theme_path.read_text(encoding="utf-8"):
+    errors.append("Linha horizontal de capa/encerramento não atualizada.")
 if not (html_path.parent / "template_files").is_dir():
     errors.append("Pasta template_files de recursos não gerada.")
 
