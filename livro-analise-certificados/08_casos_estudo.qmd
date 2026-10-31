@@ -85,10 +85,6 @@ Como avaliar se o instrumento está aprovado para uso em 5,0 bar, se esse ponto 
 
 **1. A Abordagem Conservadora (A Regra do Pior Caso):**
 
-::: {.callout-tip title="Dica prática"}
-Pare de sofrer com matemáticas complexas! A ISO/IEC 17025 diz que o laboratório deve atender aos requisitos do cliente. Quando for enviar seus instrumentos para calibração no próximo ano, envie junto uma ordem de compra exigindo: *"Favor incluir o ponto de 5,0 bar, pois é o nosso ponto crítico de processo"*. Laboratórios RBC cobram pouco (ou nada) por um ponto extra, e você elimina a necessidade de fazer interpolações matemáticas na aprovação.
-:::
-
 Esta é a regra mais usada na indústria pela sua segurança e facilidade em planilhas. Você deve olhar para os dois pontos adjacentes (o imediatamente inferior e o superior ao seu processo), ou seja, 4,0 bar e 6,0 bar. Em seguida, assumimos o **maior erro** e a **maior incerteza** desse intervalo para nos proteger.
 
 -   Maior Erro no intervalo (entre 4 e 6 bar): $+0,20$ bar.
@@ -99,19 +95,19 @@ Esta é a regra mais usada na indústria pela sua segurança e facilidade em pla
 
 -   **Veredito:** Como $0,23 \leq 0,30$ (EMP), o manômetro está **Aprovado** com segurança.
 
+::: {.callout-tip title="Dica prática"}
+Pare de sofrer com matemáticas complexas! A ISO/IEC 17025 diz que o laboratório deve atender aos requisitos do cliente. Quando for enviar seus instrumentos para calibração no próximo ano, envie junto uma ordem de compra exigindo: *"Favor incluir o ponto de 5,0 bar, pois é o nosso ponto crítico de processo"*. Laboratórios RBC cobram pouco (ou nada) por um ponto extra, e você elimina a necessidade de fazer interpolações matemáticas na aprovação.
+:::
+
 **2. A Interpolação Linear:**
+
+Se a "Regra do Pior Caso" reprovar o instrumento, você não precisa descartá-lo ou restringi-lo imediatamente. Você pode refinar a análise técnica utilizando a **Interpolação Linear**. Essa técnica assume que o erro do instrumento cresce de forma proporcional entre dois pontos calibrados sucessivos.
 
 ::: {.callout-warning title="Alerta de auditoria"}
 Nunca confunda Interpolação com **Extrapolação**! A interpolação só é válida para valores **dentro** da faixa testada pelo laboratório. Se o seu certificado vai de 0 a 8,0 bar, você jamais deve tentar "adivinhar" o erro em 9,0 bar. Auditores consideram isso uma falha grave, pois o comportamento do sensor fora da faixa calibrada é desconhecido.
 :::
 
-Se a "Regra do Pior Caso" reprovar o instrumento, você não precisa descartá-lo ou restringi-lo imediatamente. Você pode refinar a análise técnica utilizando a **Interpolação Linear**. Essa técnica assume que o erro do instrumento cresce de forma proporcional entre dois pontos calibrados sucessivos.
-
 Para descobrir o erro em um valor que não está exatamente na metade do caminho, utilizamos a equação de interpolação:
-
-::: {.callout-tip title="Dica prática"}
-Monte essa fórmula no Excel uma única vez. Ela será sua ferramenta de defesa em auditorias para provar que, no ponto exato de uso, o seu equipamento é tecnicamente conforme, mesmo que o "pior erro" do certificado sugira o contrário.
-:::
 
 $$Erro_{x} = E_1 + \frac{(E_2 - E_1)}{(I_2 - I_1)} \cdot (I_x - I_1)$$
 
@@ -123,8 +119,8 @@ Onde:
 
 -   $E_1$ e $E_2$: São os erros relatados para esses pontos no certificado.
 
-::: {.callout-note title="E a Incerteza"}
-Diferente do erro, a Incerteza de Medição ($U$) não deve ser interpolada para baixo. Por uma **convenção conservadora de segurança**, adotamos sempre a maior incerteza encontrada no intervalo entre os dois pontos. Se no ponto 4,0 bar a incerteza é 0,02 e no ponto 6,0 bar é 0,03, utilizaremos 0,03 para o cálculo do seu Máximo Desvio em 5,2 bar.
+::: {.callout-tip title="Dica prática"}
+Monte essa fórmula no Excel uma única vez. Ela será sua ferramenta de defesa em auditorias para provar que, no ponto exato de uso, o seu equipamento é tecnicamente conforme, mesmo que o "pior erro" do certificado sugira o contrário.
 :::
 
 Retornando ao nosso exemplo, aplicando a fórmula, teriamos:
@@ -132,3 +128,7 @@ Retornando ao nosso exemplo, aplicando a fórmula, teriamos:
 $$Erro_{5,0} = 0,10 + \frac{(0,20 - 0,10)}{(6,0 - 4,0)} \cdot (5,0 - 4,0) = +0,15 \text{ bar}$$
 
 Seu Máximo Desvio ($MD$) em 5,0 bar será: $|0,15| + 0,03 = \mathbf{0,18 \text{ bar}}$.
+
+::: {.callout-note title="E a Incerteza"}
+Diferente do erro, a Incerteza de Medição ($U$) não deve ser interpolada para baixo. Por uma **convenção conservadora de segurança**, adotamos sempre a maior incerteza encontrada no intervalo entre os dois pontos. Se no ponto 4,0 bar a incerteza é 0,02 e no ponto 6,0 bar é 0,03, utilizaremos 0,03 para o cálculo do seu Máximo Desvio em 5,2 bar.
+:::
