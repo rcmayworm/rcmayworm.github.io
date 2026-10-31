@@ -7,10 +7,12 @@ A primeira etapa na gestão de um ativo não envolve números ou cálculos compl
 Todo certificado emitido sob a chancela da acreditação deve possuir o símbolo da **Cgcre (Coordenação Geral de Acreditação do Inmetro)** ou de órgãos internacionais equivalentes, como a marca do **ILAC-MRA**. Esses selos são a evidência técnica de que o laboratório passou por uma rigorosa avaliação e possui rastreabilidade metrológica ininterrupta até o Sistema Internacional de Unidades (SI).
 
 ::: {.callout-note title="Como conferir a acreditação"}
-Antes de contratar uma calibração acreditada, consulte o cadastro e o escopo de acreditação no portal oficial do [Inmetro](https://www.gov.br/inmetro/pt-br/assuntos/acreditacao). O símbolo de acreditação deve ser interpretado conforme as regras aplicáveis ao laboratório, ao serviço e ao certificado. As marcas de terceiros presentes na edição PDF não são reproduzidas nesta versão HTML.
+Antes de contratar uma calibração acreditada, consulte o cadastro e o escopo de acreditação no portal oficial do [Inmetro](https://www.gov.br/inmetro/pt-br/assuntos/acreditacao). O símbolo de acreditação deve ser interpretado conforme as regras aplicáveis ao laboratório, ao serviço e ao certificado. A figura a seguir é uma reprodução ilustrativa dos símbolos, sem indicar acreditação ou endosso do autor, do livro ou deste site.
 :::
 
-As marcas de acreditação oferecem evidência visual do reconhecimento para atividades cobertas pelo escopo, mas não substituem a consulta ao escopo e a análise dos dados do certificado. Se o certificado não apresentar essas marcas, a rastreabilidade não é automática e será necessário evidenciar a conformidade de toda a cadeia de padrões do laboratório por conta própria, o que gera um risco altíssimo de não conformidade em auditorias da ISO 9001 ou ISO/IEC 17025.
+![Exemplos dos símbolos de reconhecimento: à esquerda, símbolo associado à Rede Brasileira de Calibração (RBC), sob acreditação da Cgcre/Inmetro; à direita, marca do Acordo de Reconhecimento Mútuo ILAC-MRA. Reprodução com finalidade didática, sem implicar acreditação ou endosso do autor ou do livro.](assets/figuras/selos-rbc-ilac-mra.webp){#fig-selos-rbc fig-align="center" width="75%"}
+
+Como ilustrado na @fig-selos-rbc, as marcas de acreditação oferecem evidência visual do reconhecimento para atividades cobertas pelo escopo, mas não substituem a consulta ao escopo e a análise dos dados do certificado. Se o certificado não apresentar essas marcas, a rastreabilidade não é automática e será necessário evidenciar a conformidade de toda a cadeia de padrões do laboratório por conta própria, o que gera um risco altíssimo de não conformidade em auditorias da ISO 9001 ou ISO/IEC 17025.
 
 ## Muito além do Selo: Analisando a CMC
 
