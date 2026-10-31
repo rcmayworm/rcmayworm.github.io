@@ -67,7 +67,7 @@ Um guia prático para interpretar certificados de calibração, estabelecer crit
 
 <div class="section-eyebrow">Artigos e divulgação científica</div>
 
-## Blog
+## [Blog](blog/index.qmd){.home-heading-link}
 
 Artigos, notas técnicas e tutoriais publicados. Use as setas para explorar as postagens quando houver mais conteúdos disponíveis.
 
