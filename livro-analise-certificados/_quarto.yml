@@ -1,0 +1,57 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "Análise Crítica de Certificados de Calibração"
+  subtitle: "Como ler, interpretar e aprovar equipamentos com segurança"
+  author: "Ruan Carvalho Mayworm"
+  date: "2026"
+  description: "Guia introdutório de análise crítica de certificados de calibração e decisões metrológicas."
+  cover-image: assets/capa.webp
+  cover-image-alt: "Capa da primeira edição do livro"
+  page-navigation: true
+  search: true
+  site-url: "https://rcmayworm.github.io/livro-analise-certificados/"
+  sidebar:
+    style: docked
+  navbar:
+    right:
+      - text: "Site acadêmico"
+        href: https://rcmayworm.github.io/
+      - text: "Edição em PDF"
+        href: comprar-pdf.qmd
+  chapters:
+    - index.qmd
+    - 01_fundamentos.qmd
+    - 02_gestao_metro.qmd
+    - 03_competencia.qmd
+    - 04_criterio_aceitacao.qmd
+    - 05_regra_decisao.qmd
+    - 06_reprovacao.qmd
+    - 07_frequencia.qmd
+    - 08_casos_estudo.qmd
+    - 09_validacao_planilhas.qmd
+    - agradecimentos.qmd
+    - references.qmd
+    - revisao-editorial.qmd
+  appendices:
+    - comprar-pdf.qmd
+
+bibliography: references.bib
+csl: ieee.csl
+lang: pt-BR
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    number-sections: true
+    link-external-newwindow: true
+    smooth-scroll: true
+    fig-responsive: true
+    reference-location: document
+
+execute:
+  echo: false

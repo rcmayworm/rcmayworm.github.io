@@ -1,0 +1,12 @@
+# Notas editoriais e limitações {.unnumbered}
+
+Esta edição online gratuita é uma adaptação em Quarto do livro *Análise Crítica de Certificados de Calibração* (1ª edição, 2026) fornecido pelo autor. O conteúdo é educativo e não substitui procedimentos de confirmação metrológica, avaliação de riscos ou a leitura das normas aplicáveis.
+
+## Ajustes de esclarecimento desta versão
+
+- **Acreditação e calibração:** a tabela de criticidade deixou de tratar a contratação de serviço RBC como obrigação legal geral. A necessidade de laboratório acreditado depende de requisitos legais, regulatórios, contratuais ou internos aplicáveis. Ver [esclarecimento do Inmetro](https://www.gov.br/inmetro/pt-br/acesso-a-informacao/perguntas-frequentes/acreditacao/existe-obrigatoriedade-de-contratacao-de-servico-em-laboratorio-acreditado).
+- **Regra de decisão:** a condição $|Erro| + U \leq EMP$ é apresentada como regra conservadora possível, e não como critério universal. O risco de falsa aceitação não é automaticamente 50% na zona de dúvida.
+- **Intervalo de calibração:** os percentuais apresentados na matriz inspirada em Schumacher são exemplos de política de gestão, cuja adoção requer justificativa técnica documentada.
+- **Identificação de acreditação:** figuras de marcas institucionais de terceiros foram retiradas da edição HTML; recomenda-se a consulta às fontes oficiais.
+
+As formulações, figuras e interpretações restantes devem ser avaliadas pelo profissional responsável quanto à aplicação pretendida. A edição PDF comercial pode manter sua diagramação e texto próprios, não sendo objeto desta publicação em HTML.

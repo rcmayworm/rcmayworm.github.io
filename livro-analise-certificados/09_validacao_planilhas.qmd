@@ -1,0 +1,15 @@
+# Bônus: Validação de Planilhas (ISO/IEC 17025)
+
+::: {.callout-tip title="Dica prática"}
+Proteja a integridade dos seus dados: bloqueie todas as células que contenham fórmulas com senha. Deixe liberado para o usuário apenas os campos de entrada (Erro, Incerteza e Identificação). Crie uma aba oculta de "Memorial de Cálculo" que sirva de guia para o auditor entender a lógica por trás da célula de status.
+:::
+
+No ambiente digital, sua planilha de Excel é uma ferramenta de medição e deve ser tratada como tal. O requisito 7.11 da ISO/IEC 17025 exige que softwares e planilhas desenvolvidos internamente sejam validados antes do uso [@iso17025]. Isso garante que um erro de digitação de fórmula não aprove um equipamento que deveria ser reprovado.
+
+Para validar sua planilha de Análise Crítica:
+
+1.  Crie um cenário de teste com valores conhecidos (Ex: Erro = 2,0; U = 0,5; EMP = 2,0).
+
+2.  Verifique se o resultado automático da planilha condiz com o cálculo manual ($2,5 > 2,0 \rightarrow$ Reprovado).
+
+3.  Documente esse teste e anexe ao seu sistema de gestão como "Evidência de Validação de Software" [@iso17025].

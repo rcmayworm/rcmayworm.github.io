@@ -1,0 +1,8 @@
+# Agradecimentos e Próximos Passos {.unnumbered}
+
+
+Chegamos ao final deste manual. Gostaria de expressar meu sincero agradecimento a você, leitor, por ter dedicado seu tempo e confiança a este material. Sei o quão corrida é a rotina no chão de fábrica e nos laboratórios, e o simples fato de você ter chegado até aqui demonstra o seu compromisso com a excelência e com a qualidade do seu trabalho.
+
+Minha missão com este e-book foi traduzir anos de estudo acadêmico e vivência prática em um método que você pudesse aplicar no dia seguinte, sem planilhas obscuras ou achismos. Espero que o conhecimento compartilhado aqui tire o "peso" das auditorias de suas costas e traga segurança matemática para as suas tomadas de decisão.
+
+A metrologia não precisa ser um obstáculo burocrático, quando bem aplicada, ela é uma das ferramentas mais poderosas para a redução de custos e o aumento da produtividade.

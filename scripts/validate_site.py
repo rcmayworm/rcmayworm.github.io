@@ -115,6 +115,31 @@ if not (ROOT / 'styles.css').is_file():
     errors.append('CSS do tema não localizado')
 if (ROOT / 'LICENSE').exists():
     errors.append('Licença criada sem decisão editorial')
+# Book: ensure all HTML chapters and local figures exist and PDF is not public.
+BOOK = ROOT / 'livro-analise-certificados'
+if not (BOOK / '_quarto.yml').is_file():
+    errors.append('Livro online Quarto não encontrado')
+elif yaml:
+    try:
+        book_config = yaml.safe_load((BOOK / '_quarto.yml').read_text(encoding='utf-8'))
+        if book_config.get('project', {}).get('type') != 'book':
+            errors.append('Subprojeto do livro deve ser Quarto Book')
+        for chapter in book_config['book']['chapters'] + book_config['book'].get('appendices', []):
+            if not (BOOK / chapter).is_file():
+                errors.append(f'Capítulo ausente: {chapter}')
+        for ch in BOOK.glob('*.qmd'):
+            for pic in re.findall(r'assets/figuras/[A-Za-z0-9_-]+\\.webp', ch.read_text(encoding='utf-8')):
+                if not (BOOK / pic).is_file():
+                    errors.append(f'Figura ausente: {ch.name} -> {pic}')
+    except Exception as ex:
+        errors.append(f'Livro Quarto inválido: {ex}')
+if not (BOOK / 'assets/capa.webp').is_file():
+    errors.append('Capa do livro ausente')
+if list(BOOK.rglob('*.pdf')):
+    errors.append('PDF comercial não deve constar no repositório público')
+if 'https://rcmayworm.github.io/livro-analise-certificados/' not in (ROOT / 'ebooks.qmd').read_text(encoding='utf-8'):
+    errors.append('Catálogo não possui link de leitura online')
+
 if errors:
     print('FALHA:')
     for msg in errors: print(' -', msg)

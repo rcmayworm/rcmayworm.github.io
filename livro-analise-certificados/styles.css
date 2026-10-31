@@ -1,0 +1,16 @@
+/* Identidade editorial própria, em alinhamento com a capa */
+:root { --azul-capa: #244958; --azul-claro: #718e9c; }
+body { line-height: 1.72; }
+h1,h2,h3,.navbar-title,.sidebar-title { color: var(--azul-capa); }
+h1 { font-weight: 750; }
+.sidebar nav[role=doc-toc] a.active, .sidebar-item-container .active { color: var(--azul-capa); }
+main img { max-width: 100%; height: auto; }
+figure { margin: 1.9rem auto; }
+figcaption, .figure-caption { color: #455b66; font-size: .91rem; }
+.callout { border-radius: .25rem; }
+.table-responsive { overflow-x: auto; }
+@media (max-width: 700px) {
+  body { font-size: 1rem; }
+  main { overflow-wrap: anywhere; }
+  table { font-size: .85rem; }
+}

@@ -1,0 +1,43 @@
+# Fundamentos Normativos
+
+## O que a ISO 9001, 17025 e 10012 realmente exigem
+
+Para gerenciar seus ativos com maestria, você deve dominar o papel das três "bíblias" que sustentam a confiabilidade metrológica na indústria. Elas não são burocracias isoladas, mas engrenagens que trabalham juntas para mitigar o risco de medições errôneas.
+
+-   **ABNT NBR ISO 9001:2015 --- Sistemas de Gestão da Qualidade --- Requisitos:** foca na eficácia do sistema de gestão para garantir a satisfação do cliente e a conformidade dos produtos. Ela exige que a empresa assegure que seus instrumentos forneçam resultados válidos e confiáveis [@iso9001].
+
+-   **ABNT NBR ISO/IEC 17025:2017 --- Requisitos gerais para a competência de laboratórios de ensaio e calibração:** é o selo de garantia do laboratório. Ela assegura que quem calibra seu equipamento tem competência técnica e rastreabilidade comprovada para gerar resultados tecnicamente válidos [@iso17025].
+
+-   **ABNT NBR ISO 10012:2026 --- Sistemas de gestão de medição --- Requisitos para processos de medição e equipamentos de medição:** é o manual prático do usuário. Ela detalha como gerenciar os processos de medição e como realizar a **comprovação metrológica**, que é o conjunto de operações para garantir que o equipamento atende aos requisitos do seu processo específico [@iso10012].
+
+O ponto central que integra essas normas é o requisito **6.4.5 da ISO/IEC 17025**: seu equipamento deve ser capaz de alcançar a exatidão e a incerteza requeridas para fornecer um resultado válido para o seu processo. Seguir os requisitos da ISO 10012 facilita o cumprimento das exigências de medição tanto da ISO 9001 quanto da ISO/IEC 17025. Diferente do que muitos acreditam, as normas focam no **resultado** e não apenas no "como fazer". Elas dão a você a liberdade de decidir como controlar seus ativos, desde que consiga provar documentalmente que suas medições são tecnicamente confiáveis e adequadas ao uso pretendido.
+
+## O mito de que "todo equipamento precisa ser calibrado"
+
+::: {.callout-warning title="Alerta de auditoria"}
+Calibrar itens sem requisitos metrológicos associados ao uso pretendido pode gerar custos desnecessários; a necessidade de calibração deve ser avaliada segundo os requisitos aplicáveis. Auditores de sistemas de gestão valorizam muito mais uma empresa que sabe justificar por que **não** calibra certos itens do que uma que calibra tudo sem saber o que fazer com os resultados.
+:::
+
+::: {.callout-tip title="Dica prática"}
+Para organizar sua gestão, classifique seus instrumentos em três níveis na sua planilha: **Críticos** (controle metrológico mais rigoroso, conforme requisitos aplicáveis), **Operacionais** (calibração ou verificação compatível com o uso) e **Informativos** (controle proporcional à finalidade e ao risco).
+:::
+
+Um dos maiores ralos de dinheiro na indústria é a calibração indiscriminada. Segundo as normas de referência, a obrigatoriedade de calibração aplica-se apenas aos equipamentos que afetam a validade dos resultados [@iso17025]. Isso inclui instrumentos usados para a medição direta do mensurando, para aplicar correções de valores ou para obter resultados calculados a partir de múltiplas grandezas.
+
+Se um instrumento é utilizado apenas para monitoramento qualitativo ou como indicador de segurança que não impacta a qualidade final, como um termômetro de parede para conforto térmico ou um manômetro auxiliar em uma linha de ar comprimido que não controla o processo, ele não precisa de uma calibração RBC cara. Nesses casos, uma checagem funcional interna é suficiente para atender aos requisitos de gestão sem onerar o orçamento [@iso10012].
+
+## Ajuste vs. Calibração
+
+::: {.callout-warning title="Alerta de auditoria"}
+Se o seu instrumento for ajustado, o histórico dele muda! A norma **ISO/IEC 17025** e as diretrizes da **ISO 10012** exigem que, em caso de ajuste ou reparo, o laboratório relate os resultados **Antes do Ajuste** (*As Found*) e **Depois do Ajuste** (*As Left*).
+
+Os dados *As Found* são vitais para sua **Análise de Impacto**: eles provam ao auditor se você produziu peças defeituosas no passado. Além disso, após qualquer ajuste, o sistema **deve ser obrigatoriamente recalibrado**. Jamais utilize um equipamento ajustado baseando-se em certificados antigos, pois suas características de erro e incerteza foram fisicamente alteradas.
+:::
+
+Um dos erros conceituais mais comuns é usar os termos "calibrar" e "ajustar" como sinônimos. Essa confusão leva profissionais a acreditarem que, ao voltar do laboratório, o instrumento está magicamente "consertado" e medindo perfeitamente, o que nem sempre é verdade.
+
+Para dominar a gestão de equipamentos, você precisa separar essas duas operações de forma definitiva, baseando-se no *Vocabulário Internacional de Metrologia* (VIM) [@vim2012].
+
+Segundo o VIM, a **calibração** é a operação que estabelece uma relação entre os valores e as incertezas fornecidos por padrões e as indicações correspondentes do seu instrumento. Na prática, a calibração é apenas um diagnóstico. É como fazer um exame de sangue ou tirar um raio-X. O laboratório de calibração apenas "tira uma foto" do comportamento do seu instrumento naquele momento, revelando a tendência (erro) e a incerteza associada. Calibrar um equipamento **não** significa que ele passará a medir corretamente, significa apenas que os erros e as incertezas de medição dele agora são conhecidos e estão documentados em um certificado.
+
+Por outro lado, o **ajuste** é definido como o conjunto de operações efetuadas num sistema de medição para que ele forneça indicações prescritas correspondentes a determinados valores da grandeza a ser medida. Na prática, o ajuste é a intervenção física ou eletrônica, a verdadeira "regulagem" ou manutenção. É o ato de girar um parafuso de calibração (ajuste de zero/*span*) ou reconfigurar o *software* para minimizar ou eliminar o erro encontrado. O ajuste tenta fazer com que a indicação do instrumento fique o mais próxima possível do valor real do padrão.

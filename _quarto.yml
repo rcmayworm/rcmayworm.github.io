@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "**/*.qmd"
+    - "!livro-analise-certificados/**"
 
 lang: pt-BR
 

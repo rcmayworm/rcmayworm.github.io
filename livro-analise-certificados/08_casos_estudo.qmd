@@ -1,0 +1,130 @@
+# Casos de Estudo Práticos: Onde a mágica acontece
+
+Parabéns por ter chegado até aqui. Você já domina a teoria normativa, entende a diferença entre erro e incerteza e sabe como definir um Critério de Aceitação sólido. Agora, vamos sair do papel e entrar no chão de fábrica. Neste capítulo final, aplicaremos a "Regra de Ouro" da decisão metrológica em três cenários reais. O objetivo é transformar dados frios de um certificado em decisões estratégicas que protejam a qualidade do seu produto e a conformidade da sua empresa em auditorias.
+
+A equação que guiará nossos vereditos é a soma do impacto do erro sistemático com a dúvida da medição, que chamaremos de Máximo Desvio (*MD*):
+
+$$MD = |Erro| + U \leq EMP$$
+
+## Caso Prático 1: Avaliando um Paquímetro Digital
+
+Considere um paquímetro digital com resolução de 0,01 mm, utilizado no setor de usinagem para medir eixos com uma tolerância de projeto de $\pm 0,10$ mm, ou seja, o intervalo de tolerância ($IT$) desse processo é de $0,20$ mm.
+
+Para garantir uma margem de segurança técnica, a engenharia definiu o **Erro Máximo Permitido (EMP)** utilizando a regra de $1/4$ da tolerância do processo ($EMP = IT / 4$). Portanto, nosso limite de aceitação é de **0,05 mm**.
+
+Abaixo, os resultados extraídos do Certificado de Calibração RBC recebido:
+
+| Valor nominal (mm) | Valor medido (mm) | Erro/tendência (mm) | Incerteza U (mm) |
+|--:|--:|--:|--:|
+| 50,00 | 50,01 | +0,01 | 0,02 |
+| 100,00 | 100,02 | +0,02 | 0,02 |
+| 150,00 | 150,02 | +0,02 | 0,03 |
+
+: Resultados da calibração — paquímetro digital. {#tbl-paquimetro}
+
+**Análise Passo a Passo:**
+
+1.  No ponto de 50 mm: $MD = |0,01| + 0,02 = 0,03$ mm. Como $0,03 \leq 0,05$, o instrumento está **Aprovado**.
+
+2.  No ponto de 100 mm: $MD = |0,02| + 0,02 = 0,04$ mm. Como $0,04 \leq 0,05$, o instrumento está **Aprovado**.
+
+3.  No ponto de 150 mm: $MD = |0,02| + 0,03 = 0,05$ mm. Como $0,05 \leq 0,05$, o instrumento está **Aprovado** no limite.
+
+**Veredito:** O paquímetro está **APROVADO** para uso no processo de usinagem dos eixos, pois seu Máximo Desvio em nenhum ponto ultrapassou o critério estabelecido.
+
+## Caso Prático 2: Avaliando um Termômetro de Estufa
+
+::: {.callout-tip title="Dica prática"}
+Não faça esses cálculos manualmente para cada instrumento. Utilize uma planilha de gestão onde você cadastra o EMP uma única vez. Ao digitar o Erro e a Incerteza do novo certificado, o Excel deve aplicar a fórmula $|E| + U$ e retornar automaticamente uma célula colorida (Verde para Aprovado, Vermelho para Reprovado).
+:::
+
+Neste cenário, avaliamos um termômetro digital usado em uma estufa de secagem que opera em um ponto crítico de $100~^\circ C \pm 5~^\circ C$ ($IT = 10~^\circ C$). Seguindo recomendações de normas setoriais, o EMP foi definido como $1/5$ da tolerância, resultando em um **EMP de $2,0~^\circ C$**.
+
+Vejamos os dados do certificado simulado:
+
+| Valor nominal (°C) | Valor medido (°C) | Erro/tendência (°C) | Incerteza U (°C) |
+|--:|--:|--:|--:|
+| 90,0 | 91,0 | +1,0 | 0,5 |
+| 100,0 | 101,5 | +1,5 | 1,0 |
+| 110,0 | 111,2 | +1,2 | 0,6 |
+
+: Resultados da calibração — termômetro de estufa. {#tbl-termometro}
+
+**Análise Passo a Passo:**
+
+-   No ponto de $90~^\circ C$: $MD = |1,0| + 0,5 = 1,5~^\circ C$ (Aprovado).
+
+-   No ponto de $100~^\circ C$: $MD = |1,5| + 1,0 = 2,5~^\circ C$. Como $2,5 > 2,0$, o instrumento está **REPROVADO** neste ponto crítico.
+
+-   No ponto de $110~^\circ C$: $MD = |1,2| + 0,6 = 1,8~^\circ C$ (Aprovado).
+
+::: {.callout-warning title="Alerta de auditoria"}
+Auditores de Sistemas de Gestão exigem que a análise crítica seja evidenciada. Não basta o cálculo estar certo na sua cabeça, o certificado ou o registro de aprovação deve estar **datado e assinado** pelo responsável técnico, declarando explicitamente a adequação ao uso.
+:::
+
+**Veredito e Ação Corretiva:** O instrumento **não pode ser utilizado** na estufa conforme planejado. Como o erro no ponto central de operação ($100~^\circ C$) somado à incerteza ultrapassou o EMP, o engenheiro deve: (1) Retirar o equipamento de serviço e etiquetá-lo como "Fora de Uso"; (2) Solicitar ajuste e recalibração; e (3) Realizar uma Análise de Impacto para verificar se os lotes secos desde a última calibração foram afetados.
+
+## Caso Prático 3: Avaliando um Manômetro Digital
+
+Um dos maiores dilemas do chão de fábrica ocorre quando o seu processo trabalha em um valor específico, mas o laboratório calibrou apenas pontos genéricos distribuídos ao longo da faixa (ex: 0%, 25%, 50%, 75% e 100%).
+
+**Cenário Fictício:** Você usa um manômetro digital de 0 a 10 bar. O seu processo de injeção plástica trabalha cravado no ponto crítico de **5,0 bar**. A engenharia definiu que o **EMP é de 0,30 bar**. Você recebe o seguinte certificado RBC:
+
+| Valor nominal (bar) | Valor medido (bar) | Erro/tendência (bar) | Incerteza U (bar) |
+|--:|--:|--:|--:|
+| 2,0 | 2,05 | +0,05 | 0,02 |
+| 4,0 | 4,10 | +0,10 | 0,02 |
+| 6,0 | 6,20 | +0,20 | 0,03 |
+| 8,0 | 8,25 | +0,25 | 0,03 |
+
+: Resultados da calibração — manômetro digital. {#tbl-manometro}
+
+Como avaliar se o instrumento está aprovado para uso em 5,0 bar, se esse ponto não existe na tabela? A metrologia nos oferece dois caminhos práticos e aceitos em auditorias:
+
+**1. A Abordagem Conservadora (A Regra do Pior Caso):**\
+::: {.callout-tip title="Dica prática"}
+Pare de sofrer com matemáticas complexas! A ISO/IEC 17025 diz que o laboratório deve atender aos requisitos do cliente. Quando for enviar seus instrumentos para calibração no próximo ano, envie junto uma ordem de compra exigindo: *"Favor incluir o ponto de 5,0 bar, pois é o nosso ponto crítico de processo"*. Laboratórios RBC cobram pouco (ou nada) por um ponto extra, e você elimina a necessidade de fazer interpolações matemáticas na aprovação.
+:::
+
+Esta é a regra mais usada na indústria pela sua segurança e facilidade em planilhas. Você deve olhar para os dois pontos adjacentes (o imediatamente inferior e o superior ao seu processo), ou seja, 4,0 bar e 6,0 bar. Em seguida, assumimos o **maior erro** e a **maior incerteza** desse intervalo para nos proteger.
+
+-   Maior Erro no intervalo (entre 4 e 6 bar): $+0,20$ bar.
+
+-   Maior Incerteza no intervalo: $0,03$ bar.
+
+-   Cálculo do Máximo Desvio: $MD = |0,20| + 0,03 = 0,23$ bar.
+
+-   **Veredito:** Como $0,23 \leq 0,30$ (EMP), o manômetro está **Aprovado** com segurança.
+
+**2. A Interpolação Linear:**\
+::: {.callout-warning title="Alerta de auditoria"}
+Nunca confunda Interpolação com **Extrapolação**! A interpolação só é válida para valores **dentro** da faixa testada pelo laboratório. Se o seu certificado vai de 0 a 8,0 bar, você jamais deve tentar "adivinhar" o erro em 9,0 bar. Auditores consideram isso uma falha grave, pois o comportamento do sensor fora da faixa calibrada é desconhecido.
+:::
+
+Se a "Regra do Pior Caso" reprovar o instrumento, você não precisa descartá-lo ou restringi-lo imediatamente. Você pode refinar a análise técnica utilizando a **Interpolação Linear**. Essa técnica assume que o erro do instrumento cresce de forma proporcional entre dois pontos calibrados sucessivos.
+
+Para descobrir o erro em um valor que não está exatamente na metade do caminho, utilizamos a equação de interpolação:
+
+::: {.callout-tip title="Dica prática"}
+Monte essa fórmula no Excel uma única vez. Ela será sua ferramenta de defesa em auditorias para provar que, no ponto exato de uso, o seu equipamento é tecnicamente conforme, mesmo que o "pior erro" do certificado sugira o contrário.
+:::
+
+$$Erro_{x} = E_1 + \frac{(E_2 - E_1)}{(I_2 - I_1)} \cdot (I_x - I_1)$$
+
+Onde:
+
+-   $I_x$: É o valor que você utiliza no seu processo (ex: 5,2 bar).
+
+-   $I_1$ e $I_2$: São os pontos calibrados vizinhos (ex: 4,0 e 6,0 bar).
+
+-   $E_1$ e $E_2$: São os erros relatados para esses pontos no certificado.
+
+::: {.callout-note title="E a Incerteza"}
+Diferente do erro, a Incerteza de Medição ($U$) não deve ser interpolada para baixo. Por uma **convenção conservadora de segurança**, adotamos sempre a maior incerteza encontrada no intervalo entre os dois pontos. Se no ponto 4,0 bar a incerteza é 0,02 e no ponto 6,0 bar é 0,03, utilizaremos 0,03 para o cálculo do seu Máximo Desvio em 5,2 bar.
+:::
+
+Retornando ao nosso exemplo, aplicando a fórmula, teriamos:
+
+$$Erro_{5,0} = 0,10 + \frac{(0,20 - 0,10)}{(6,0 - 4,0)} \cdot (5,0 - 4,0) = +0,15 \text{ bar}$$
+
+Seu Máximo Desvio ($MD$) em 5,0 bar será: $|0,15| + 0,03 = \mathbf{0,18 \text{ bar}}$.

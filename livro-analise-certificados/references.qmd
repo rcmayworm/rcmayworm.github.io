@@ -1,0 +1,6 @@
+# Referências bibliográficas {.unnumbered}
+
+As fontes abaixo foram transcritas das referências presentes na edição PDF fornecida pelo autor. A conferência de edições, detalhes bibliográficos e aplicabilidade normativa será realizada antes da publicação.
+
+::: {#refs}
+:::

@@ -28,6 +28,13 @@ jobs:
           python scripts/validate_site.py
       - name: Renderizar site
         run: quarto render
+      - name: Renderizar livro Quarto Book
+        run: |
+          quarto render livro-analise-certificados --to html
+          test -f livro-analise-certificados/_book/index.html
+          mkdir -p _site/livro-analise-certificados
+          cp -a livro-analise-certificados/_book/. _site/livro-analise-certificados/
+          test -f _site/livro-analise-certificados/index.html
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
       - name: Enviar site renderizado

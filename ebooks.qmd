@@ -21,7 +21,7 @@ toc: false
 
 Guia técnico sobre leitura e interpretação de certificados de calibração, rastreabilidade, critérios de aceitação, regras de decisão, frequência de calibração e avaliação da adequação de instrumentos ao uso pretendido. Inclui exemplos aplicados e orientações para gestão metrológica.
 
-**Leitura online gratuita:** versão HTML em preparação. O acesso aos capítulos será ativado nesta página após a publicação e a revisão técnico-científica.
+**Leitura online gratuita:** [abrir o livro e navegar pelos capítulos](https://rcmayworm.github.io/livro-analise-certificados/). Esta edição HTML inclui notas editoriais de revisão e referências.
 
 **Edição PDF comercial:** [Adquirir na Hotmart](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
 :::

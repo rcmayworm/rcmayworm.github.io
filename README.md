@@ -7,7 +7,7 @@ Código-fonte do site pessoal em Quarto Website, com Blog e E-books.
 - `index.qmd`: página inicial, pesquisa e destaques científicos.
 - `about.qmd`, `research.qmd`, `publications.qmd`, `software.qmd`, `contact.qmd`: conteúdo acadêmico.
 - `blog/index.qmd`: listagem automática de postagens; `blog/posts/modelo-de-post/index.qmd` é um rascunho com `draft: true` e não aparece no site publicado.
-- `ebooks.qmd`: catálogo de livros, ainda sem downloads ou livros publicados.
+- `ebooks.qmd`: catálogo com acesso ao livro online gratuito e edição PDF comercial.
 - `_quarto.yml` e `styles.css`: navegação, metadados e aparência.
 - `.github/workflows/pages.yml`: validação, renderização e publicação automática em GitHub Pages.
 - `scripts/validate_site.py`: verificações estáticas do código-fonte.
@@ -40,5 +40,13 @@ O HTML é gerado em `_site/`. A validação de conteúdo e links deve ocorrer an
 ## Restrições editoriais
 
 - Não adicionar dados sensíveis, imagens de laboratório não autorizadas ou resultados inéditos ao repositório público.
-- O primeiro livro é apenas uma proposta editorial; não há downloads disponíveis.
+- O livro **Análise Crítica de Certificados de Calibração** é gratuito para leitura HTML, e a edição PDF é comercializada separadamente pela Hotmart.
 - Nenhuma licença explícita foi definida para o projeto.
+
+## Quarto Book — Análise Crítica de Certificados de Calibração
+
+- Fontes em `livro-analise-certificados/` (capítulos, imagens e bibliografia).
+- Renderizar localmente: `quarto render livro-analise-certificados --to html`.
+- O workflow integra `_book/` ao caminho `_site/livro-analise-certificados/` antes do deploy.
+- A edição comercial em PDF não é versionada nem publicada no GitHub Pages.
+- Notas editoriais na página `livro-analise-certificados/revisao-editorial.qmd`.

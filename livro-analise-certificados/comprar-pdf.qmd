@@ -1,0 +1,14 @@
+---
+title: "Edição em PDF"
+number-sections: false
+---
+
+# Adquira a edição em PDF {.unnumbered}
+
+A versão online de **Análise Crítica de Certificados de Calibração** pode ser lida gratuitamente neste site. A edição digital em **PDF** é comercializada separadamente pela Hotmart.
+
+[Comprar o e-book em PDF na Hotmart](https://go.hotmart.com/F105183714N){.btn .btn-primary target="_blank" rel="noopener noreferrer"}
+
+A compra, o pagamento e a disponibilização do arquivo PDF são realizados na plataforma Hotmart. O PDF não é oferecido para download gratuito neste site.
+
+[Continuar a leitura online](index.qmd).

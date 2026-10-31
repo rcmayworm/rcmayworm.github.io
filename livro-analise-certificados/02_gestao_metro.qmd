@@ -1,0 +1,23 @@
+# Gestão Avançada e Confirmação Metrológica
+
+## Aprofundamento na ISO 10012: muito além da calibração
+
+::: {.callout-tip title="Dica prática"}
+Pense na **Calibração** como o diagnóstico técnico (o que o instrumento *é*) e na **Comprovação Metrológica** como o veredito de aptidão (se ele *serve* para o que você precisa).
+:::
+
+Para o gestor que busca excelência, é preciso entender que a calibração é apenas um meio, e não o fim. A norma ISO 10012 introduz o conceito de **Comprovação Metrológica**, definida como o conjunto de operações necessárias para assegurar que um equipamento de medição atende aos requisitos do seu uso pretendido [@iso10012].
+
+Enquanto a **Calibração** limita-se a estabelecer a relação entre os valores fornecidos por padrões e as indicações correspondentes, quantificando formalmente os erros e as incertezas associadas [@vim2012], a comprovação metrológica é um processo de decisão. Ela envolve a análise crítica dos resultados, a comparação com os requisitos metrológicos do processo, eventuais ajustes ou reparos e a etiquetagem final do status de uso. Um instrumento só é considerado "comprovado" quando sua adequação técnica ao processo é demonstrada e documentada [@iso10012].
+
+## Classificação e Criticidade de Instrumentos
+
+Nem todo equipamento de medição merece o mesmo nível de investimento. A gestão inteligente exige a classificação dos ativos para otimizar custos e focar no que realmente impacta o produto final, conforme Tabela @tbl-criticidade.
+
+| Classificação | Definição técnico-operacional | Ação requerida |
+|:--|:--|:--|
+| **Crítico** | Afeta diretamente qualidade, segurança ou legalidade. | Calibração por prestador tecnicamente competente; acreditação RBC quando exigida por requisito aplicável. |
+| **Operacional** | Auxilia no controle do processo, sem decisão final. | Calibração rastreável ou verificação interna. |
+| **Informativo** | Uso orientativo (por exemplo, conforto térmico ou segurança geral). | Controle compatível com o uso pretendido e os requisitos aplicáveis. |
+
+: Matriz de criticidade e ação metrológica (transcrição do original). {#tbl-criticidade}

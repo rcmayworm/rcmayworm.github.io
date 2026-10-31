@@ -1,0 +1,21 @@
+# Cenários de Reprovação: O que fazer agora?
+
+## Protocolo de Análise de Impacto
+
+Quando um equipamento é reprovado, a norma exige uma ação imediata para mitigar o risco de produtos não conformes no mercado [@iso10012; @iso17025]. Siga este protocolo estruturado:
+
+1.  **Segregação e Identificação:** Retire o instrumento de uso imediatamente e aplique uma etiqueta de "REPROVADO" ou "FORA DE SERVIÇO" para evitar uso acidental.
+
+2.  **Levantamento do Histórico:** Identifique qual foi a última data em que o equipamento foi utilizado com conformidade comprovada.
+
+3.  **Avaliação de Risco no Produto:** Avalie todos os lotes produzidos e medidos com esse instrumento no intervalo entre a calibração atual e a anterior.
+
+4.  **Ações de Contenção:** Dependendo da gravidade do erro encontrado, decida entre: Re-inspecionar o estoque, notificar o cliente (*Recall*) ou aceitar o lote sob concessão técnica devidamente justificada.
+
+## Análise de Impacto no Produto
+
+::: {.callout-warning title="Alerta de auditoria"}
+A falta de uma evidência documental de "Análise de Impacto" ou "Análise de Causa Raiz" para instrumentos reprovados é uma das não conformidades mais aplicadas em auditorias ISO 9001 e 17025. O auditor não quer ver apenas o instrumento consertado, ele quer ver como você garantiu que o cliente não recebeu peças ruins.
+:::
+
+Esta é a parte que mais gera pesadelos em auditorias. Se o equipamento foi reprovado hoje, você deve investigar o efeito desse desvio em todos os resultados de medição realizados desde a última calibração em que ele estava conforme [@iso17025; @iso10012]. Isso significa avaliar se os produtos fabricados no mês passado, que foram medidos com este instrumento, correm o risco de estar fora da tolerância do cliente. Caso o risco seja real, a organização deve iniciar o procedimento de **Gestão de Trabalho Não Conforme**, o que pode envolver o *recall* de lotes ou a re-inspeção de estoque.

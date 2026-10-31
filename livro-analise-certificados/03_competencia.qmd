@@ -1,0 +1,69 @@
+# Seleção e Identificação: A Garantia da Competência
+
+A primeira etapa na gestão de um ativo não envolve números ou cálculos complexos, mas sim a garantia de que o serviço foi prestado por uma instituição tecnicamente competente. Quando você contrata um laboratório, a forma mais segura de garantir a validade dos seus resultados e a aceitação em auditorias é verificar se ele pertence à **RBC (Rede Brasileira de Calibração)**.
+
+## Como identificar a Rastreabilidade
+
+Todo certificado emitido sob a chancela da acreditação deve possuir o símbolo da **Cgcre (Coordenação Geral de Acreditação do Inmetro)** ou de órgãos internacionais equivalentes, como a marca do **ILAC-MRA**. Esses selos são a evidência técnica de que o laboratório passou por uma rigorosa avaliação e possui rastreabilidade metrológica ininterrupta até o Sistema Internacional de Unidades (SI).
+
+::: {.callout-note title="Como conferir a acreditação"}
+Antes de contratar uma calibração acreditada, consulte o cadastro e o escopo de acreditação no portal oficial do [Inmetro](https://www.gov.br/inmetro/pt-br/assuntos/acreditacao). O símbolo de acreditação deve ser interpretado conforme as regras aplicáveis ao laboratório, ao serviço e ao certificado. As marcas de terceiros presentes na edição PDF não são reproduzidas nesta versão HTML.
+:::
+
+As marcas de acreditação oferecem evidência visual do reconhecimento para atividades cobertas pelo escopo, mas não substituem a consulta ao escopo e a análise dos dados do certificado. Se o certificado não apresentar essas marcas, a rastreabilidade não é automática e será necessário evidenciar a conformidade de toda a cadeia de padrões do laboratório por conta própria, o que gera um risco altíssimo de não conformidade em auditorias da ISO 9001 ou ISO/IEC 17025.
+
+## Muito além do Selo: Analisando a CMC
+
+::: {.callout-tip title="Dica prática"}
+Sempre confira o *escopo de acreditação* no site do Inmetro antes da contratação. Um laboratório pode ser acreditado para calibrar balanças, mas não possuir competência reconhecida para o termômetro específico que sua fábrica utiliza.
+:::
+
+::: {.callout-warning title="Alerta de auditoria"}
+Contratar um laboratório cuja CMC seja maior ou muito próxima ao seu Erro Máximo Permitido (EMP) tornará o certificado inútil para a tomada de decisão. Recomenda-se que a incerteza do laboratório seja, no mínimo, de 3 a 10 vezes menor que a tolerância do seu processo.
+:::
+
+Contratar um laboratório apenas por ele "ser RBC" também é um erro comum que pode invalidar a análise crítica. Antes de enviar o instrumento, você deve consultar o escopo de acreditação no site do Inmetro e analisar a **CMC (Capacidade de Medição e Calibração)**.
+
+A CMC representa a menor incerteza de medição que o laboratório consegue entregar sob condições ideais. Se a incerteza do laboratório (CMC) for muito alta em relação à sua necessidade, ela "comerá" toda a sua margem de tolerância, levando à reprovação injusta de equipamentos que ainda poderiam ser utilizados.
+
+## O Checklist Obrigatório da ISO/IEC 17025
+
+Para que um certificado de calibração tenha validade jurídica e técnica em auditorias, ele não pode ser apenas um "papel assinado". O requisito 7.8 da norma ISO/IEC 17025 estabelece o que chamamos de relato de resultados, garantindo que todas as informações necessárias para a interpretação dos dados estejam presentes [@iso17025].
+
+De acordo com o item 7.8.2.1 da norma, cada relatório deve incluir, no mínimo, as seguintes informações para minimizar mal-entendidos:
+
+-   **Título:** Por exemplo, "Certificado de Calibração".
+
+-   **Identificação do Laboratório:** Nome e endereço do laboratório que realizou o serviço.
+
+-   **Local das Atividades:** Endereço onde a calibração foi executada.
+
+-   **Identificação Unívoca:** Número do certificado em todas as suas páginas e indicação clara do final do documento.
+
+-   **Dados do Cliente:** Nome e informações de contato do solicitante.
+
+-   **Método Utilizado:** Identificação do procedimento de calibração.
+
+-   **Descrição do Item:** Identificação clara e condição do objeto calibrado.
+
+-   **Datas Críticas:** Data do recebimento do item.
+
+-   **Data da Atividade:** Data(s) em que a calibração foi efetivamente realizada.
+
+-   **Data de Emissão:** Data em que o relatório foi liberado.
+
+-   **Plano de Amostragem:** Referência ao método, se o laboratório for responsável por esta etapa.
+
+-   **Declaração de Escopo:** Nota afirmando que os resultados referem-se apenas aos itens calibrados.
+
+-   **Resultados:** Apresentação dos dados com as respectivas unidades de medida.
+
+-   **Desvios do Método:** Registro de adições, exclusões ou desvios em relação ao procedimento.
+
+-   **Autorização:** Identificação da(s) pessoa(s) que autoriza(m) o relatório.
+
+-   **Provedores Externos:** Identificação clara caso algum resultado tenha sido obtido por terceiros.
+
+::: {.callout-warning title="Alerta de auditoria"}
+Além destes itens, certificados de calibração devem obrigatoriamente declarar a **incerteza de medição** e a **rastreabilidade metrológica**. Certificados que omitem a incerteza são tecnicamente nulos para fins de comprovação metrológica, pois o resultado de uma medição só é considerado completo quando acompanhado de sua dúvida associada.
+:::
