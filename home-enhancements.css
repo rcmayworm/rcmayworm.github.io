@@ -136,3 +136,11 @@ body:has(.academic-hero) .quarto-listing-grid > *,
 @media (prefers-reduced-motion: reduce) {
   #quarto-document-content .feature-card-clickable { transition: none; }
 }
+
+/* Alinhamento vertical das chamadas editoriais e dos H2 na página inicial.
+   O primeiro bloco (Biblioteca digital / E-books) mantém seu espaçamento original.
+   O Quarto pode atribuir a classe ao elemento section ou diretamente ao h2. */
+body:has(.academic-hero) #quarto-document-content section.home-compact-heading > h2,
+body:has(.academic-hero) #quarto-document-content h2.home-compact-heading {
+  margin-top: .65rem !important;
+}

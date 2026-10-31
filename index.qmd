@@ -65,7 +65,7 @@ Um guia prático para interpretar certificados de calibração, estabelecer crit
 
 <div class="section-eyebrow">Artigos e divulgação científica</div>
 
-## [Blog](blog/index.qmd){.home-heading-link}
+## [Blog](blog/index.qmd){.home-heading-link} {.home-compact-heading}
 
 Artigos, notas técnicas e tutoriais publicados. Use as setas para explorar as postagens quando houver mais conteúdos disponíveis.
 
@@ -81,7 +81,7 @@ Artigos, notas técnicas e tutoriais publicados. Use as setas para explorar as p
 
 <div class="section-eyebrow">Produção científica</div>
 
-## [Pesquisa e publicações em destaque](publications.qmd){.home-heading-link}
+## [Pesquisa e publicações em destaque](publications.qmd){.home-heading-link} {.home-compact-heading}
 
 Conheça projetos e artigos já documentados, com acesso às referências originais e seus identificadores DOI.
 
@@ -108,7 +108,7 @@ Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avali
 
 <div class="section-eyebrow">Ferramentas e materiais</div>
 
-## Recursos acadêmicos
+## Recursos acadêmicos {.home-compact-heading}
 
 ::: {.feature-grid}
 ::: {.feature-card .feature-card-clickable}
@@ -129,7 +129,7 @@ Espaço para disponibilizar apresentações acadêmicas e materiais de palestras
 
 <div class="section-eyebrow">Trajetória profissional</div>
 
-## Sobre mim e perfis
+## Sobre mim e perfis {.home-compact-heading}
 
 ::: {.feature-grid .three}
 ::: {.feature-card .feature-card-clickable}

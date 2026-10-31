@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-description: "Artigos técnicos, notas de pesquisa e tutoriais em metrologia, Python, estatística e instrumentação."
+description: "Este espaço reúne artigos técnicos, textos de divulgação científica e tutoriais sobre metrologia, gestão da qualidade, instrumentação, estatística, Python, análise de dados e machine learning. Os conteúdos abordam fundamentos e aplicações práticas, com referências verificáveis e distinção entre exemplos didáticos e resultados de pesquisas publicadas."
 toc: false
 listing:
   contents: posts
@@ -12,12 +12,8 @@ listing:
   page-size: 10
 ---
 
-<div class="section-eyebrow">Notas técnicas e divulgação científica</div>
-
-Neste blog compartilho artigos de divulgação científica, textos técnicos, tutoriais e materiais de aprendizagem. Cada conteúdo distingue referências históricas, explicações didáticas e resultados científicos publicados.
-
 ::: {.blog-intro}
-**Temas:** história da metrologia, incerteza de medição, instrumentação, Python, estatística, ultrassom, processamento de sinais e análise de dados.
+**Temas:** História da metrologia, incerteza de medição, gestão da qualidade, instrumentação, Python, estatística, ultrassom, processamento de sinais, análise de dados e machine learning.
 :::
 
 ## Publicações
