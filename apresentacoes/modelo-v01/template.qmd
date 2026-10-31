@@ -5,7 +5,13 @@ lang: pt-BR
 format:
   revealjs:
     theme: [default, tema.scss]
-    embed-resources: true
+    embed-resources: false
+    chalkboard:
+      theme: whiteboard
+      boardmarker-width: 4
+      buttons: true
+    slide-level: 2
+    controls: true
     html-math-method: mathml
     width: 1280
     height: 720
@@ -24,19 +30,17 @@ format:
     pdf-separate-fragments: false
 ---
 
-<!-- PROTÓTIPO VISUAL v0.1 — exemplos numéricos e sinal inteiramente sintéticos. -->
-
-## {.slide-capa data-background-color="#112c41"}
+## Capa {.slide-capa data-background-color="#112c41"}
 
 ::: {.capa-conteudo}
 [MODELO DE APRESENTAÇÃO CIENTÍFICA]{.sobretitulo-capa}
 
 [Metrologia, dados e decisões confiáveis]{.titulo-capa}
 
-[Uma demonstração de estilos para palestras, aulas e apresentações de resultados]{.subtitulo-capa}
-
 ::: {.capa-linha}
 :::
+
+[Uma demonstração de estilos para palestras, aulas e apresentações de resultados]{.subtitulo-capa}
 
 ::: {.capa-identificacao}
 **Ruan Carvalho Mayworm**
@@ -231,7 +235,7 @@ Critério e interpretação
 A comunicação visual complementa o argumento técnico; não substitui a documentação do método.
 :::
 
-## {.slide-fecho data-background-color="#112c41"}
+## Encerramento {.slide-fecho data-background-color="#112c41"}
 
 ::: {.fecho-conteudo}
 [ENCERRAMENTO]{.sobretitulo-capa}

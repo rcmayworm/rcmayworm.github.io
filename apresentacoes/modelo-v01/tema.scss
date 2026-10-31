@@ -61,27 +61,27 @@ $presentation-line-height: 1.38;
 .reveal .slides section.slide-fecho > h2 { display: none; }
 .reveal .capa-conteudo, .reveal .fecho-conteudo {
   padding: 1.1em 0.1em 0.2em;
-  max-width: 92%; color: #eaf3f7;
+  max-width: 98%; color: #eaf3f7;
 }
 .reveal .sobretitulo-capa {
   color: #aad2df; letter-spacing: 0.18em; font-weight: 750;
   font-size: 0.58em; text-transform: uppercase;
 }
 .reveal .titulo-capa, .reveal .titulo-fecho {
-  display: block; max-width: 18ch;
+  display: block; max-width: 100%;
   font-family: Georgia, "Times New Roman", serif;
-  color: #ffffff; font-size: 2.3em; font-weight: 600;
-  line-height: 1.08; letter-spacing: -0.035em;
-  margin: 0.55em 0 0.34em;
+  color: #ffffff; font-size: 2.05em; font-weight: 600;
+  line-height: 1.10; letter-spacing: -0.035em;
+  margin: 0.42em 0 0.22em;
 }
 .reveal .subtitulo-capa, .reveal .subtitulo-fecho {
-  display: block; color: #d6e7ed; font-size: 0.89em; max-width: 29em;
+  display: block; color: #d6e7ed; font-size: 0.88em; max-width: 100%;
 }
 .reveal .capa-linha {
   display: block; background: #6eafc3; height: 5px;
-  width: 94px; margin: 1.2em 0 1em; border-radius: 3px;
+  width: 125px; margin: 0.60em 0 0.7em; border-radius: 3px;
 }
-.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; }
+.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 1.35em; }
 .reveal .capa-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
 .reveal .capa-identificacao strong { color: #fff; font-size: 1.22em; }
 .reveal .capa-identificacao em { font-size: 0.86em; color: #a7cad7; }
