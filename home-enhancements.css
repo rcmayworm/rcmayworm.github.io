@@ -7,32 +7,59 @@
 .blog-carousel-arrow:disabled { opacity: .38; cursor: not-allowed; }
 .blog-carousel-arrow[hidden] { display: none !important; }
 .blog-carousel-arrow:focus-visible { outline: 3px solid #2583a5; outline-offset: 2px; }
-#home-blog-listing .list.grid {
+
+/* Os itens são gerados automaticamente pelo Quarto: manter todos em uma só linha.
+   A seletorização cobre tanto um ID no contêiner quanto no próprio grid. */
+#home-blog-listing .list.grid,
+#home-blog-listing.list.grid {
+  --blog-card-gap: 1rem;
   display: flex !important;
-  flex-wrap: nowrap !important;
-  gap: 1rem;
-  overflow-x: auto;
-  overflow-y: hidden;
+  flex-flow: row nowrap !important;
+  gap: var(--blog-card-gap) !important;
+  grid-template-columns: none !important;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
   scroll-snap-type: x mandatory;
-  scroll-padding-inline: 2px;
-  padding: .25rem .15rem 1rem;
-  margin: 0;
+  scroll-padding-inline: 0;
+  overscroll-behavior-x: contain;
+  -webkit-overflow-scrolling: touch;
+  padding: .25rem 0 1rem !important;
+  margin: 0 !important;
   scrollbar-width: thin;
 }
-#home-blog-listing .list.grid > * {
-  flex: 0 0 min(320px, calc(50% - .5rem));
-  max-width: 100%;
-  min-width: 0;
+#home-blog-listing .list.grid > *,
+#home-blog-listing.list.grid > * {
+  flex: 0 0 calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
+  width: calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
+  max-width: calc((100% - 2 * var(--blog-card-gap)) / 3) !important;
+  min-width: 0 !important;
+  box-sizing: border-box;
   scroll-snap-align: start;
 }
 #home-blog-listing .quarto-grid-item { height: 100%; }
 #home-blog-listing .card { height: 100%; box-shadow: none; border: 1px solid var(--line); }
 #home-blog-listing .card:hover { border-color: #a4bdc6; }
-#home-blog-listing .list.grid:not(.js-blog-carousel) { overflow-x: auto; }
-@media (max-width: 700px) {
-  #home-blog-listing .list.grid > * { flex-basis: min(88%, 320px); }
+
+@media (max-width: 900px) {
+  #home-blog-listing .list.grid > *,
+  #home-blog-listing.list.grid > * {
+    flex-basis: calc((100% - var(--blog-card-gap)) / 2) !important;
+    width: calc((100% - var(--blog-card-gap)) / 2) !important;
+    max-width: calc((100% - var(--blog-card-gap)) / 2) !important;
+  }
+}
+@media (max-width: 620px) {
+  #home-blog-listing .list.grid > *,
+  #home-blog-listing.list.grid > * {
+    flex-basis: 100% !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
   .academic-hero .hero-btn { flex: 1 1 calc(50% - .6rem); }
 }
 @media (prefers-reduced-motion: reduce) {
-  #home-blog-listing .list.grid { scroll-behavior: auto; }
+  #home-blog-listing .list.grid,
+  #home-blog-listing.list.grid { scroll-behavior: auto; }
 }
