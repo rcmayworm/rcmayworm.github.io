@@ -32,7 +32,7 @@ listing:
 
 <p class="hero-bio">Atuo na interface entre metrologia, estatística e análise de dados, com experiência em instrumentação científica, processamento de sinais, avaliação da incerteza de medição e gestão da qualidade. Desenvolvo aplicações em Python e investigo o uso de machine learning e otimização em sistemas de medição, especialmente em acústica e ultrassom.</p>
 
-<div class="hero-tags"><span class="hero-tag">Metrologia</span><span class="hero-tag">Estatística</span><span class="hero-tag">Machine Learning</span><span class="hero-tag">Análise de dados</span><span class="hero-tag">Qualidade</span></div>
+<div class="hero-tags"><span class="hero-tag">Metrologia</span>Qualidade<span class="hero-tag"></span><span class="hero-tag">Estatística</span><span class="hero-tag">Análise de dados</span><span class="hero-tag">Machine Learning</span></div>
 
 <div class="cta-row" aria-label="Acessos principais"><a class="hero-btn hero-btn-primary" href="ebooks.html">E-books</a><a class="hero-btn hero-btn-secondary" href="blog/">Blog</a><a class="hero-btn hero-btn-secondary" href="publications.html">Minhas publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Sobre mim</a></div>
 :::
