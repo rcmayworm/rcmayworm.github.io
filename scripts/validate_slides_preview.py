@@ -1,6 +1,6 @@
 """Validação do HTML Reveal.js após renderização Quarto no GitHub Actions.
 
-Exige exatamente oito slides, incluindo capa inicial e encerramento, sem
+Exige exatamente nove slides, incluindo capa, referências e obrigado, sem
 slide vazio, além de checar os controles de anotações e os arquivos auxiliares.
 """
 from html.parser import HTMLParser
@@ -67,12 +67,25 @@ for r in report:
     print("  {index}: id={id}, class={class}, chars={characters}".format(**r))
 
 errors = []
-if len(slides) != 8:
-    errors.append(f"Esperados 8 slides, encontrados {len(slides)}")
+if len(slides) != 9:
+    errors.append(f"Esperados 9 slides, encontrados {len(slides)}")
 if not slides or "slide-capa" not in slides[0]["class"]:
     errors.append("Primeiro slide não é a capa.")
 if slides and "slide-fecho" not in slides[-1]["class"]:
     errors.append("Último slide não é o encerramento.")
+if len(slides) >= 9:
+    reference_text = " ".join(slides[-2]["text"]).lower()
+    final_text = " ".join(slides[-1]["text"]).lower()
+    if "referências" not in reference_text or "jcgm 100:2008" not in reference_text:
+        errors.append("Penúltimo slide não contém referências.")
+    for marker in ["obrigado!", "link da apresentação", "contato", "rcmayworm@gmail.com",
+                   "github.com/rcmayworm", "lattes", "linkedin"]:
+        if marker not in final_text:
+            errors.append(f"Slide final não contém: {marker}.")
+    for link in ["mailto:rcmayworm@gmail.com", "https://www.linkedin.com/in/ruanmayworm/",
+                 "http://lattes.cnpq.br/5951712664292058", "https://github.com/rcmayworm"]:
+        if link not in html:
+            errors.append(f"Link de contato ausente: {link}.")
 if any(r["characters"] < 40 for r in report):
     errors.append("Existe slide vazio ou com conteúdo inesperadamente curto.")
 if "chalkboard" not in html.lower():
@@ -95,4 +108,4 @@ if errors:
     for error in errors:
         print("FALHA:", error)
     sys.exit(1)
-print("OK: 8 slides completos, capa inicial, encerramento e recursos Reveal.js.")
+print("OK: 9 slides completos, capa inicial, referências, obrigado e recursos Reveal.js.")

@@ -49,7 +49,7 @@ format:
 
 Engenharia · Metrologia · Métodos computacionais
 
-*Apresentação demonstrativa — v0.1 · 2026*
+*Apresentação demonstrativa — v0.4 · 2026*
 :::
 :::
 
@@ -237,25 +237,92 @@ Critério e interpretação
 A comunicação visual complementa o argumento técnico; não substitui a documentação do método.
 :::
 
-## Encerramento {.slide-fecho data-background-color="#112c41"}
+## Referências
+
+[07 · REFERÊNCIAS]{.etiqueta-topo}
+
+::: {.lista-referencias}
+
+::: {.referencia-item}
+**[1]** JCGM (2008). *Evaluation of measurement data — Guide to the expression of uncertainty in measurement* (JCGM 100:2008).
+:::
+
+::: {.referencia-item}
+**[2]** JCGM (2012). *International vocabulary of metrology — Basic and general concepts and associated terms (VIM)* (JCGM 200:2012).
+:::
+
+::: {.referencia-item}
+**[3]** Quarto Project. *Reveal.js Presentations*. [Documentação oficial](https://quarto.org/docs/presentations/revealjs/).
+:::
+
+:::
+
+::: {.aviso-referencias}
+**Referências demonstrativas.** Substitua pelas fontes efetivamente utilizadas em cada palestra. Se necessário, distribua a bibliografia em mais de um slide.
+:::
+
+::: {.notes}
+Este slide ilustra um padrão bibliográfico. Conferir edição, ano, identificação e fonte das referências ao produzir uma apresentação real.
+:::
+
+## Obrigado {.slide-fecho data-background-color="#112c41"}
 
 ::: {.fecho-conteudo}
+
 [ENCERRAMENTO]{.sobretitulo-capa}
 
-[Conclusões claras. Métodos verificáveis.]{.titulo-fecho}
+[Obrigado!]{.titulo-fecho .titulo-obrigado}
 
 ::: {.capa-linha}
 :::
 
-[Modelo visual de apresentações científicas · versão de avaliação]{.subtitulo-fecho}
+::: {.bloco-apresentacao}
+[LINK DA APRESENTAÇÃO]{.rotulo-contato}
 
-::: {.fecho-identificacao}
-**Ruan Carvalho Mayworm**
+[rcmayworm.github.io/previas/modelo-apresentacoes-v01/](https://rcmayworm.github.io/previas/modelo-apresentacoes-v01/){.link-apresentacao}
+:::
+
+::: {.bloco-contatos}
+[CONTATO]{.rotulo-contato}
+
+:::: {.grade-contatos}
+
+::: {.contato-item}
+[E-MAIL]{.tipo-contato}
+
+[rcmayworm@gmail.com](mailto:rcmayworm@gmail.com)
+:::
+
+::: {.contato-item}
+[SITE PESSOAL]{.tipo-contato}
 
 [rcmayworm.github.io](https://rcmayworm.github.io/)
 :::
+
+::: {.contato-item}
+[GITHUB]{.tipo-contato}
+
+[github.com/rcmayworm](https://github.com/rcmayworm)
+:::
+
+::: {.contato-item}
+[CURRÍCULO LATTES]{.tipo-contato}
+
+[Acessar currículo](http://lattes.cnpq.br/5951712664292058)
+:::
+
+::: {.contato-item}
+[LINKEDIN]{.tipo-contato}
+
+[linkedin.com/in/ruanmayworm](https://www.linkedin.com/in/ruanmayworm/)
+:::
+
+::::
+
+:::
+
 :::
 
 ::: {.notes}
-Exemplo de slide de encerramento.
+Substitua o link da apresentação pelo endereço final de cada evento. Conferir os contatos antes de divulgar.
 :::

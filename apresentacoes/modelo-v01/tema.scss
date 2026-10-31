@@ -1,5 +1,5 @@
 /*
-  Modelo visual de apresentação científica, versão 0.1.
+  Modelo visual de apresentação científica, versão 0.4.
   Tema original, inspirado nas cores do site rcmayworm.github.io.
   Não utiliza fontes ou estilos copiados de terceiros.
 */
@@ -81,7 +81,7 @@ $presentation-line-height: 1.38;
   display: block; background: #6eafc3; height: 5px;
   width: 100%; max-width: 100%; margin: 0.62em 0 0.75em; border-radius: 3px;
 }
-.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 2.2em; }
+.reveal .capa-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 3.4em; }
 .reveal .fecho-identificacao { font-size: 0.72em; line-height: 1.2; margin-top: 2.2em; }
 .reveal .fecho-identificacao p { margin: 0.28em 0; color: #d1e1e7; }
 .reveal .fecho-identificacao strong { color: #fff; font-size: 1.22em; }
@@ -193,4 +193,89 @@ $presentation-line-height: 1.38;
 .reveal .slides section.slide-capa .footer,
 .reveal .slides section.slide-fecho .footer {
   color: #d2e3e9;
+}
+
+/*-- scss:rules --*/
+/* Referências e agradecimento: componentes independentes do conteúdo comum. */
+.reveal .lista-referencias {
+  display: grid;
+  gap: 0.62em;
+  margin: 0.85em 0 0.7em;
+}
+.reveal .referencia-item {
+  background: #f4f8f9;
+  border-left: 4px solid var(--rm-teal);
+  padding: 0.43em 0.7em;
+  border-radius: 0 5px 5px 0;
+  color: var(--rm-ink-soft);
+  font-size: 0.67em;
+  line-height: 1.43;
+}
+.reveal .referencia-item p { margin: 0; }
+.reveal .aviso-referencias {
+  border: 1px solid var(--rm-rule);
+  background: var(--rm-mist);
+  border-radius: 7px;
+  padding: 0.55em 0.75em;
+  font-size: 0.57em;
+}
+.reveal .aviso-referencias p { margin: 0; }
+.reveal .titulo-obrigado {
+  font-size: 2.38em;
+  max-width: 100%;
+  margin: 0.18em 0 0.10em;
+}
+.reveal .fecho-conteudo .capa-linha { margin: 0.33em 0 0.63em; }
+.reveal .rotulo-contato {
+  display: block;
+  color: #a9d3df;
+  letter-spacing: 0.12em;
+  font-size: 0.54em;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 700;
+}
+.reveal .bloco-apresentacao {
+  padding: 0.14em 0 0.2em;
+}
+.reveal .link-apresentacao {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #78b4c7;
+  font-size: 0.76em;
+  padding-bottom: 0.14em;
+  margin-top: 0.38em;
+}
+.reveal .bloco-contatos {
+  margin-top: 1.00em;
+}
+.reveal .grade-contatos {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 1.20em;
+  row-gap: 0.42em;
+  margin-top: 0.54em;
+}
+.reveal .contato-item {
+  min-width: 0;
+  padding-top: 0.16em;
+}
+.reveal .tipo-contato {
+  display: block;
+  color: #a9d3df;
+  font-size: 0.43em;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+.reveal .contato-item p { margin: 0.09em 0 0; }
+.reveal .contato-item a {
+  color: #fff;
+  font-size: 0.63em;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.reveal .contato-item a:hover,
+.reveal .link-apresentacao:hover {
+  color: #b8e6f3;
+  text-decoration: underline;
 }
