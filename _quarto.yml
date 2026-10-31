@@ -19,22 +19,22 @@ website:
     search: true
     collapse: true
     left:
-      - text: "Início"
-        href: index.qmd
-      - text: "Pesquisa"
-        href: research.qmd
-      - text: "Publicações"
-        href: publications.qmd
-      - text: "Blog"
-        href: blog/index.qmd
       - text: "E-books"
         href: ebooks.qmd
+      - text: "Blog"
+        href: blog/index.qmd
+      - text: "Publicações"
+        href: publications.qmd
+      - text: "Pesquisa"
+        href: research.qmd
+      - text: "Sobre"
+        href: about.qmd
       - text: "Mais"
         menu:
-          - text: "Sobre"
-            href: about.qmd
           - text: "Software"
             href: software.qmd
+          - text: "Apresentações"
+            href: presentations.qmd
           - text: "Contato"
             href: contact.qmd
     right:
@@ -51,6 +51,7 @@ format:
     css:
       - styles.css
       - ebook-cards.css
+      - home-enhancements.css
     toc: true
     toc-depth: 2
     smooth-scroll: true

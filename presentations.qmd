@@ -1,0 +1,15 @@
+---
+title: "Apresentações"
+description: "Apresentações acadêmicas, palestras e materiais técnicos de Ruan Mayworm."
+toc: false
+---
+
+<div class="section-eyebrow">Materiais acadêmicos</div>
+
+## Apresentações e palestras
+
+Esta página reunirá apresentações de pesquisas, palestras e materiais técnicos **quando forem revisados e autorizados para divulgação pública**.
+
+No momento, não há apresentações disponibilizadas para consulta ou download.
+
+Para conhecer os artigos e demais materiais já publicados, consulte [Publicações](publications.qmd) e [Blog](blog/index.qmd).

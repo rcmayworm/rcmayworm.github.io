@@ -1,8 +1,24 @@
 ---
 title: "Ruan Mayworm"
-description: "Ruan Mayworm — pesquisa em metrologia e ultrassom, publicações, blog técnico e e-books."
+description: "Ruan Mayworm — metrologia, análise de dados, e-books, artigos do blog e publicações científicas."
 title-block-style: none
 toc: false
+listing:
+  id: home-blog-listing
+  contents:
+    - "blog/posts/*/index.qmd"
+    - "!blog/posts/modelo-de-post/index.qmd"
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  exclude:
+    draft: true
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  page-size: 100
+  image-height: 168px
+  max-description-length: 155
 ---
 
 ::: {.academic-hero}
@@ -18,7 +34,7 @@ toc: false
 
 <div class="hero-tags"><span class="hero-tag">Metrologia</span><span class="hero-tag">Estatística</span><span class="hero-tag">Machine Learning</span><span class="hero-tag">Análise de dados</span><span class="hero-tag">Qualidade</span></div>
 
-<div class="cta-row"><a class="hero-btn hero-btn-primary" href="publications.html">Ver publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Conheça meu trabalho</a></div>
+<div class="cta-row" aria-label="Acessos principais"><a class="hero-btn hero-btn-primary" href="ebooks.html">E-books</a><a class="hero-btn hero-btn-secondary" href="blog/">Blog</a><a class="hero-btn hero-btn-secondary" href="publications.html">Minhas publicações</a><a class="hero-btn hero-btn-secondary" href="about.html">Sobre mim</a></div>
 :::
 ::: {.hero-photo}
 <img class="hero-portrait" src="assets/images/ruan-mayworm-alta.jpeg" alt="Retrato de Ruan Mayworm em ambiente de laboratório" width="200" height="250" loading="eager" decoding="async">
@@ -49,39 +65,21 @@ Um guia prático para interpretar certificados de calibração, estabelecer crit
 :::
 :::
 
-<div class="section-eyebrow">Compartilhamento de conhecimento</div>
+<div class="section-eyebrow">Artigos e divulgação científica</div>
 
-## Blog e recursos acadêmicos
+## Blog
 
-::: {.feature-grid .three}
-::: {.feature-card}
-<div class="card-label">Blog</div>
+Artigos, notas técnicas e tutoriais publicados. Use as setas para explorar as postagens quando houver mais conteúdos disponíveis.
 
-### Artigos e tutoriais
+<div class="blog-carousel-nav" aria-label="Navegar entre artigos do blog">
+<button class="blog-carousel-arrow" id="blog-prev" type="button" aria-controls="home-blog-listing" aria-label="Ver artigos anteriores" hidden><span aria-hidden="true">‹</span></button>
+<button class="blog-carousel-arrow" id="blog-next" type="button" aria-controls="home-blog-listing" aria-label="Ver próximos artigos" hidden><span aria-hidden="true">›</span></button>
+</div>
 
-Espaço reservado para publicações sobre metrologia, Python, estatística e instrumentação.
-
-[Ir para o Blog](blog/index.qmd)
+::: {#home-blog-listing .home-blog-listing}
 :::
-::: {.feature-card}
-<div class="card-label">Software</div>
 
-### Código científico
-
-Projetos, notebooks e ferramentas reprodutíveis, quando estiverem revisados e autorizados para divulgação.
-
-[Ver Software](software.qmd)
-:::
-::: {.feature-card}
-<div class="card-label">Perfil acadêmico</div>
-
-### Trajetória e currículo
-
-Formação, competências, artigos publicados e links para identificadores acadêmicos.
-
-[Sobre](about.qmd) · [Lattes](http://lattes.cnpq.br/5951712664292058)
-:::
-:::
+[Ver todos os artigos do blog](blog/index.qmd){.inline-link}
 
 <div class="section-eyebrow">Produção científica</div>
 
@@ -109,3 +107,64 @@ Estudos metrológicos da técnica *Time-of-Flight Diffraction* aplicada à avali
 [*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298) · [Pesquisa](research.qmd)
 :::
 :::
+
+<div class="section-eyebrow">Ferramentas e materiais</div>
+
+## Recursos acadêmicos
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="card-label">Software</div>
+
+### Código científico
+
+Repositórios, programas e ferramentas para análise de dados, automação e pesquisa, conforme disponibilidade de versões públicas.
+
+[Explorar software e código](software.qmd)
+:::
+::: {.feature-card}
+<div class="card-label">Apresentações</div>
+
+### Palestras e materiais técnicos
+
+Espaço para disponibilizar apresentações acadêmicas e materiais de palestras, após revisão e autorização.
+
+[Ver apresentações](presentations.qmd)
+:::
+:::
+
+<div class="section-eyebrow">Trajetória profissional</div>
+
+## Sobre mim e perfis
+
+::: {.feature-grid .three}
+::: {.feature-card}
+<div class="card-label">Sobre mim</div>
+
+### Formação e experiência
+
+Conheça minha formação acadêmica, trajetória profissional e áreas de atuação.
+
+[Sobre mim](about.qmd)
+:::
+::: {.feature-card}
+<div class="card-label">Currículo acadêmico</div>
+
+### Currículo Lattes
+
+Acesse meu currículo na Plataforma Lattes, com histórico de formação e produção acadêmica.
+
+[Consultar currículo Lattes](http://lattes.cnpq.br/5951712664292058){target="_blank" rel="noopener noreferrer"}
+:::
+::: {.feature-card}
+<div class="card-label">Rede profissional</div>
+
+### LinkedIn
+
+Acesse meu perfil profissional para conhecer experiências e publicações compartilhadas.
+
+[Visitar LinkedIn](https://www.linkedin.com/in/ruanmayworm/){target="_blank" rel="noopener noreferrer"}
+:::
+:::
+
+<script defer src="home-blog.js"></script>
