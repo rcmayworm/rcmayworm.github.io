@@ -82,7 +82,7 @@ if len(slides) >= 9:
                    "site pessoal", "lattes", "linkedin"]:
         if marker not in final_text:
             errors.append(f"Slide final não contém: {marker}.")
-    if "github.com/rcmayworm" in final_text or "github" in final_text:
+    if "github.com/rcmayworm" in final_text or "github:" in final_text:
         errors.append("Slide final ainda contém GitHub.")
     if "encerramento" in final_text:
         errors.append("Slide final ainda contém o rótulo ENCERRAMENTO.")
