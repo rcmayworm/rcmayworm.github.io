@@ -123,7 +123,7 @@ Podemos visualizar melhor a diferença entre esses conceitos por meio de uma ana
 
 Imagine que o centro do alvo representa o valor que desejamos medir. Cada marca representa um resultado obtido. A posição das marcas em relação ao centro e a distância entre elas ajudam a entender quatro situações diferentes.
 
-![Quatro alvos com diferentes combinações de exatidão e precisão: A, B, C e D.](images/capa.svg){#fig-alvos fig-cap="Figura 1 — Representação ilustrativa de quatro combinações entre exatidão e precisão. Os alvos são uma analogia didática, não um método de avaliação metrológica."}
+![Quatro alvos coloridos com diferentes combinações de exatidão e precisão: A, B, C e D.](images/figura1-exatidao-precisao-moderna.svg){#fig-alvos fig-cap="Figura 1 — Quatro combinações ilustrativas de exatidão e precisão. A cruz representa a referência e os pontos representam medições repetidas. A analogia não substitui uma avaliação metrológica."}
 
 As situações da @fig-alvos representam:
 
