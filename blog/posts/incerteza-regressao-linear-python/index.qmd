@@ -289,15 +289,23 @@ O código calcula os coeficientes da reta, os valores previstos, os resíduos, o
 
 ### Resultados da calibração
 
-Aplicando a função aos dados da tabela, obtemos:
+A @tbl-resultados-regressao reúne os principais resultados do ajuste e explica o significado de cada um.
 
-- **Equação ajustada:** $T=5{,}0423\,V-0{,}4863$, com $T$ em °C e $V$ em mV;
-- **Coeficiente de determinação:** $R^2=0{,}9984$;
-- **Desvio-padrão residual:** $s=0{,}7062\ \mathrm{°C}$;
-- **Incerteza-padrão da resposta média:** de aproximadamente $0{,}213$ a $0{,}404\ \mathrm{°C}$;
-- **Incerteza expandida da resposta média (95%):** de aproximadamente $0{,}482$ a $0{,}913\ \mathrm{°C}$.
+| Indicador | Resultado | O que significa? |
+|:---|:---:|:---|
+| Equação ajustada | $T = 5{,}0423\,V - 0{,}4863$ | Permite estimar a temperatura a partir da tensão medida. |
+| Coeficiente de determinação ($R^2$) | $0{,}9984$ | Indica que a reta explica aproximadamente 99,84% da variação observada da temperatura nos dados utilizados. |
+| Desvio-padrão residual ($s$) | $0{,}7062\ \mathrm{°C}$ | Mostra a dispersão dos resultados em torno da reta ajustada. |
+| Incerteza-padrão da resposta média | $0{,}213$ a $0{,}404\ \mathrm{°C}$ | Expressa a incerteza associada à estimação da resposta média pela reta, nos pontos de calibração. |
+| Incerteza expandida da resposta média (95%) | $0{,}482$ a $0{,}913\ \mathrm{°C}$ | Corresponde à semi-amplitude dos intervalos de confiança pontuais de 95% da resposta média, sob as hipóteses adotadas. |
+| Fator de abrangência ($k$) | $2{,}262$ | Multiplica a incerteza-padrão para obter a incerteza expandida apresentada. |
+| Graus de liberdade | $9$ | Resultam das 11 observações menos os 2 coeficientes ajustados. |
 
-**Atenção à diferença entre incerteza-padrão e expandida:** o fator de abrangência calculado é $k\approx2{,}262$ (9 graus de liberdade). Por isso, a incerteza expandida é maior do que a incerteza-padrão. O valor de $0{,}7062\ \mathrm{°C}$, por sua vez, é o *desvio-padrão residual*, cujo cálculo utiliza $n-p$ no denominador; ele não deve ser confundido com o RMSE convencional, calculado com denominador $n$.
+: Resultados da regressão linear dos dados do termopar. {#tbl-resultados-regressao}
+
+Na equação ajustada, $T$ representa a **temperatura em °C** e $V$ a **tensão em mV**. Os intervalos de incerteza apresentados referem-se aos pontos da calibração e à **resposta média estimada**, não a uma medição individual nem à incerteza metrológica completa do termopar.
+
+**Atenção à diferença entre incerteza-padrão e expandida:** a incerteza expandida é obtida multiplicando a incerteza-padrão pelo fator $k\approx2{,}262$. Já o valor $s=0{,}7062\ \mathrm{°C}$ é o *desvio-padrão residual*, calculado com $n-p$ no denominador; ele não deve ser confundido com o RMSE convencional, calculado com denominador $n$.
 
 A regressão é apresentada na @fig-ajuste.
 
