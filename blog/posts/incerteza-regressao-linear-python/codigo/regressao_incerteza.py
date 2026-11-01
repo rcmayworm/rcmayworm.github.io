@@ -1,4 +1,4 @@
-"""Reproduz a regressão e as figuras do artigo (dados originais do LinkedIn, 2025).
+"""Reproduz a regressão e as figuras do artigo (dados de calibração do termopar).
 
 OLS com intercepto: tensões tratadas como conhecidas, erros em temperatura
 independentes, de média zero, variância constante e aproximadamente normais.
@@ -16,7 +16,7 @@ TENSAO_MV = np.array([0.20, 1.10, 2.00, 2.90, 4.10, 5.20,
 TEMPERATURA_C = np.arange(0.0, 51.0, 5.0)
 
 
-def regressao_com_incerteza(x, y, pontos=None, confianca=0.95):
+def incerteza_regressao_linear(x, y, pontos=None, confianca=0.95):
     """Estima OLS e incerteza da resposta média para valores fixos de x."""
     x = np.asarray(x, dtype=float)
     y = np.asarray(y, dtype=float)
@@ -79,23 +79,23 @@ def salvar_figura(pasta, nome):
 
 def main():
     x, y = TENSAO_MV, TEMPERATURA_C
-    r = regressao_com_incerteza(x, y)
+    r = incerteza_regressao_linear(x, y)
     xp = np.linspace(x.min(), x.max(), 401)
-    curva = regressao_com_incerteza(x, y, pontos=xp)
+    curva = incerteza_regressao_linear(x, y, pontos=xp)
     pasta = Path(__file__).resolve().parent.parent / "figuras"
     pasta.mkdir(parents=True, exist_ok=True)
 
     plt.figure(figsize=(8, 4.6))
-    plt.scatter(x, y, label="Dados originais", zorder=3)
-    plt.plot(xp, curva["y_media"], label="Reta de mínimos quadrados")
+    plt.scatter(x, y, label="Dados da calibração", zorder=3)
+    plt.plot(xp, curva["y_media"], label="Regressão linear")
     plt.fill_between(xp, curva["y_media"] - curva["U_media"],
                      curva["y_media"] + curva["U_media"], alpha=.18,
-                     label="IC pontual 95% da média")
+                     label="IC 95% da média (pontual)")
     plt.xlabel("Tensão (mV)")
     plt.ylabel("Temperatura (°C)")
     plt.title("Regressão linear: calibração de termopar")
     plt.grid(alpha=.2)
-    plt.legend()
+    plt.legend(loc="upper left", frameon=True)
     salvar_figura(pasta, "01_regressao_e_incerteza")
 
     plt.figure(figsize=(8, 4.2))
@@ -114,7 +114,7 @@ def main():
     plt.ylabel("Incerteza (°C)")
     plt.title("Incerteza da resposta média")
     plt.grid(alpha=.2)
-    plt.legend()
+    plt.legend(loc="upper center", frameon=True)
     salvar_figura(pasta, "03_incerteza_por_tensao")
 
     b0, b1 = r["coeficientes"]
