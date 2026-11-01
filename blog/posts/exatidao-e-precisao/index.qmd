@@ -16,7 +16,7 @@ execute:
   eval: false
 ---
 
-![Dois alvos ilustram o contraste entre um conjunto de medições agrupadas com viés e outro conjunto agrupado próximo da referência.](images/capa.webp){width="100%"}
+<img src="images/capa.webp" alt="Dois alvos ilustram o contraste entre medições agrupadas com viés e medições agrupadas próximas à referência." style="width: 100%; height: auto;">
 
 Ao medir qualquer grandeza, seja a temperatura, a pressão ou as dimensões de uma peça mecânica, dois conceitos fundamentais surgem: **exatidão** e **precisão**. Apesar de serem frequentemente confundidos, eles têm significados diferentes e influenciam diretamente a confiabilidade dos resultados.
 
