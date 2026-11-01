@@ -82,10 +82,19 @@ else:
         try:
             article_frontmatter = yaml.safe_load(article_text.split('---', 2)[1])
             assert article_frontmatter['author'] == 'Ruan Mayworm'
-            assert article_frontmatter['image'] == 'images/capa-historia.svg'
+            assert article_frontmatter['image'] == 'images/capa-historia.webp'
         except Exception as ex:
             errors.append(f'Metadados do artigo histórico inválidos: {ex}')
-    figures = ['capa-historia.svg', 'covado-real.svg', 'quebra-quilos.svg', 'padroes-si.svg']
+    cover = article_dir / 'images' / 'capa-historia.webp'
+    if not cover.is_file():
+        errors.append('Nova capa do artigo histórico ausente')
+    elif cover.read_bytes()[:4] != b'RIFF' or cover.read_bytes()[8:12] != b'WEBP':
+        errors.append('Capa histórica deve ser um arquivo WebP válido')
+    if 'src="images/capa-historia.webp"' not in article_text:
+        errors.append('Imagem de abertura do artigo histórico não referenciada')
+    if 'fig-cap="Evolução dos padrões de medição' in article_text:
+        errors.append('Imagem de abertura não deve ter legenda visível')
+    figures = ['covado-real.svg', 'quebra-quilos.svg', 'padroes-si.svg']
     for figure in figures:
         asset = article_dir / 'images' / figure
         if not asset.is_file():
