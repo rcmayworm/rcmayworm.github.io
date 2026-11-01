@@ -2,7 +2,7 @@
 title: "Análise Crítica de Certificados de Calibração: um guia prático"
 author: "Ruan Mayworm"
 date: 2025-10-14
-date-modified: 2026-10-31
+date-modified: 2026-11-01
 description: "Guia para verificar certificados, avaliar erros, incertezas e critérios de aceitação antes de aprovar um instrumento."
 categories:
   - Metrologia
@@ -16,9 +16,7 @@ execute:
   eval: false
 ---
 
-> **Sobre esta edição:** adaptação para leitura no site acadêmico de um artigo autoral publicado originalmente no [LinkedIn](https://www.linkedin.com/pulse/an%C3%A1lise-cr%C3%ADtica-de-certificados-calibra%C3%A7%C3%A3o-um-guia-pr%C3%A1tico-mayworm-vlvyf/) em 2025-10-14. A estrutura temática e os exemplos principais foram preservados, com redação editada para a web e ilustrações técnicas novas. As imagens originais do LinkedIn não foram reutilizadas por não terem sido recuperadas em qualidade verificável. As notas técnicas adicionais são identificadas como esclarecimentos desta edição.
-
-![Ilustração da análise crítica de um certificado de calibração, com lupa, informações de medição e símbolos de verificação.](images/capa.avif){fig-cap="Análise crítica de certificados de calibração: conferência de resultados, incerteza de medição e critérios de aceitação. Ilustração conceitual."}
+![Ilustração de um certificado de calibração examinado com lupa, com indicadores de medição, verificação e alerta.](images/capa.avif)
 
 O certificado de calibração não deve ser tratado apenas como evidência documental de que um equipamento passou por um laboratório. Os resultados registrados nele precisam ser confrontados com os requisitos da aplicação. Uma medição utilizada para aprovar um produto, por exemplo, requer uma decisão fundamentada sobre erro, incerteza e tolerância.
 
