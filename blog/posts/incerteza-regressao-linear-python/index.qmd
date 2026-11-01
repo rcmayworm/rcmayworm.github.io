@@ -17,6 +17,8 @@ execute:
   eval: false
 ---
 
+<img src="images/capa.webp" alt="Nuvem de pontos experimentais com reta de regressão linear, banda de incerteza e indicação de resíduos." style="width: 100%; height: auto;" loading="eager" decoding="async">
+
 A análise de regressão é uma ferramenta fundamental para modelar relações entre variáveis, sendo amplamente utilizada em engenharia, ciências e finanças. No entanto, além de simplesmente ajustar um modelo, é essencial quantificar a incerteza das previsões, garantindo maior confiabilidade nas estimativas.
 
 Este artigo explica como calcular a incerteza em regressões lineares, abordando conceitos teóricos essenciais e apresentando um exemplo prático utilizando **Python**.
