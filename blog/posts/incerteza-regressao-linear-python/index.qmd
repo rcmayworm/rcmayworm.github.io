@@ -2,107 +2,277 @@
 title: "Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python"
 author: "Ruan Mayworm"
 date: 2025-03-26
-date-modified: 2026-10-31
-description: "Mínimos quadrados, matriz de covariância e avaliação de incerteza em regressão linear para calibração."
+date-modified: 2026-11-01
+description: "Mínimos quadrados, covariância dos coeficientes e avaliação da incerteza de uma curva de calibração com os dados originais de termopar e código Python reproduzível."
 categories:
   - Estatística
   - Python
   - Incerteza de Medição
+  - Metrologia
 image: images/capa.svg
-image-alt: "Ilustração esquemática original para o artigo Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python"
+image-alt: "Ilustração esquemática de regressão linear e intervalos de incerteza"
 draft: false
 toc: true
 execute:
   eval: false
 ---
 
-> **Sobre esta edição:** adaptação para leitura no site acadêmico de um artigo autoral publicado originalmente no [LinkedIn](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/) em 2025-03-26. A estrutura temática e os exemplos principais foram preservados, com redação editada para a web e ilustrações técnicas novas. As imagens originais do LinkedIn não foram reutilizadas por não terem sido recuperadas em qualidade verificável. As notas técnicas adicionais são identificadas como esclarecimentos desta edição.
+> **Sobre esta edição.** Este texto preserva a proposta didática e os 11 pares de dados do [artigo que publiquei no LinkedIn em 26 de março de 2025](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/). As equações foram transcritas para LaTeX, e o código e os gráficos foram refeitos a partir da tabela original. Esclarecimentos e correções técnicas desta edição estão destacados ao longo do texto.
 
-![Gráfico de regressão linear com pontos sintéticos, reta ajustada e duas faixas de incerteza.](images/capa.svg){#fig-regressao fig-cap="Dados sintéticos: regressão linear com faixa de confiança da resposta média e faixa de previsão individual. Ilustração criada para esta edição, não reconstituição do experimento original."}
+A análise de regressão é uma ferramenta fundamental para modelar relações entre variáveis, com aplicações em engenharia, ciência e calibração de instrumentos. Entretanto, obter uma equação ajustada é apenas parte da análise: também precisamos avaliar a incerteza dos coeficientes e dos valores calculados com o modelo.
 
-A regressão linear é frequentemente utilizada em curvas de calibração, relacionando a indicação de um instrumento com valores de referência. A equação ajustada descreve a relação estimada; para utilizá-la metrologicamente, é necessário também avaliar **a incerteza dos coeficientes** e **a incerteza dos valores calculados**.
+Neste artigo, apresento o método dos mínimos quadrados, a matriz de covariância dos parâmetros e a propagação de incertezas em regressões lineares. Ao final, utilizo um exemplo de calibração de termopar e Python para ilustrar os cálculos e os resultados.
 
-## Mínimos quadrados ordinários
+## Método dos mínimos quadrados
 
-Para \(n\) pares de dados \((x_i,y_i)\), considere o modelo
+O método dos mínimos quadrados determina os parâmetros de um modelo minimizando a soma dos quadrados das diferenças entre os resultados observados e aqueles fornecidos pelo modelo, chamadas *resíduos*.
 
-\[
-y_i = \beta_0 + \beta_1 x_i + \varepsilon_i,\]
+Para `n` pares `(x_i,y_i)`, um modelo polinomial de grau `m` pode ser escrito como:
 
-em que \(\beta_0\) é o intercepto, \(\beta_1\) a inclinação e \(\varepsilon_i\) o erro aleatório. Com a matriz de projeto \(X=[\mathbf{1}\ \mathbf{x}]\), a estimativa de mínimos quadrados é
+$$
+y_i=\beta_0+\sum_{j=1}^{m}\beta_j x_i^j+\varepsilon_i,
+\qquad i=1,\ldots,n,
+$$
 
-\[
-\hat{\boldsymbol\beta}=(X^\mathsf{T}X)^{-1}X^\mathsf{T}\mathbf{y}.
-\]
+em que `\beta_j` são os parâmetros e `\varepsilon_i` representa o erro associado à observação. Na forma matricial:
 
-A expressão pressupõe posto completo. Na implementação numérica, é preferível resolver o problema via `numpy.linalg.lstsq`, em vez de inverter explicitamente a matriz normal.
-
-## Variância residual e covariância dos parâmetros
-
-Assumindo erros independentes, homoscedásticos, com média zero e variância comum, a variância residual estimada é
-
-\[
-s^2=\frac{\sum_{i=1}^{n}(y_i-\hat y_i)^2}{n-2},
+$$
+\mathbf{y}=\mathbf{X}\boldsymbol{\beta}+\boldsymbol{\varepsilon},
 \qquad
-C_{\hat\beta}=s^2(X^\mathsf{T}X)^{-1}.
-\]
+\mathbf{X}=
+\begin{bmatrix}
+1&x_1&x_1^2&\cdots&x_1^m\\
+1&x_2&x_2^2&\cdots&x_2^m\\
+\vdots&\vdots&\vdots&&\vdots\\
+1&x_n&x_n^2&\cdots&x_n^m
+\end{bmatrix}.
+$$
 
-As raízes quadradas dos elementos diagonais de \(C_{\hat\beta}\) são os erros-padrão do intercepto e da inclinação. O termo fora da diagonal representa a **covariância** entre eles e deve ser mantido na propagação.
+No caso da regressão linear simples, com intercepto e inclinação:
 
-Para o valor médio estimado \(\hat y(x_0)=\hat\beta_0+\hat\beta_1x_0\), a incerteza padrão associada aos coeficientes é
+$$
+y_i=\beta_0+\beta_1x_i+\varepsilon_i.
+$$
 
-\[
-u\!\left[\hat y(x_0)\right]=\sqrt{\begin{bmatrix}1&x_0\end{bmatrix}
-C_{\hat\beta}
-\begin{bmatrix}1\\x_0\end{bmatrix}}.
-\]
+Sob as hipóteses usuais dos mínimos quadrados ordinários — valores de `x` tratados como conhecidos, erros de média zero, independentes e com variância comum — a solução algébrica é:
 
-A previsão de **uma nova observação individual** requer contabilizar também a dispersão residual, além da incerteza da média ajustada. A análise metrológica de uma curva real pode exigir ainda incertezas dos padrões, dos valores de \(x\), correlações e termos do tipo B — não contemplados automaticamente pelo modelo simples de mínimos quadrados ordinários.
+$$
+\hat{\boldsymbol{\beta}}=
+(\mathbf{X}^{\mathsf{T}}\mathbf{X})^{-1}
+\mathbf{X}^{\mathsf{T}}\mathbf{y},
+$$
 
-## Exemplo computacional reproduzível (dados sintéticos)
+desde que a matriz `\mathbf{X}` tenha posto completo. Essa expressão fundamenta o método, mas não é recomendável inverter diretamente a matriz normal na implementação numérica. No exemplo, empregaremos o algoritmo `numpy.linalg.lstsq`.
 
-O artigo original apresenta um caso de calibração de termopar e reporta os indicadores \(R^2=0{,}9984\) e RMSE de aproximadamente \(0{,}7062\,{}^\circ\mathrm C\). A tabela de dados experimentais e os gráficos originais não foram recuperados integralmente; por isso, o exemplo abaixo utiliza **dados sintéticos independentes**, não reproduz nem valida aqueles resultados.
+### Matriz de covariância dos coeficientes
 
-```{.python}
+Os coeficientes estimados possuem incertezas e, em geral, são correlacionados. A matriz de covariância estimada é dada por:
+
+$$
+\mathbf{C}_{\hat{\boldsymbol{\beta}}}
+=s^2(\mathbf{X}^{\mathsf{T}}\mathbf{X})^{-1},
+$$
+
+em que `s^2` é a variância residual estimada:
+
+$$
+s^2=\frac{\sum_{i=1}^{n}(y_i-\hat{y}_i)^2}{n-p}.
+$$
+
+Aqui, `n` é o número de observações e `p` o número de parâmetros ajustados (`p=2` para a reta). No caso linear simples:
+
+$$
+\mathbf{C}_{\hat{\boldsymbol{\beta}}}
+=\begin{bmatrix}
+s_{00}&s_{01}\\
+s_{01}&s_{11}
+\end{bmatrix}.
+$$
+
+Os elementos da diagonal principal são as variâncias dos coeficientes, cujas raízes quadradas fornecem as respectivas incertezas-padrão. O elemento `s_{01}` representa a covariância entre intercepto e inclinação.
+
+**Esclarecimento técnico:** uma covariância diferente de zero não indica, por si só, multicolinearidade. A correlação entre intercepto e inclinação é esperada quando a variável independente não está centrada em sua média.
+
+## Como estimar a incerteza da regressão linear?
+
+O [JCGM 100:2008 (GUM)](https://www.bipm.org/en/committees/jc/jcgm/publications) estabelece uma abordagem geral para propagação de incertezas, incluindo os termos de covariância. Para uma grandeza de saída `f(x_1,\ldots,x_q)`, a forma linearizada é:
+
+$$
+u_c^2(f)=
+\sum_{i=1}^{q}
+\left(\frac{\partial f}{\partial x_i}\right)^2u^2(x_i)
++
+2\sum_{i=1}^{q-1}\sum_{j=i+1}^{q}
+\frac{\partial f}{\partial x_i}
+\frac{\partial f}{\partial x_j}
+u(x_i,x_j).
+$$
+
+Para a **resposta média ajustada** em um valor fixo `x_0`,
+
+$$
+\hat{y}(x_0)=\hat{\beta}_0+\hat{\beta}_1x_0.
+$$
+
+As derivadas parciais são:
+
+$$
+\frac{\partial\hat{y}}{\partial\hat{\beta}_0}=1,
+\qquad
+\frac{\partial\hat{y}}{\partial\hat{\beta}_1}=x_0.
+$$
+
+Portanto, a incerteza-padrão associada à estimação dos coeficientes é:
+
+$$
+\boxed{
+u_{\mathrm{m}}^2(x_0)=s_{00}+x_0^2s_{11}+2x_0s_{01}
+}.
+$$
+
+O termo de covariância deve ser mantido. Caso existam contribuições adicionais relevantes, como a incerteza do padrão de referência, elas precisam ser consideradas de acordo com o modelo de medição, incluindo coeficientes de sensibilidade e eventuais correlações.
+
+Para um **intervalo de confiança pontual de 95% da resposta média**, assumindo erros normalmente distribuídos e as demais hipóteses do modelo, a semi-amplitude é:
+
+$$
+U_{\mathrm{m}}(x_0)
+=t_{0{,}975;\,n-p}\,u_{\mathrm{m}}(x_0).
+$$
+
+No exemplo a seguir, `n=11` e `p=2`; logo, `\nu=9` graus de liberdade e `k\approx 2{,}2622`.
+
+É importante diferenciar essa incerteza da resposta média da incerteza associada à **predição de uma nova observação individual**. Nesta última, a variância residual também é incorporada:
+
+$$
+u_{\mathrm{pred}}(x_0)
+=\sqrt{u_{\mathrm{m}}^2(x_0)+s^2}.
+$$
+
+Em qualquer caso, os intervalos aqui descritos são *pontuais*, não bandas simultâneas para toda a curva. A inferência também depende das hipóteses estatísticas adotadas.
+
+## Exemplo prático: calibração de termopar
+
+Considere um termopar comparado com um termômetro de referência em diferentes temperaturas. A tabela reproduz os **11 pares de tensão e temperatura do artigo original**. Não há, na publicação de origem, detalhes suficientes para reconstituir todas as contribuições de incerteza e o procedimento experimental completo; assim, o objetivo deste exemplo é a análise da regressão e de sua incerteza.
+
+| Tensão (mV) | Temperatura (°C) |
+|---:|---:|
+| 0,20 | 0,00 |
+| 1,10 | 5,00 |
+| 2,00 | 10,00 |
+| 2,90 | 15,00 |
+| 4,10 | 20,00 |
+| 5,20 | 25,00 |
+| 6,10 | 30,00 |
+| 6,90 | 35,00 |
+| 8,20 | 40,00 |
+| 8,80 | 45,00 |
+| 10,10 | 50,00 |
+
+: Dados de tensão e temperatura apresentados no artigo de 2025. {#tbl-calibracao}
+
+Adotamos o modelo `T=\beta_0+\beta_1V+\varepsilon`, com `T` em graus Celsius e `V` em milivolts. Portanto, a inclinação é expressa em °C/mV.
+
+### Implementação em Python
+
+Para reproduzir o ajuste, podemos usar NumPy e SciPy. O [script Python completo](codigo/regressao_incerteza.py) também calcula os indicadores do ajuste e gera os três gráficos apresentados adiante.
+
+~~~python
 import numpy as np
 from scipy.stats import t
 
-# Dados sintéticos de tensão (mV) e temperatura (°C)
-x = np.array([0., 1., 2., 3., 4., 5., 6., 7., 8.])
-y = np.array([0.2, 4.8, 10.5, 14.7, 20.3, 25.1, 29.6, 35.4, 40.2])
+V = np.array([0.20, 1.10, 2.00, 2.90, 4.10, 5.20,
+              6.10, 6.90, 8.20, 8.80, 10.10])
+T = np.arange(0., 51., 5.)
 
-X = np.column_stack((np.ones_like(x), x))
-beta, *_ = np.linalg.lstsq(X, y, rcond=None)
-residuos = y - X @ beta
+X = np.column_stack((np.ones(V.size), V))
+beta, _, posto, _ = np.linalg.lstsq(X, T, rcond=None)
+assert posto == 2
+
+residuos = T - X @ beta
 n, p = X.shape
-s2 = np.sum(residuos**2) / (n - p)
-C_beta = s2 * np.linalg.inv(X.T @ X)
+gl = n - p
+s2 = np.sum(residuos**2) / gl
 
-x0 = np.array([0., 2., 4., 6., 8.])
-H = np.column_stack((np.ones_like(x0), x0))
-y0 = H @ beta
-u_media = np.sqrt(np.einsum('ij,jk,ik->i', H, C_beta, H))
-u_previsao = np.sqrt(u_media**2 + s2)
-k95 = t.ppf(0.975, df=n-p)
+# Covariância dos coeficientes calculada via fatoração QR.
+_, R = np.linalg.qr(X, mode="reduced")
+Rinv = np.linalg.solve(R, np.eye(p))
+C_beta = s2 * (Rinv @ Rinv.T)
 
-print('Intercepto e inclinação:', beta)
-print('Incerteza expandida da resposta média:', k95 * u_media)
-print('Semi-amplitude do intervalo de previsão:', k95 * u_previsao)
-```
+# Incerteza da resposta média nos pontos de calibração.
+u_media = np.sqrt(
+    C_beta[0, 0] + V**2 * C_beta[1, 1]
+    + 2 * V * C_beta[0, 1]
+)
+k = t.ppf(0.975, gl)
+U_media = k * u_media
 
-**Dependências:** Python 3, NumPy e SciPy. As fórmulas de abrangência com Student consideram as hipóteses estatísticas indicadas e não incluem automaticamente outras contribuições metrológicas.
+r2 = 1 - np.sum(residuos**2) / np.sum((T - T.mean())**2)
+s = np.sqrt(s2)
+rmse = np.sqrt(np.mean(residuos**2))
 
-## Avaliação do ajuste
+print("Coeficientes:", beta)
+print("R²:", r2)
+print("Desvio-padrão residual:", s)
+print("RMSE:", rmse)
+print("Fator k:", k)
+print("Incerteza expandida:", U_media.min(), U_media.max())
+~~~
 
-Além do coeficiente \(R^2\), examine os **resíduos** para verificar curvatura, heteroscedasticidade e valores influentes. Uma correlação aparente elevada não é suficiente para comprovar adequação do modelo. O erro-padrão residual \(s\) quantifica dispersão dos resíduos; não deve ser confundido com erro absoluto médio (MAE).
+A rotina utiliza `numpy.linalg.lstsq` para estimar os coeficientes e uma fatoração QR para calcular a matriz de covariância sem inverter diretamente `X^\mathsf{T}X`.
 
-A faixa da resposta média tende a ser mais estreita em torno da média de \(x\), aumentando nas extremidades do intervalo. Isso reflete a geometria do ajuste, **não significa que os resíduos individuais aumentem necessariamente nas extremidades**.
+### Resultados
+
+| Grandeza | Resultado |
+|---|---:|
+| Equação ajustada | `T=(5{,}0423\ \mathrm{°C/mV})V-0{,}4863\ \mathrm{°C}` |
+| Coeficiente de determinação, `R^2` | 0,9984 |
+| Desvio-padrão residual, `s` | 0,7062 °C |
+| RMSE (divisor `n`) | 0,6388 °C |
+| Graus de liberdade | 9 |
+| Fator de abrangência de 95% (`t` de Student) | 2,2622 |
+| Incerteza-padrão da média, `u_{\mathrm m}` | 0,2129 a 0,4036 °C |
+| Incerteza expandida pontual, `U_{\mathrm m}` | **0,4817 a 0,9131 °C** |
+
+**Correções técnicas desta edição.** No artigo original, o intervalo de aproximadamente 0,225 a 0,400 °C foi denominado *incerteza expandida*, mas representa a ordem de grandeza da incerteza-padrão da resposta média. Após aplicação do fator `k=2{,}2622`, obtém-se o intervalo de **0,4817 a 0,9131 °C** para os pontos do conjunto analisado. Além disso, o valor de 0,7062 °C é o **desvio-padrão residual** (divisor `n-p`). O RMSE convencional, calculado com divisor `n`, é 0,6388 °C.
+
+### Regressão e intervalo de confiança
+
+![Pontos originais de calibração do termopar, reta ajustada e intervalo pontual de confiança de 95% da resposta média.](figuras/01_regressao_e_incerteza.svg){#fig-ajuste fig-alt="Gráfico de temperatura em função da tensão, com onze observações, reta de regressão e faixa de confiança da resposta média."}
+
+A @fig-ajuste apresenta os valores da @tbl-calibracao, a reta de mínimos quadrados e uma faixa de confiança **pontual** de 95% para a resposta média. O `R^2` elevado indica que o modelo explica grande parte da variação da temperatura neste conjunto, mas não garante, isoladamente, que as hipóteses estatísticas sejam atendidas.
+
+## Como avaliar a qualidade do ajuste?
+
+O coeficiente de determinação `R^2` expressa a fração da soma de quadrados total explicada pelo modelo com intercepto. Valores próximos de um indicam bom ajuste nesse sentido, mas não excluem tendências sistemáticas ou heterocedasticidade.
+
+O desvio-padrão residual `s` caracteriza a dispersão residual após considerar os graus de liberdade empregados no ajuste. O RMSE é a raiz da média dos quadrados dos resíduos. Nenhum dos dois representa o **erro absoluto médio (MAE)**.
+
+![Resíduos da regressão linear em função da tensão.](figuras/02_residuos.svg){#fig-residuos fig-alt="Gráfico de dispersão dos resíduos em função da tensão com linha horizontal no valor zero."}
+
+Na @fig-residuos, os resíduos apresentam valores positivos e negativos sem uma curvatura claramente definida. Contudo, com apenas 11 observações, a inspeção visual não permite comprovar normalidade, independência ou homocedasticidade. A aplicação metrológica também deve avaliar as incertezas do sistema de referência e da própria tensão.
+
+### Incerteza ao longo do intervalo de tensão
+
+![Incerteza-padrão e incerteza expandida pontual da resposta média ajustada, em função da tensão.](figuras/03_incerteza_por_tensao.svg){#fig-incerteza fig-alt="Duas curvas em U comparando a incerteza-padrão da média e a incerteza expandida da média em função da tensão."}
+
+Como mostra a @fig-incerteza, a incerteza da **resposta média estimada** é menor próxima da média das tensões de calibração e aumenta nas extremidades do intervalo. Essa propriedade decorre da geometria dos mínimos quadrados e da distribuição dos valores de `V`, **não** de um aumento obrigatório da dispersão dos resíduos nas extremidades.
+
+Na região central, a incerteza expandida pontual fica próxima de 0,482 °C; na extremidade superior dos dados, atinge cerca de 0,913 °C. Esses valores representam a incerteza associada à estimação da **média ajustada**, e não a incerteza metrológica completa de uma indicação individual do sistema.
 
 ## Conclusão
 
-A regressão linear oferece uma ferramenta útil para calibração, desde que a interpretação inclua os coeficientes, suas covariâncias, o comportamento dos resíduos e as fontes adicionais de incerteza relevantes para a aplicação.
+Avaliar a incerteza em regressões lineares complementa os indicadores tradicionais de qualidade do ajuste e permite interpretar com maior rigor os resultados de uma curva de calibração. A matriz de covariância dos coeficientes é essencial, pois incorpora tanto as variâncias do intercepto e da inclinação quanto sua correlação.
 
-## Referências indicadas no artigo original
+O exemplo do termopar mostra por que `R^2` elevado não é suficiente para caracterizar a confiabilidade de um resultado. É necessário distinguir a incerteza da **resposta média**, a incerteza de **predição individual** e a incerteza de medição completa, de acordo com o objetivo e as informações disponíveis sobre o sistema experimental.
 
-- JCGM 100:2008 — *Guide to the Expression of Uncertainty in Measurement*.
-- Artigo original no LinkedIn, com a aplicação em termopar e código de cálculo.
+A implementação em Python torna a análise reproduzível e permite examinar como as incertezas variam ao longo da faixa estudada. Para aplicações reais, devem ser verificadas as hipóteses do ajuste e consideradas as demais fontes relevantes de incerteza.
+
+## Referências e leituras complementares
+
+- **JCGM.** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement*. JCGM 100:2008. [Publicações oficiais JCGM/BIPM](https://www.bipm.org/en/committees/jc/jcgm/publications).
+- **NIST/SEMATECH.** *e-Handbook of Statistical Methods*. [Ajuste por mínimos quadrados](https://www.itl.nist.gov/div898/handbook/pmd/section4/pmd431.htm).
+- **Miller, J. N.; Miller, J. C.** *Statistics and Chemometrics for Analytical Chemistry*. Pearson.
+- **NumPy.** [`numpy.linalg.lstsq` — documentação oficial](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html).
+- **SciPy.** [Distribuição `t` de Student](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+
+**Publicação original:** [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python — LinkedIn (26/03/2025)](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/).
