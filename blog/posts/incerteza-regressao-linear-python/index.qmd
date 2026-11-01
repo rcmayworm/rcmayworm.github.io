@@ -9,8 +9,8 @@ categories:
   - Python
   - Incerteza de Medição
   - Metrologia
-image: images/capa.svg
-image-alt: "Ilustração esquemática de uma regressão linear"
+image: images/capa.webp
+image-alt: "Nuvem de pontos, reta de regressão, banda de incerteza e resíduos destacados"
 draft: false
 toc: true
 execute:
