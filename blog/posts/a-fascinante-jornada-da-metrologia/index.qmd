@@ -2,14 +2,14 @@
 title: "A fascinante jornada da Metrologia: da antiguidade aos dias atuais"
 author: "Ruan Mayworm"
 date: 2025-02-13
-date-modified: 2026-10-30
+date-modified: 2026-11-01
 description: "Uma viagem pela história da ciência da medição, das medidas antigas ao Sistema Internacional de Unidades e à metrologia contemporânea."
 categories:
   - Metrologia
   - História da Ciência
   - Divulgação Científica
-image: images/capa-historia.svg
-image-alt: "Linha do tempo da história da metrologia ilustrando a Antiguidade, a criação do metro, a Convenção do Metro e o SI moderno"
+image: images/capa-historia.webp
+image-alt: "Da Antiguidade à metrologia moderna: régua, padrões de massa, balança, micrômetro e instrumento digital"
 draft: false
 toc: true
 execute:
@@ -18,7 +18,7 @@ execute:
 
 > **Sobre esta edição:** artigo autoral originalmente publicado no [LinkedIn (13/02/2025)](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/) e reproduzido pela [ASMETRO-SI (14/02/2025)](https://asmetro.org.br/portalsn/2025/02/14/a-fascinante-jornada-da-metrologia-da-antiguidade-aos-dias-atuais/). Esta versão foi adaptada para leitura na web, com atualização de alguns dados históricos e metrológicos e **ilustrações esquemáticas originais**, diferentes das imagens da publicação anterior.
 
-![Linha do tempo ilustrativa da evolução dos padrões de medição, da Antiguidade ao SI moderno.](images/capa-historia.svg){fig-alt="Ilustração vetorial original com marcos da história da medição" fig-cap="Evolução dos padrões de medição. Ilustração esquemática preparada para esta edição."}
+<img src="images/capa-historia.webp" alt="Evolução histórica da metrologia representada por padrões antigos de comprimento e massa, balança, micrômetro e padrão moderno de medição." style="width: 100%; height: auto;" loading="eager" decoding="async">
 
 Desde os primórdios da civilização, a medição tem sido uma ferramenta essencial para o desenvolvimento humano. A metrologia, que é a ciência da medição, percorreu uma longa e fascinante jornada repleta de descobertas, desafios e curiosidades. Sua evolução reflete a busca constante da humanidade por precisão, ordem e progresso.
 
@@ -87,4 +87,4 @@ A história da metrologia é um reflexo do progresso humano, desde as medições
 
 ---
 
-*Adaptação editorial de texto autoral previamente publicado; quatro figuras vetoriais originais foram preparadas para esta versão. Não foram reproduzidas imagens de terceiros sem licença verificada.*
+*Adaptação editorial de texto autoral previamente publicado; três figuras vetoriais e uma capa ilustrada original foram preparadas para esta versão. Não foram reproduzidas imagens de terceiros sem licença verificada.*
