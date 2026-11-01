@@ -8,8 +8,8 @@ categories:
   - Metrologia
   - Calibração
   - Gestão da Qualidade
-image: images/capa.svg
-image-alt: "Ilustração esquemática original para o artigo Análise Crítica de Certificados de Calibração: um guia prático"
+image: images/capa.avif
+image-alt: "Ilustração de certificado de calibração sob análise com lupa, indicadores de erro e incerteza e símbolos de avaliação técnica"
 draft: false
 toc: true
 execute:
@@ -18,7 +18,7 @@ execute:
 
 > **Sobre esta edição:** adaptação para leitura no site acadêmico de um artigo autoral publicado originalmente no [LinkedIn](https://www.linkedin.com/pulse/an%C3%A1lise-cr%C3%ADtica-de-certificados-calibra%C3%A7%C3%A3o-um-guia-pr%C3%A1tico-mayworm-vlvyf/) em 2025-10-14. A estrutura temática e os exemplos principais foram preservados, com redação editada para a web e ilustrações técnicas novas. As imagens originais do LinkedIn não foram reutilizadas por não terem sido recuperadas em qualidade verificável. As notas técnicas adicionais são identificadas como esclarecimentos desta edição.
 
-![Representação esquemática de um certificado e de uma régua de decisão metrológica, com erro e incerteza expandida.](images/capa.svg){fig-cap="Análise de certificado: resultado de calibração e critério de aceitação. Esquema didático original."}
+![Ilustração da análise crítica de um certificado de calibração, com lupa, informações de medição e símbolos de verificação.](images/capa.avif){fig-cap="Análise crítica de certificados de calibração: conferência de resultados, incerteza de medição e critérios de aceitação. Ilustração conceitual."}
 
 O certificado de calibração não deve ser tratado apenas como evidência documental de que um equipamento passou por um laboratório. Os resultados registrados nele precisam ser confrontados com os requisitos da aplicação. Uma medição utilizada para aprovar um produto, por exemplo, requer uma decisão fundamentada sobre erro, incerteza e tolerância.
 
