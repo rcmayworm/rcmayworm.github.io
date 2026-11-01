@@ -8,13 +8,15 @@ categories:
   - Metrologia
   - Estatística
   - Instrumentação
-image: images/capa.svg
-image-alt: "Quatro alvos ilustram diferentes combinações de exatidão e precisão nas medições"
+image: images/capa.webp
+image-alt: "Dois alvos ilustram medições com alta precisão: um agrupamento deslocado do centro e outro agrupamento próximo da referência"
 draft: false
 toc: true
 execute:
   eval: false
 ---
+
+![Dois alvos ilustram o contraste entre um conjunto de medições agrupadas com viés e outro conjunto agrupado próximo da referência.](images/capa.webp){width="100%"}
 
 Ao medir qualquer grandeza, seja a temperatura, a pressão ou as dimensões de uma peça mecânica, dois conceitos fundamentais surgem: **exatidão** e **precisão**. Apesar de serem frequentemente confundidos, eles têm significados diferentes e influenciam diretamente a confiabilidade dos resultados.
 
