@@ -2,14 +2,14 @@
 title: "Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição"
 author: "Ruan Mayworm"
 date: 2025-01-28
-date-modified: 2026-10-31
+date-modified: 2026-11-02
 description: "Fatores e métodos para estabelecer e revisar intervalos de calibração com base em desempenho, risco e histórico."
 categories:
   - Metrologia
   - Calibração
   - Gestão da Qualidade
-image: images/capa.svg
-image-alt: "Ilustração esquemática original para o artigo Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição"
+image: images/capa.webp
+image-alt: "Paquímetro digital, tendência de desempenho, limite de acompanhamento e intervalos de calibração no calendário"
 draft: false
 toc: true
 execute:
@@ -18,7 +18,7 @@ execute:
 
 > **Sobre esta edição:** adaptação para leitura no site acadêmico de um artigo autoral publicado originalmente no [LinkedIn](https://www.linkedin.com/pulse/como-determinar-os-intervalos-entre-calibra%C3%A7%C3%B5es-dos-de-ruan-mayworm-vx4me/) em 2025-01-28. A estrutura temática e os exemplos principais foram preservados, com redação editada para a web e ilustrações técnicas novas. As imagens originais do LinkedIn não foram reutilizadas por não terem sido recuperadas em qualidade verificável. As notas técnicas adicionais são identificadas como esclarecimentos desta edição.
 
-![Esquema de planejamento e revisão periódica dos intervalos de calibração de equipamentos.](images/capa.svg){fig-cap="Definição de intervalos por histórico, risco e monitoramento de desempenho. Ilustração original."}
+<img src="images/capa.webp" alt="Paquímetro digital ao lado de um gráfico de tendência, limite de acompanhamento e calendário de calibrações periódicas." style="width: 100%; height: auto;" loading="eager" decoding="async">
 
 Definir quando um equipamento deve voltar a ser calibrado envolve aspectos metrológicos, operacionais e econômicos. Um prazo fixo, aplicado indistintamente a todos os instrumentos, pode tanto aumentar custos quanto deixar passar alterações relevantes de desempenho.
 
