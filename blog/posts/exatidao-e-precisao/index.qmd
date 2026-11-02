@@ -2,21 +2,21 @@
 title: "Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?"
 author: "Ruan Mayworm"
 date: 2025-03-11
-date-modified: 2026-11-01
+date-modified: 2026-11-02
 description: "Entenda, com exemplos do dia a dia, a diferença entre exatidão e precisão, como avaliar o erro e a dispersão dos resultados e por que isso importa nas medições."
 categories:
   - Metrologia
   - Estatística
   - Instrumentação
-image: images/capa.webp
-image-alt: "Dois alvos ilustram medições com alta precisão: um agrupamento deslocado do centro e outro agrupamento próximo da referência"
+image: images/capa-2026.webp
+image-alt: "Quatro alvos representam combinações de exatidão e precisão, com paquímetro digital e padrões de massa"
 draft: false
 toc: true
 execute:
   eval: false
 ---
 
-<img src="images/capa.webp" alt="Dois alvos ilustram o contraste entre medições agrupadas com viés e medições agrupadas próximas à referência." style="width: 100%; height: auto;">
+<img src="images/capa-2026.webp" alt="Quatro alvos ilustram a proximidade das medições à referência e sua dispersão, acompanhados de um paquímetro digital e padrões de massa." style="width: 100%; height: auto;" loading="eager" decoding="async">
 
 Ao medir qualquer grandeza, seja a temperatura, a pressão ou as dimensões de uma peça mecânica, dois conceitos fundamentais surgem: **exatidão** e **precisão**. Apesar de serem frequentemente confundidos, eles têm significados diferentes e influenciam diretamente a confiabilidade dos resultados.
 
