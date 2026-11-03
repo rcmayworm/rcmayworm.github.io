@@ -142,7 +142,7 @@ As **letras em vermelho da @fig-certificado** funcionam como um roteiro de leitu
 | **O** | Fator de abrangência **(k)** | Verificar o fator utilizado para expressar a incerteza expandida; a incerteza indicada está na coluna **IM (g)** da tabela de resultados. |
 | **P** | Rastreabilidade | Identificar os padrões e instrumentos de referência e os dados dos respectivos certificados. |
 
-: Correspondência das marcações vermelhas da @fig-certificado com os campos do certificado fictício. {#tbl-marcacoes-certificado}
+: Correspondência das marcações vermelhas da @fig-certificado com os campos do certificado fictício. {#tbl-marcacoes-certificado tbl-colwidths="[12,33,55]"}
 
 Por exemplo, para examinar um resultado, comece pela marcação **K** e confira o erro de indicação e a unidade. Depois, observe a incerteza na coluna **IM (g)** e o fator de abrangência apontado pela marcação **O**. Compare essas informações com o erro máximo admissível da sua aplicação e aplique a regra de decisão apropriada. **O certificado não determina, sozinho, se a balança está conforme.**
 
