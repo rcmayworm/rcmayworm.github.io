@@ -16,7 +16,7 @@ execute:
   eval: false
 ---
 
-![Ilustração de um certificado de calibração examinado com lupa, com indicadores de medição, verificação e alerta.](images/capa.avif)
+![](images/capa.avif){fig-alt="Ilustração de um certificado de calibração sendo analisado com lupa, símbolos de medição, verificação e alerta."}
 
 Na engenharia e na qualidade, a confiabilidade das medições é fundamental. Um produto pode ser aprovado ou rejeitado, um processo pode ser liberado ou interrompido e até decisões financeiras podem depender de um simples resultado de medição.
 
@@ -122,17 +122,33 @@ A @fig-certificado apresenta um **certificado fictício de calibração de uma b
 
 [Abrir a imagem do certificado em tamanho original](images/certificado-ficticio-original.jpg).
 
-Observe que o certificado reúne várias informações discutidas anteriormente: identificação do laboratório e do cliente, descrição do instrumento, resultados da calibração, incertezas, referências de rastreabilidade, condições ambientais e responsáveis pelo documento. As **letras vermelhas** ajudam a localizar esses campos na figura.
+As **letras em vermelho da @fig-certificado** funcionam como um roteiro de leitura. Localize cada marcação na imagem e utilize a @tbl-marcacoes-certificado para identificar a informação correspondente e entender por que ela deve ser verificada.
 
-Para facilitar a leitura, podemos identificar alguns blocos importantes:
+| Marcação | Onde olhar no certificado | O que conferir? |
+|:---:|:---|:---|
+| **A** | Título e número do certificado | Identificar o documento e seu número, neste exemplo, **Certificado nº 51**. |
+| **B** | Nome do laboratório | Conferir quem realizou a calibração: **Laboratório Medida Certa**, fictício. |
+| **C** | Endereço e dados de contato do laboratório | Verificar a identificação e os dados do laboratório emissor. |
+| **D** | Rodapé — **página 1 de 1** | Conferir a identificação do final e se todas as páginas do certificado estão presentes. |
+| **E** | Informações do cliente | Verificar para quem o certificado foi emitido, neste caso, **AlfaTech Solutions S.A.** (fictícia). |
+| **F** | Observações — procedimento **PROC-001** | Identificar o procedimento de calibração utilizado. |
+| **G** | Informações do objeto calibrado | Conferir descrição, fabricante, modelo e número de série da balança, comparando-os com o equipamento real. |
+| **H** | Data da calibração — **29/09/2021** | Distinguir a data em que a calibração foi realizada da data de emissão do documento. |
+| **I** | Observação sobre a aplicação dos resultados | Confirmar que os resultados se referem somente ao objeto calibrado. |
+| **K** | Resultados da calibração | Examinar os valores indicados, os valores de referência e os erros de indicação, com suas unidades. |
+| **L** | Campo de aprovação | Verificar a identificação e a autorização do responsável pela emissão. |
+| **M** | Observação sobre a reprodução | Conferir a orientação para reprodução integral do certificado, preservando seu contexto. |
+| **N** | Dados ambientais | Identificar as condições registradas, como **23 °C** e **45% de umidade relativa**. |
+| **O** | Fator de abrangência **(k)** | Verificar o fator utilizado para expressar a incerteza expandida; a incerteza indicada está na coluna **IM (g)** da tabela de resultados. |
+| **P** | Rastreabilidade | Identificar os padrões e instrumentos de referência e os dados dos respectivos certificados. |
 
-- **Cabeçalho e identificação:** nome do laboratório, número do certificado, cliente, equipamento e datas.
-- **Rastreabilidade:** identificação dos padrões e equipamentos de referência utilizados.
-- **Resultados da calibração:** valores indicados, valores de referência, erros e informações sobre a incerteza.
-- **Condições e observações:** ambiente da calibração, procedimento e ressalvas aplicáveis.
-- **Aprovação:** identificação dos responsáveis pela emissão.
+: Correspondência das marcações vermelhas da @fig-certificado com os campos do certificado fictício. {#tbl-marcacoes-certificado}
 
-As marcações são **didáticas** e não representam uma numeração oficial de requisitos da ISO/IEC 17025. Os dados do certificado são fictícios e **não correspondem aos valores do exemplo numérico da balança apresentado na seção anterior**.
+Por exemplo, para examinar um resultado, comece pela marcação **K** e confira o erro de indicação e a unidade. Depois, observe a incerteza na coluna **IM (g)** e o fator de abrangência apontado pela marcação **O**. Compare essas informações com o erro máximo admissível da sua aplicação e aplique a regra de decisão apropriada. **O certificado não determina, sozinho, se a balança está conforme.**
+
+As marcações são **didáticas** e não correspondem à numeração oficial dos requisitos da ISO/IEC 17025. A identificação dos padrões na marcação **P**, por exemplo, ajuda na análise documental, mas não dispensa a avaliação das informações de rastreabilidade necessárias.
+
+Os dados do certificado são fictícios e **não correspondem aos valores do exemplo numérico da balança apresentado na seção anterior**.
 
 ### O certificado garante que o instrumento está adequado?
 
