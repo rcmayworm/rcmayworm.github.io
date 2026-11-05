@@ -345,9 +345,9 @@ Seja na calibração de sensores, na análise de dados experimentais ou no contr
 
 ## Referências e fontes
 
-- **NIST/SEMATECH.** *e-Handbook of Statistical Methods*. [Manual de métodos estatísticos](https://www.itl.nist.gov/div898/handbook/).
+- **NIST/SEMATECH.** *e-Handbook of Statistical Methods*. [DOI: 10.18434/M32189](https://doi.org/10.18434/M32189) · [Manual online](https://www.itl.nist.gov/div898/handbook/).
 
-- **Miller, J. N.; Miller, J. C.** *Statistics and Chemometrics for Analytical Chemistry*. Referência sobre aplicações em laboratórios e análise de dados (edição não especificada).
+- **Miller, J. N.; Miller, J. C.** *Statistics and Chemometrics for Analytical Chemistry*. 6ª edição. Pearson/Prentice Hall, 2010. ISBN 9780273730422. [Registro bibliográfico](https://iucat.iu.edu/iui/9093778).
 
 - **JCGM 100:2008(E).** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).* [DOI: 10.59161/JCGM100-2008E](https://doi.org/10.59161/JCGM100-2008E).
 
