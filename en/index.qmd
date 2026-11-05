@@ -20,10 +20,12 @@ listing:
   max-description-length: 155
 ---
 
-::: {.academic-hero}
-::: {.hero-grid}
-::: {}
+::: {.academic-hero .academic-hero--profile}
 <div class="hero-kicker">Metrology · Quality · Data Analysis</div>
+
+::: {.hero-photo}
+<img class="hero-portrait" src="../assets/images/ruan-mayworm-alta.jpeg" alt="Portrait of Ruan Mayworm in a laboratory setting" width="216" height="216" loading="eager" decoding="async">
+:::
 
 <h1 class="hero-title">Ruan Mayworm</h1>
 
@@ -34,11 +36,6 @@ listing:
 <div class="hero-tags"><span class="hero-tag">Metrology</span><span class="hero-tag">Quality</span><span class="hero-tag">Statistics</span><span class="hero-tag">Data analysis</span><span class="hero-tag">Machine Learning</span></div>
 
 <div class="cta-row" aria-label="Main links"><a class="hero-btn hero-btn-primary" href="ebooks.html">E-books</a><a class="hero-btn hero-btn-secondary" href="blog/">Blog</a><a class="hero-btn hero-btn-secondary" href="publications.html">My publications</a><a class="hero-btn hero-btn-secondary" href="about.html">About me</a></div>
-:::
-::: {.hero-photo}
-<img class="hero-portrait" src="../assets/images/ruan-mayworm-alta.jpeg" alt="Portrait of Ruan Mayworm in a laboratory setting" width="200" height="250" loading="eager" decoding="async">
-:::
-:::
 :::
 
 <div class="section-eyebrow">Digital library</div>
