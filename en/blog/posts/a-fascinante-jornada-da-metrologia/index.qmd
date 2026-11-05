@@ -48,7 +48,7 @@ In Brazil, adoption of the metric system was strongly associated with Emperor Do
 
 Resistance to the new measures formed part of the **Quebra-Quilos Revolt**, which took place chiefly in **1874 and 1875** in provinces of northeastern Brazil. The protests included the destruction of weights and measuring instruments and also expressed dissatisfaction with taxation, military recruitment and the actions of public authorities. The transition to uniform standards was not free of conflict. [Source: Brazil's National Archives](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
 
-![Timeline showing Brazil's imperial law of 1862, the Quebra-Quilos Revolt of 1874–1875 and the Metre Convention of 1875.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/quebra-quilos.svg){fig-cap="Historical milestones in Brazil's metric system and international metrological cooperation. Original infographic, not a contemporary poster."}
+![Timeline showing Brazil's imperial law of 1862, the Quebra-Quilos Revolt of 1874–1875 and the Metre Convention of 1875.](images/quebra-quilos.svg){fig-cap="Historical milestones in Brazil's metric system and international metrological cooperation. Original infographic, not a contemporary poster."}
 
 ## Metrology during the Industrial Revolution and the twentieth century
 
