@@ -1,4 +1,5 @@
 /* Página inicial: navegação, vitrine responsiva de postagens e perfis. */
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&display=swap");
 .academic-hero .cta-row { gap: .6rem; }
 .academic-hero .hero-btn { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; }
 .blog-carousel-nav { display: flex; justify-content: flex-end; gap: .5rem; margin: -.5rem 0 .75rem; min-height: 40px; }
@@ -143,4 +144,101 @@ body:has(.academic-hero) .quarto-listing-grid > *,
 body:has(.academic-hero) #quarto-document-content section.home-compact-heading > h2,
 body:has(.academic-hero) #quarto-document-content h2.home-compact-heading {
   margin-top: .65rem !important;
+}
+/* Experimento de identidade visual: somente a home em português.
+   A classe .academic-hero--pt não existe em en/index.qmd. */
+.academic-hero.academic-hero--pt {
+  background: #f8f7f3;
+  color: #263b48;
+  border: 1px solid #e3e8e8;
+  box-shadow: 0 10px 30px rgba(17, 44, 65, .045);
+  text-align: center;
+  padding: clamp(2rem, 4.5vw, 3.75rem) clamp(1.25rem, 4vw, 3rem);
+}
+.academic-hero--pt .hero-kicker {
+  color: #346579;
+  letter-spacing: .145em;
+  font-size: clamp(.69rem, 1.55vw, .82rem);
+}
+.academic-hero--pt .hero-photo {
+  justify-content: center;
+  margin: 1.5rem auto 1.2rem;
+}
+.academic-hero--pt .hero-portrait {
+  width: 184px;
+  height: 184px;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  box-shadow: 0 10px 26px rgba(17, 44, 65, .18);
+}
+.academic-hero--pt h1.hero-title {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(2.55rem, 5.5vw, 3.65rem);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  color: #112c41;
+  margin: .2rem auto .5rem;
+}
+.academic-hero--pt p.hero-subtitle {
+  color: #274558;
+  max-width: 72ch;
+  font-weight: 550;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+.academic-hero--pt p.hero-bio {
+  color: #4b606b;
+  max-width: 72ch;
+  margin: 1.25rem auto 0;
+  font-size: 1.01rem;
+  line-height: 1.75;
+}
+.academic-hero--pt .hero-tags {
+  justify-content: center;
+  margin: 1.45rem auto 1.6rem;
+}
+.academic-hero--pt .hero-tag {
+  color: #294c5f;
+  background: #edf3f3;
+  border: 1px solid #d5e3e5;
+  font-weight: 550;
+}
+.academic-hero--pt .cta-row {
+  justify-content: center;
+}
+.academic-hero--pt .hero-btn-primary {
+  background: #112c41;
+  color: #fff !important;
+}
+.academic-hero--pt .hero-btn-secondary {
+  background: #fff;
+  border: 1px solid #b9cbd0;
+  color: #173c53 !important;
+}
+.academic-hero--pt .hero-btn:hover {
+  filter: none;
+  transform: translateY(-1px);
+}
+/* Apenas os títulos da home PT recebem a fonte editorial. */
+body:has(.academic-hero--pt) #quarto-document-content h2,
+body:has(.academic-hero--pt) #quarto-document-content h3 {
+  font-family: "Source Serif 4", Georgia, serif;
+  font-weight: 650;
+  letter-spacing: -.025em;
+}
+@media (max-width: 700px) {
+  .academic-hero--pt .hero-photo { justify-content: center; margin-top: 1.25rem; }
+  .academic-hero--pt .hero-portrait { width: 150px; height: 150px; }
+  .academic-hero--pt h1.hero-title { font-size: clamp(2.25rem, 9vw, 2.8rem); }
+  .academic-hero--pt p.hero-bio { font-size: .97rem; }
+  .academic-hero--pt .hero-tags { gap: .4rem; }
+  .academic-hero--pt .hero-btn { flex: 1 1 calc(50% - .6rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .academic-hero--pt .hero-btn:hover { transform: none; }
 }
