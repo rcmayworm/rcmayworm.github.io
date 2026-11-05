@@ -12,6 +12,32 @@ Código-fonte do site pessoal em Quarto Website, com Blog e E-books.
 - `.github/workflows/pages.yml`: validação, renderização e publicação automática em GitHub Pages.
 - `scripts/validate_site.py`: verificações estáticas do código-fonte.
 
+## Idiomas (PT-BR / EN-GB)
+
+- O conteúdo original permanece na raiz: `/index.html`, `/about.html`, `/blog/` e `/blog/posts/<slug>/`.
+- A versão inglesa usa URLs paralelas: `/en/index.html`, `/en/about.html`, `/en/blog/` e `/en/blog/posts/<slug>/`.
+- `en/_metadata.yml` define `lang: en-GB` para as páginas em inglês.
+- `_quarto.yml` apresenta 🇧🇷 Português / 🇬🇧 English na barra superior. `language-switch.html` mapeia os links para a **mesma página** no idioma selecionado e localiza a navegação inglesa.
+- As imagens e os scripts de pesquisa são compartilhados sempre que possível. Posts ingleses referenciam os mesmos arquivos de figuras e o código Python original.
+- Cada artigo novo publicado em português requer uma versão em `en/blog/posts/<slug>/index.qmd` antes de ser considerado bilíngue. A automação **não traduz** o texto.
+- Títulos, resumos, legendas e texto acadêmico em inglês devem passar por revisão editorial humana; preservar equações, unidades, resultados, citações e links.
+- O livro Quarto em `livro-analise-certificados/` permanece **somente em português**. A página inglesa `en/ebooks.qmd` informa essa limitação e mantém os links originais.
+
+### Teste sem publicação
+
+A branch de testes usa `.github/workflows/validate-bilingual.yml` para executar:
+
+```sh
+python -m pip install PyYAML
+python scripts/validate_site.py
+python scripts/validate_bilingual.py
+quarto render
+python scripts/validate_rendered_carousel.py
+python scripts/validate_rendered_bilingual.py
+```
+
+Esse workflow **não faz deploy**. Apenas a branch `main` aciona o workflow de publicação atual. A versão anterior está preservada em `backup/site-antes-bilingue-2026-11-05`.
+
 ## Publicação
 
 1. Em **Settings → Pages → Build and deployment → Source**, selecionar **GitHub Actions**.

@@ -1,0 +1,24 @@
+---
+title: "Research"
+description: "Research areas in ultrasound metrology, instrumentation and measurement uncertainty."
+---
+
+## Ultrasound metrology and acoustic power
+
+Experimental research on ultrasonic power measurement using radiation force, including the design and investigation of a Kibble balance. This approach combines mechanical engineering, instrumentation, control and measurement data analysis.
+
+**Published results:** [*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) and [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946).
+
+## Ultrasonic non-destructive testing — ToFD
+
+Metrological studies of the *Time-of-Flight Diffraction* (ToFD) technique, including transducer configurations, probe spacing and the evaluation of uncertainty associated with measurement results.
+
+**Published results:** [*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298), [*Soldagem & Inspeção* (2019)](https://doi.org/10.1590/0104-9224/SI24.27) and [*Soldagem & Inspeção* (2016)](https://doi.org/10.1590/0104-9224/SI2104.02).
+
+## Hydrophone calibration and acoustic-field characterisation
+
+Research involving hydrophone characterisation, signal acquisition and ultrasonic field analysis. The academic profile associated with this project documents ongoing work on harmonic-generation-based hydrophone calibration. Unpublished experimental results will not be disclosed without authorisation.
+
+## Instrumentation and computational methods
+
+Development and application of measurement automation routines, signal processing and statistical evaluation of experimental results. Optimisation and machine learning are identified as areas of research and further development, rather than universally validated results.

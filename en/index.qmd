@@ -1,0 +1,153 @@
+---
+title: "Ruan Mayworm"
+description: "Ruan Mayworm — metrology, data analysis, e-books, technical blog and scientific publications."
+title-block-style: none
+toc: false
+listing:
+  id: home-blog-listing
+  contents:
+    - "blog/posts/*/index.qmd"
+  type: grid
+  grid-columns: 3
+  sort: "date desc"
+  exclude:
+    draft: true
+  sort-ui: false
+  filter-ui: false
+  categories: false
+  page-size: 100
+  image-height: 168px
+  max-description-length: 155
+---
+
+::: {.academic-hero}
+::: {.hero-grid}
+::: {}
+<div class="hero-kicker">Metrology · Quality · Data Analysis</div>
+
+<h1 class="hero-title">Ruan Mayworm</h1>
+
+<p class="hero-subtitle">Mechanical Engineer · MSc and PhD in Metrology</p>
+
+<p class="hero-bio">I work at the intersection of metrology, statistics and data analysis, with experience in scientific instrumentation, signal processing, measurement uncertainty evaluation and quality management. I develop Python applications and explore the use of machine learning and optimisation in measurement systems, particularly in acoustics and ultrasound.</p>
+
+<div class="hero-tags"><span class="hero-tag">Metrology</span><span class="hero-tag">Quality</span><span class="hero-tag">Statistics</span><span class="hero-tag">Data analysis</span><span class="hero-tag">Machine Learning</span></div>
+
+<div class="cta-row" aria-label="Main links"><a class="hero-btn hero-btn-primary" href="ebooks.html">E-books</a><a class="hero-btn hero-btn-secondary" href="blog/">Blog</a><a class="hero-btn hero-btn-secondary" href="publications.html">My publications</a><a class="hero-btn hero-btn-secondary" href="about.html">About me</a></div>
+:::
+::: {.hero-photo}
+<img class="hero-portrait" src="../assets/images/ruan-mayworm-alta.jpeg" alt="Portrait of Ruan Mayworm in a laboratory setting" width="200" height="250" loading="eager" decoding="async">
+:::
+:::
+:::
+
+<div class="section-eyebrow">Digital library</div>
+
+## [E-books and technical resources](ebooks.qmd){.home-heading-link}
+
+::: {.book-feature .ebook-feature}
+::: {.ebook-cover-wrap}
+<a href="ebooks.html" aria-label="Learn about the book Análise Crítica de Certificados de Calibração"><img class="ebook-cover-image" src="../assets/images/capa-analise-certificados.webp" alt="Cover of Análise Crítica de Certificados de Calibração by Ruan Carvalho Mayworm" width="210" height="297" loading="lazy" decoding="async"></a>
+:::
+::: {.book-details}
+<span class="status-label">First edition · 2026</span>
+
+### Análise Crítica de Certificados de Calibração
+
+*How to read and interpret calibration certificates and make sound equipment decisions.*
+
+A practical guide to interpreting calibration certificates, establishing acceptance criteria and making evidence-based decisions about measuring equipment. **The book is currently available in Portuguese.**
+
+[Read free online (Portuguese)](https://rcmayworm.github.io/livro-analise-certificados/) · [Purchase the PDF edition (Portuguese)](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+:::
+:::
+
+<div class="section-eyebrow">Articles and science communication</div>
+
+## [Blog](blog/index.qmd){.home-heading-link} {.home-compact-heading}
+
+Technical articles, research notes and tutorials. Use the arrows to browse the posts when more articles are available.
+
+<div class="blog-carousel-nav" aria-label="Browse blog posts">
+<button class="blog-carousel-arrow" id="blog-prev" type="button" aria-controls="home-blog-listing" aria-label="Previous articles" hidden><span aria-hidden="true">‹</span></button>
+<button class="blog-carousel-arrow" id="blog-next" type="button" aria-controls="home-blog-listing" aria-label="Next articles" hidden><span aria-hidden="true">›</span></button>
+</div>
+
+::: {#home-blog-listing .home-blog-listing}
+:::
+
+[View all blog articles](blog/index.qmd){.inline-link}
+
+<div class="section-eyebrow">Scientific output</div>
+
+## [Featured research and publications](publications.qmd){.home-heading-link} {.home-compact-heading}
+
+Explore documented projects and scientific papers, with links to the original references and DOI identifiers.
+
+::: {.feature-grid}
+::: {.feature-card}
+<div class="card-label">Ultrasound metrology</div>
+
+### Kibble balance and ultrasonic power
+
+Experimental development for measuring ultrasonic power through radiation force.
+
+[*Measurement* (2022)](https://doi.org/10.1016/j.measurement.2022.111788) · [*Acta IMEKO* (2025)](https://doi.org/10.21014/actaimeko.v14i2.1946)
+:::
+::: {.feature-card}
+<div class="card-label">Non-destructive testing</div>
+
+### ToFD technique
+
+Metrological studies of the *Time-of-Flight Diffraction* technique for ultrasonic detection and characterisation of discontinuities.
+
+[*Measurement* (2021)](https://doi.org/10.1016/j.measurement.2020.108298) · [Research](research.qmd)
+:::
+:::
+
+<div class="section-eyebrow">Tools and resources</div>
+
+## Academic resources {.home-compact-heading}
+
+::: {.feature-grid}
+::: {.feature-card .feature-card-clickable}
+### [Scientific software](software.qmd){.feature-card-link}
+
+Repositories, programs and tools for data analysis, automation and scientific research.
+:::
+::: {.feature-card .feature-card-clickable}
+### [Presentations and talks](presentations.qmd){.feature-card-link}
+
+A space for academic presentations and conference materials.
+:::
+:::
+
+<div class="section-eyebrow">Professional background</div>
+
+## About me and professional profiles {.home-compact-heading}
+
+::: {.feature-grid .three}
+::: {.feature-card .feature-card-clickable}
+<div class="card-label">About me</div>
+
+### [Education and experience](about.qmd){.feature-card-link}
+
+Learn about my academic qualifications, professional background and research interests.
+:::
+::: {.feature-card .feature-card-clickable}
+<div class="card-label">Academic CV</div>
+
+### [Lattes CV](http://lattes.cnpq.br/5951712664292058){.feature-card-link target="_blank" rel="noopener noreferrer"}
+
+Visit my CV on the Brazilian Lattes Platform for my educational background and scientific output.
+:::
+::: {.feature-card .feature-card-clickable}
+<div class="card-label">Professional network</div>
+
+### [LinkedIn](https://www.linkedin.com/in/ruanmayworm/){.feature-card-link target="_blank" rel="noopener noreferrer"}
+
+Visit my professional profile to learn about my experience and shared publications.
+:::
+:::
+
+<script defer src="../home-blog.js"></script>

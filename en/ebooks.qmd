@@ -1,0 +1,30 @@
+---
+title: "E-books"
+description: "Catalogue of technical books available for online reading and in PDF editions."
+toc: false
+---
+
+<div class="section-eyebrow">Digital library</div>
+
+## Análise Crítica de Certificados de Calibração
+
+::: {.book-feature .ebook-feature}
+::: {.ebook-cover-wrap}
+<img class="ebook-cover-image" src="../assets/images/capa-analise-certificados.webp" alt="Cover of the first edition of Análise Crítica de Certificados de Calibração" width="210" height="297" loading="lazy" decoding="async">
+:::
+::: {.book-details}
+<span class="status-label">First edition · 2026</span>
+
+**Ruan Carvalho Mayworm**
+
+*Critical review of calibration certificates: how to read, interpret and make well-founded equipment decisions.*
+
+A technical guide to interpreting calibration certificates, metrological traceability, acceptance criteria, decision rules, calibration intervals and the suitability of measuring instruments for their intended use. Includes practical examples and metrological management guidance.
+
+**Language availability:** the online book and commercial PDF edition are currently in **Portuguese**; this catalogue description has been translated into English.
+
+**Free online reading (Portuguese):** [open the book and browse its chapters](https://rcmayworm.github.io/livro-analise-certificados/).
+
+**Commercial PDF edition (Portuguese):** [purchase the PDF](https://go.hotmart.com/F105183714N){target="_blank" rel="noopener noreferrer"}
+:::
+:::

@@ -1,0 +1,7 @@
+---
+title: "Digital books"
+description: "The digital-book catalogue is available on the E-books page."
+toc: false
+---
+
+The catalogue has been consolidated under **[E-books](ebooks.qmd)**. This page remains available to preserve links from earlier versions of the academic website.

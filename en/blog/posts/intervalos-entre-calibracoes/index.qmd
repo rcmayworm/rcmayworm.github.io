@@ -1,0 +1,68 @@
+---
+title: "How to Determine Calibration Intervals for Measuring Equipment"
+author: "Ruan Mayworm"
+date: 2025-01-28
+date-modified: 2026-11-02
+description: "Factors and methods for establishing and reviewing calibration intervals based on performance, risk and historical evidence."
+categories:
+  - Metrology
+  - Calibration
+  - Quality Management
+image: /blog/posts/intervalos-entre-calibracoes/images/capa.webp
+image-alt: "Digital calliper, performance trend, monitoring limit and calibration dates on a calendar"
+draft: false
+toc: true
+execute:
+  eval: false
+---
+
+> **About this edition:** adapted for the academic website from an original article published on [LinkedIn](https://www.linkedin.com/pulse/como-determinar-os-intervalos-entre-calibra%C3%A7%C3%B5es-dos-de-ruan-mayworm-vx4me/) on 28 January 2025. The original themes and main examples have been preserved, with editing for web publication and new technical illustrations. The original LinkedIn images have not been reused because copies of verifiable quality could not be retrieved. Additional technical notes are identified as clarifications in this edition.
+
+<img src="../../../../blog/posts/intervalos-entre-calibracoes/images/capa.webp" alt="Digital calliper next to a trend chart, a monitoring limit and a calendar showing recurring calibrations." style="width: 100%; height: auto;" loading="eager" decoding="async">
+
+Deciding when a measuring instrument should next be calibrated involves metrological, operational and economic considerations. Applying the same fixed interval to every instrument may increase costs unnecessarily or allow significant performance changes to go undetected.
+
+## Why review calibration intervals?
+
+Periodic monitoring seeks to identify drift and instability, reduce the risk of decisions based on unsuitable measurements and ensure that calibration information remains adequate for its intended use. **Metrological traceability** is established through a documented chain of calibrations and comparisons, not simply by the chosen calibration frequency.
+
+## Factors affecting calibration frequency
+
+The original article highlights manufacturers' recommendations, environmental conditions, frequency of use, previous calibration results, measurement criticality and required uncertainty. Decisions should combine this evidence with the consequences of failure and actual operating conditions.
+
+For example, two instruments of the same model may warrant different intervals if one operates in a controlled environment while the other is exposed to vibration, overload or intensive use.
+
+## Methods for establishing and reviewing intervals
+
+### Initial interval selection
+
+An initial interval may be based on documented experience, technical recommendations and applicable contractual or regulatory requirements. It should be **reviewed once sufficient results become available**.
+
+### Calibration history and the Schumacher method
+
+One approach discussed in the original article is to classify previous results as conforming, nonconforming or damaged and use the observed sequences to propose shorter, unchanged or longer intervals. The method requires predefined rules and consistent records; it does not automatically justify extending calibration intervals.
+
+### Control charts and trends
+
+Charts of measurement errors or corrections over time can help detect drift and dispersion. A succession of results close to an acceptance limit may indicate that an earlier review is necessary, even if the most recent certificate reported conformity.
+
+![Synthetic example of changes in an instrument's error over successive calibrations.](../../../../blog/posts/intervalos-entre-calibracoes/images/historico-sintetico.svg){#fig-historico-calibracao fig-cap="Synthetic series illustrating trend monitoring. It does not represent actual laboratory results or data from the original article."}
+
+### Reviewing calibration certificates
+
+In addition to the conforming/nonconforming decision, it is useful to examine the **magnitude of the measurement error**, **expanded uncertainty** and **remaining margin** relative to the specified limit. Unstable instruments may warrant shorter intervals, intermediate checks or investigation of their operating conditions.
+
+## Guidelines and the relationship between tolerance and uncertainty
+
+The original article refers to OIML D 10 and ISO 10012 for the management of measurement systems and the determination of intervals. The ratio of tolerance to uncertainty can help assess whether the metrological capability is appropriate for an application; however, **it does not determine calibration frequency on its own**. Reference thresholds adopted by an organisation must be technically justified.
+
+## Conclusion
+
+A calibration interval is a **metrological management decision based on risk and evidence**. Regular reviews should balance reliability, performance history and cost, using documented criteria suited to the criticality of the measurements.
+
+## References mentioned in the original article
+
+- OIML D 10 — guidelines for determining calibration intervals.
+- ISO 10012 — management of measurement processes and measuring equipment.
+- ISO/IEC 17025:2017 — competence of laboratories.
+- Albertazzi and Sousa — *Fundamentos de Metrologia Científica e Industrial* (2004; Portuguese).

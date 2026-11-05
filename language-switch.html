@@ -1,0 +1,72 @@
+<!-- Navegação bilíngue progressiva: conteúdo estático permanece acessível sem JavaScript. -->
+<script>
+(function () {
+  'use strict';
+  const root = '/'; // Repositório do tipo usuário do GitHub Pages.
+  const pathname = window.location.pathname;
+  const english = pathname.startsWith(root + 'en/');
+  const raw = english ? pathname.slice((root + 'en/').length) : pathname.slice(root.length);
+  const relative = raw || 'index.html';
+  const target = relative.endsWith('/') ? relative + 'index.html' : relative;
+  const ptURL = root + target;
+  const enURL = root + 'en/' + target;
+
+  function setText(anchor, value) {
+    const menuText = anchor.querySelector('.menu-text');
+    if (menuText) menuText.textContent = value;
+    else anchor.textContent = value;
+  }
+  const dictionary = {
+    'E-books': 'E-books',
+    'Blog': 'Blog',
+    'Publicações': 'Publications',
+    'Pesquisa': 'Research',
+    'Sobre': 'About',
+    'Mais': 'More',
+    'Código': 'Software',
+    'Apresentações': 'Presentations',
+    'Contato': 'Contact'
+  };
+  const localPages = new Set([
+    'index.html','about.html','research.html','publications.html',
+    'ebooks.html','books.html','software.html','presentations.html',
+    'contact.html','blog/index.html'
+  ]);
+
+  const navbar = document.querySelector('header nav.navbar') || document.querySelector('nav.navbar');
+  if (navbar) {
+    const anchors = navbar.querySelectorAll('a');
+    anchors.forEach(anchor => {
+      const label = anchor.textContent.trim().replace(/\s+/g, ' ');
+      if (label.includes('🇧🇷') && label.includes('PT')) {
+        anchor.href = ptURL;
+        anchor.setAttribute('hreflang','pt-BR');
+        anchor.setAttribute('lang','pt-BR');
+        if (!english) anchor.setAttribute('aria-current','true');
+        return;
+      }
+      if (label.includes('🇬🇧') && label.includes('English')) {
+        anchor.href = enURL;
+        anchor.setAttribute('hreflang','en-GB');
+        anchor.setAttribute('lang','en-GB');
+        if (english) anchor.setAttribute('aria-current','true');
+        return;
+      }
+      if (english && dictionary[label]) setText(anchor, dictionary[label]);
+      const href = anchor.getAttribute('href');
+      if (!href || href.startsWith('#') || /^(https?:|mailto:)/i.test(href)) return;
+      const resolved = new URL(href, window.location.href);
+      if (resolved.origin !== location.origin) return;
+      const path = resolved.pathname.replace(/^\/(?:en\/)?/, '');
+      if (localPages.has(path) && english) anchor.href = root + 'en/' + path;
+    });
+    const brand = navbar.querySelector('a.navbar-brand');
+    if (brand && english) brand.href = root + 'en/index.html';
+  }
+  if (english) {
+    document.documentElement.lang = 'en-GB';
+    const footer = document.querySelector('.nav-footer-left');
+    if (footer) footer.textContent = '© 2026 Ruan Mayworm · Academic website';
+  }
+})();
+</script>

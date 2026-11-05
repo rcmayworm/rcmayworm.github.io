@@ -1,0 +1,19 @@
+---
+title: "Blog"
+description: "Technical articles, science communication and tutorials covering metrology, quality management, instrumentation, statistics, Python, data analysis and machine learning. The articles distinguish teaching examples from published research and refer to verifiable sources."
+toc: false
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  page-size: 10
+---
+
+::: {.blog-intro}
+**Topics:** History of metrology, measurement uncertainty, quality management, instrumentation, Python, statistics, ultrasound, signal processing, data analysis and machine learning.
+:::
+
+## Articles
