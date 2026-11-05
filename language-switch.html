@@ -38,7 +38,7 @@
     const anchors = navbar.querySelectorAll('a');
     anchors.forEach(anchor => {
       const label = anchor.textContent.trim().replace(/\s+/g, ' ');
-      if (label.includes('🇧🇷') && label.includes('Português')) {
+      if (label.includes('🇧🇷') && label.includes('PT')) {
         anchor.href = ptURL;
         anchor.setAttribute('hreflang','pt-BR');
         anchor.setAttribute('lang','pt-BR');
