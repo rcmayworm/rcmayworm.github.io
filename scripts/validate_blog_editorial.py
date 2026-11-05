@@ -84,7 +84,7 @@ for locale in ("pt", "en"):
             "a-fascinante-jornada-da-metrologia",
             "exatidao-e-precisao",
         ], "10.59161/AUEZ1291"),
-        ("Mendes, A.; Rosário, P. P.", [
+        ("Mendes, A.; Rosário, P. P", [
             "analise-critica-certificados-calibracao",
             "exatidao-e-precisao",
         ], "9788521636755"),
