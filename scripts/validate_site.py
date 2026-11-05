@@ -94,19 +94,16 @@ else:
         errors.append('Imagem de abertura do artigo histórico não referenciada')
     if 'fig-cap="Evolução dos padrões de medição' in article_text:
         errors.append('Imagem de abertura não deve ter legenda visível')
-    figures = ['covado-real.svg', 'quebra-quilos.svg', 'padroes-si.svg']
+    # Fotografias históricas locais substituem os três esquemas SVG anteriores.
+    figures = ['covado-egipcio.avif', 'rotulo-quebra-quilos.avif', 'relogio-atomico-ptb.avif']
     for figure in figures:
         asset = article_dir / 'images' / figure
         if not asset.is_file():
-            errors.append(f'Ilustração ausente: {figure}')
+            errors.append(f'Fotografia ausente: {figure}')
         elif f'images/{figure}' not in article_text:
-            errors.append(f'Ilustração não referenciada: {figure}')
-        else:
-            from xml.etree import ElementTree
-            try:
-                ElementTree.parse(asset)
-            except Exception as ex:
-                errors.append(f'SVG inválido {figure}: {ex}')
+            errors.append(f'Fotografia não referenciada: {figure}')
+        elif asset.read_bytes()[4:12] != b'ftypavif':
+            errors.append(f'Imagem AVIF inválida: {figure}')
 
 post = ROOT / 'blog/posts/modelo-de-post/index.qmd'
 if post.is_file() and 'draft: true' not in post.read_text(encoding='utf-8'):

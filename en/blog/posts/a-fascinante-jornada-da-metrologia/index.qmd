@@ -16,7 +16,7 @@ execute:
   eval: false
 ---
 
-> **About this edition:** an original article first published on [LinkedIn (13 February 2025)](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/) and republished by [ASMETRO-SI (14 February 2025)](https://asmetro.org.br/portalsn/2025/02/14/a-fascinante-jornada-da-metrologia-da-antiguidade-aos-dias-atuais/). This edition has been adapted for online reading, with some historical and metrological details updated and **original schematic illustrations** different from those in the earlier publication.
+> **About this edition:** an original article first published on [LinkedIn (13 February 2025)](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/) and republished by [ASMETRO-SI (14 February 2025)](https://asmetro.org.br/portalsn/2025/02/14/a-fascinante-jornada-da-metrologia-da-antiguidade-aos-dias-atuais/). This online edition updates historical and metrological details while retaining the blog's standard cover. Historic images from the original publication have been reintroduced with revised captions.
 
 <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/capa-historia.webp" alt="The historical development of metrology represented by ancient length and mass standards, a balance, a micrometer and a modern measuring standard." style="width: 100%; height: auto;" loading="eager" decoding="async">
 
@@ -24,13 +24,15 @@ Since the beginnings of civilisation, measurement has been an essential tool for
 
 ## Early measurements and standards in antiquity
 
+![Ancient Egyptian-themed image used as the cover of the original article about the history of measurement.](https://asmetro.org.br/portalsn/wp-content/uploads/2025/02/1738087115334.jpeg){fig-cap="Egyptian-themed historical illustration used in the original publication to introduce the history of measurement. Source attributed to [Measurement Science Conference — History of Metrology](https://msc-conf.com/history-of-metrology/), reproduced by [ASMETRO-SI](https://asmetro.org.br/portalsn/2025/02/14/a-fascinante-jornada-da-metrologia-da-antiguidade-aos-dias-atuais/)."}
+
 In antiquity, many units of length were based on parts of the human body. The cubit, for example, was associated with the length of the forearm, but its value varied across regions and periods. The **Egyptian royal cubit**, used in monumental construction, was approximately **52.3 cm** and was subdivided into seven palms of four fingers each. Other traditions used shorter cubits, of around 45 cm. Similarly, the foot and inch have been used historically in various systems of measurement. [Source: historical study of the cubit](https://doi.org/10.1155/2014/489757).
 
 Units defined solely by individual body measurements could vary from person to person. Material standards helped make measurements more consistent. The pyramids of Giza are remarkable examples of ancient surveying, alignment and construction techniques; numerical estimates of their accuracy depend on the survey concerned and the structures' state of preservation.
 
 The existence of cubit rods and standards in Egypt shows concern for uniformity in measurement. Popular stories about death sentences for failure to comply with calibration requirements are not presented here as historical facts, because sufficient primary documentation was not found.
 
-![Diagram of an Egyptian royal cubit standard approximately 52.3 cm long, divided into seven palms and 28 fingers.](images/covado-real.svg){fig-cap="The Egyptian royal cubit and its subdivisions. Conceptual illustration, not to physical scale."}
+![Photograph of an Egyptian cubit rod featuring engraved inscriptions and subdivisions.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/covado-egipcio.avif){fig-cap="Ancient Egyptian cubit rod with engraved subdivisions. The royal cubit was approximately 52.3 cm long, with values varying among artefacts and periods. Claims of death penalties for failures to check standards are not treated as established historical facts without primary documentation. Image from the [original publication](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 An early cultural reference appears in the Bible, in Genesis 6:15, which describes Noah's Ark as 300 cubits long, 50 cubits wide and 30 cubits high. **Hypothetically assuming** a cubit of 45 cm gives dimensions of 135 m, 22.5 m and 13.5 m, respectively. These numbers illustrate the conversion of historical units and **are not archaeological measurements**. Other cubit conventions produce different results.
 
@@ -48,7 +50,7 @@ In Brazil, adoption of the metric system was strongly associated with Emperor Do
 
 Resistance to the new measures formed part of the **Quebra-Quilos Revolt**, which took place chiefly in **1874 and 1875** in provinces of northeastern Brazil. The protests included the destruction of weights and measuring instruments and also expressed dissatisfaction with taxation, military recruitment and the actions of public authorities. The transition to uniform standards was not free of conflict. [Source: Brazil's National Archives](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
 
-![Timeline showing Brazil's imperial law of 1862, the Quebra-Quilos Revolt of 1874–1875 and the Metre Convention of 1875.](images/quebra-quilos.svg){fig-cap="Historical milestones in Brazil's metric system and international metrological cooperation. Original infographic, not a contemporary poster."}
+![Historical commercial label reading Aos Quebra Kilos, advertising manufacture at Rua da Guia No. 34, Pernambuco.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/rotulo-quebra-quilos.avif){fig-cap="Historical commercial label entitled *Aos Quebra Kilos*, reflecting the context of the Quebra-Quilos Revolt (1874–1875) in Brazil. It is a commercial advertisement referring to the movement, not necessarily a call-to-action poster. Image from the [original publication](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 ## Metrology during the Industrial Revolution and the twentieth century
 
@@ -62,7 +64,7 @@ During the twentieth century, developments in electronics and optics made previo
 
 Modern atomic clocks offer extraordinary stability and accuracy, essential for satellite navigation, telecommunications and system synchronisation. However, statements about how much error a clock would accumulate over millions of years **depend on the clock model and operating conditions**; no such performance applies universally to all atomic clocks.
 
-![Diagram of physical constants used in defining the second, metre and kilogram in the International System of Units.](images/padroes-si.svg){fig-cap="Quantities and constants underpinning current SI definitions. Original diagram, not a representation of a particular clock or instrument."}
+![Photograph of the CS2 caesium atomic clock and its control instrumentation at PTB in Germany.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/relogio-atomico-ptb.avif){fig-cap="CS2 caesium atomic clock at Germany's [Physikalisch-Technische Bundesanstalt (PTB)](https://www.ptb.de/), a primary frequency standard used to realise the SI second. Photograph from the [original publication](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 ## Metrology in everyday life and in the future
 
@@ -74,7 +76,7 @@ Metrology will continue to play a central role in technological development, par
 
 The history of metrology reflects human progress, from rudimentary measurements based on the human body to sophisticated modern standards defined through universal constants. This development has transformed science and technology and shaped the way we interact with the world. Have you considered the role metrology plays in your own life?
 
-*An editorial adaptation of previously published original work. Three vector figures and one original cover illustration were prepared for this version. No third-party imagery was reproduced without verification of its licence.*
+*An editorial adaptation of previously published original work. The blog's standard cover is original to this website; historic images were selected for the earlier publication. Sources are credited where identified, without presuming third-party reuse licences.*
 
 ## References and Sources
 
