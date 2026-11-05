@@ -38,14 +38,18 @@
     const anchors = navbar.querySelectorAll('a');
     anchors.forEach(anchor => {
       const label = anchor.textContent.trim().replace(/\s+/g, ' ');
-      if (label.includes('🇧🇷') && label.includes('PT')) {
+      const navLink = anchor.classList.contains('nav-link');
+      const ariaLabel = anchor.getAttribute('aria-label');
+      if (navLink && (label === 'PT' || ariaLabel === 'Versão em português')) {
+        anchor.classList.add('language-switch-pt');
         anchor.href = ptURL;
         anchor.setAttribute('hreflang','pt-BR');
         anchor.setAttribute('lang','pt-BR');
         if (!english) anchor.setAttribute('aria-current','true');
         return;
       }
-      if (label.includes('🇬🇧') && label.includes('English')) {
+      if (navLink && (label === 'English' || ariaLabel === 'English version')) {
+        anchor.classList.add('language-switch-en');
         anchor.href = enURL;
         anchor.setAttribute('hreflang','en-GB');
         anchor.setAttribute('lang','en-GB');
