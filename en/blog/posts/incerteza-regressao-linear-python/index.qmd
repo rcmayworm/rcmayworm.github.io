@@ -2,7 +2,7 @@
 title: "Uncertainty Estimation in Linear Regression: A Practical Guide with Python"
 author: "Ruan Mayworm"
 date: 2025-03-26
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "Understand linear regression, the covariance matrix and uncertainty estimation for a calibration curve using Python."
 categories:
   - Statistics
@@ -295,19 +295,19 @@ The program computes the line coefficients, fitted values, residuals, coefficien
 
 | Indicator | Result | Interpretation |
 |:---|:---:|:---|
-| Fitted equation | $T = 5{,}0423\,V - 0{,}4863$ | Estimates temperature from measured voltage. |
-| Coefficient of determination ($R^2$) | $0{,}9984$ | The line accounts for approximately 99.84% of the observed temperature variation in this dataset. |
-| Residual standard deviation ($s$) | $0{,}7062\ \mathrm{°C}$ | Describes the dispersion of results around the fitted line. |
-| Standard uncertainty of the mean response | $0{,}213$ to $0{,}404\ \mathrm{°C}$ | Uncertainty associated with the estimated mean response at the calibration points. |
-| Expanded uncertainty of the mean response (95%) | $0{,}482$ to $0{,}913\ \mathrm{°C}$ | Half-widths of pointwise 95% confidence intervals for the mean response, under the stated assumptions. |
-| Coverage factor ($k$) | $2{,}262$ | Multiplies the standard uncertainty to obtain the expanded uncertainty presented. |
+| Fitted equation | $T = 5.0423\,V - 0.4863$ | Estimates temperature from measured voltage. |
+| Coefficient of determination ($R^2$) | $0.9984$ | The line accounts for approximately 99.84% of the observed temperature variation in this dataset. |
+| Residual standard deviation ($s$) | $0.7062\ \mathrm{°C}$ | Describes the dispersion of results around the fitted line. |
+| Standard uncertainty of the mean response | $0.213$ to $0.404\ \mathrm{°C}$ | Uncertainty associated with the estimated mean response at the calibration points. |
+| Expanded uncertainty of the mean response (95%) | $0.482$ to $0.913\ \mathrm{°C}$ | Half-widths of pointwise 95% confidence intervals for the mean response, under the stated assumptions. |
+| Coverage factor ($k$) | $2.262$ | Multiplies the standard uncertainty to obtain the expanded uncertainty presented. |
 | Degrees of freedom | $9$ | Eleven observations minus two fitted coefficients. |
 
 : Linear-regression results for the thermocouple data. {#tbl-resultados-regressao}
 
 In the fitted equation, $T$ is **temperature in °C** and $V$ is **voltage in mV**. The reported uncertainty ranges refer to the calibration points and the **estimated mean response**, not to an individual measurement or the complete metrological uncertainty of the thermocouple.
 
-**Distinguishing standard from expanded uncertainty:** expanded uncertainty is standard uncertainty multiplied by $k\approx2{,}262$. The quantity $s=0{,}7062\ \mathrm{°C}$ is the *residual standard deviation*, calculated using $n-p$ in the denominator. It must not be confused with conventional RMSE, which uses denominator $n$.
+**Distinguishing standard from expanded uncertainty:** expanded uncertainty is standard uncertainty multiplied by $k\approx2.262$. The quantity $s=0.7062\ \mathrm{°C}$ is the *residual standard deviation*, calculated using $n-p$ in the denominator. It must not be confused with conventional RMSE, which uses denominator $n$.
 
 The fit is illustrated in @fig-ajuste.
 
@@ -319,7 +319,7 @@ Two indicators are considered: the **coefficient of determination ($R^2$)** and 
 
 The coefficient of determination indicates the proportion of observed temperature variation explained by the model. Values close to 1 suggest that the line describes the data well, but this **does not guarantee** that the model is appropriate.
 
-Residual standard deviation expresses the dispersion of observations around the fitted line. Here, $s=0{,}7062\ \mathrm{°C}$. Whether this dispersion is acceptable depends on the thermocouple application. RMSE, also used to summarise residuals, is $0{,}6388\ \mathrm{°C}$ when calculated with $n$ in the denominator.
+Residual standard deviation expresses the dispersion of observations around the fitted line. Here, $s=0.7062\ \mathrm{°C}$. Whether this dispersion is acceptable depends on the thermocouple application. RMSE, also used to summarise residuals, is $0.6388\ \mathrm{°C}$ when calculated with $n$ in the denominator.
 
 It is also essential to examine a **residual plot**. Systematic patterns, such as curvature or a trend, may indicate that the linear model does not represent the data adequately.
 
@@ -345,11 +345,24 @@ This is important in measurement applications, helping avoid misleading conclusi
 
 Whether calibrating sensors, analysing experimental data or controlling industrial processes, **combining linear regression with uncertainty evaluation** supports more informed technical decisions.
 
-## Further references
+## References and Sources
 
-- **NIST/SEMATECH:** [*e-Handbook of Statistical Methods*](https://www.itl.nist.gov/div898/handbook/) — statistical methods with practical examples.
-- **Miller, J. N.; Miller, J. C.:** *Statistics and Chemometrics for Analytical Chemistry* — applications in laboratory measurement and data analysis.
-- **JCGM 100:2008:** [*Guide to the Expression of Uncertainty in Measurement*](https://www.bipm.org/en/committees/jc/jcgm/publications) — fundamental reference for measurement uncertainty evaluation.
-- **NumPy and SciPy:** [numpy.linalg.lstsq](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html) and [Student's t-distribution](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+- **NIST/SEMATECH.** *e-Handbook of Statistical Methods*. [DOI: 10.18434/M32189](https://doi.org/10.18434/M32189) · [Online handbook](https://www.itl.nist.gov/div898/handbook/).
 
-**Original publication:** [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python — LinkedIn (26 March 2025)](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/).
+- **Miller, J. N.; Miller, J. C.** *Statistics and Chemometrics for Analytical Chemistry*. 6th edition. Pearson/Prentice Hall, 2010. ISBN 9780273730422. [Bibliographic record](https://iucat.iu.edu/iui/9093778).
+
+- **JCGM 100:2008(E).** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).* [DOI: 10.59161/JCGM100-2008E](https://doi.org/10.59161/JCGM100-2008E).
+
+- **NumPy.** Documentation for [`numpy.linalg.lstsq`](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html).
+
+- **SciPy.** Documentation for [Student's t-distribution (`scipy.stats.t`)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+
+- **Mayworm, R. (2025).** *Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python*. [Original LinkedIn publication, 26 March 2025](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/).
+
+## Further Reading
+
+- [The Fascinating Journey of Metrology: From Antiquity to the Present Day](../a-fascinante-jornada-da-metrologia/index.qmd)
+- [Critical Review of Calibration Certificates: A Practical Guide](../analise-critica-certificados-calibracao/index.qmd)
+- [Accuracy vs Precision: What Is the Difference and Why Does It Matter in Measurement?](../exatidao-e-precisao/index.qmd)
+- **Uncertainty Estimation in Linear Regression: A Practical Guide with Python** *(this article)*
+- [How to Determine Calibration Intervals for Measuring Equipment](../intervalos-entre-calibracoes/index.qmd)

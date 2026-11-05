@@ -2,7 +2,7 @@
 title: "Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?"
 author: "Ruan Mayworm"
 date: 2025-03-11
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Entenda, com exemplos do dia a dia, a diferença entre exatidão e precisão, como avaliar o erro e a dispersão dos resultados e por que isso importa nas medições."
 categories:
   - Metrologia
@@ -157,15 +157,20 @@ Um instrumento pode fornecer medições **precisas, mas pouco exatas**, ou medi�
 
 Por fim, a avaliação da **incerteza de medição** complementa essa análise e ajuda a determinar se os resultados são suficientemente confiáveis para a decisão que precisamos tomar.
 
-## Referências
+## Referências e fontes
 
-- **JCGM 200:2012.** *Vocabulário Internacional de Metrologia (VIM)*, 3ª edição. [Definições oficiais de exatidão](https://jcgm.bipm.org/vim/en/2.13.html), [precisão](https://jcgm.bipm.org/vim/en/2.15.html) e [erro de medição](https://jcgm.bipm.org/vim/en/2.16.html).
-- **BIPM.** *Sistema Internacional de Unidades (SI)*, 9ª edição (2019).
-- **JCGM 100:2008.** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM)*.
-- **Mendes, A.; Rosário, P. P. N.** *Metrologia e Incerteza de Medição — Conceitos e Aplicações*. LTC, 2019.
+- **JCGM 200:2012.** *International Vocabulary of Metrology — Basic and general concepts and associated terms (VIM)*, 3ª edição. [DOI: 10.59161/JCGM200-2012](https://doi.org/10.59161/JCGM200-2012). Definições: [exatidão](https://jcgm.bipm.org/vim/en/2.13.html), [precisão](https://jcgm.bipm.org/vim/en/2.15.html) e [erro de medição](https://jcgm.bipm.org/vim/en/2.16.html).
+
+- **BIPM.** *The International System of Units (SI)*, 9ª edição (2019, atualizada em 2026). [DOI: 10.59161/AUEZ1291](https://doi.org/10.59161/AUEZ1291).
+
+- **JCGM 100:2008(E).** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).* [DOI: 10.59161/JCGM100-2008E](https://doi.org/10.59161/JCGM100-2008E).
+
+- **Mendes, A.; Rosário, P. P.** *Metrologia e Incerteza de Medição — Conceitos e Aplicações*. 1ª edição. LTC, 2020. ISBN 9788521636755.
 
 ## Leia mais
 
-- [Como determinar os intervalos entre calibrações dos equipamentos de medição](../intervalos-entre-calibracoes/index.qmd)
-- [Estimativa de incerteza em regressões lineares: um guia prático com Python](../incerteza-regressao-linear-python/index.qmd)
 - [A fascinante jornada da Metrologia: da antiguidade aos dias atuais](../a-fascinante-jornada-da-metrologia/index.qmd)
+- [Análise Crítica de Certificados de Calibração: um guia prático](../analise-critica-certificados-calibracao/index.qmd)
+- **Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?** *(este artigo)*
+- [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python](../incerteza-regressao-linear-python/index.qmd)
+- [Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição](../intervalos-entre-calibracoes/index.qmd)

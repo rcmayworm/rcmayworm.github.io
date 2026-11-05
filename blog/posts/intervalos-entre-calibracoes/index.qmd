@@ -2,7 +2,7 @@
 title: "Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição"
 author: "Ruan Mayworm"
 date: 2025-01-28
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Fatores e métodos para estabelecer e revisar intervalos de calibração com base em desempenho, risco e histórico."
 categories:
   - Metrologia
@@ -60,9 +60,20 @@ O artigo original cita OIML D 10 e ISO 10012 como referências para sistemas de 
 
 O intervalo de calibração é uma **decisão de gestão metrológica baseada em risco e evidências**. A revisão periódica deve equilibrar confiabilidade, histórico de desempenho e custos, com critérios documentados e alinhados à criticidade das medições.
 
-## Referências indicadas no artigo original
+## Referências e fontes
 
-- OIML D 10 — diretrizes para determinação dos intervalos de calibração.
-- ISO 10012 — gestão de processos de medição e equipamentos de medição.
-- ISO/IEC 17025:2017 — competência de laboratórios.
-- Albertazzi e Sousa — *Fundamentos de Metrologia Científica e Industrial* (2004).
+- **ILAC-G24:2022 / OIML D 10:2022.** *Guidelines for the determination of recalibration intervals of measuring equipment*. [Documento oficial](https://www.oiml.org/en/files/pdf_d/d010-e22.pdf).
+
+- **ISO 10012:2026.** *Quality management — Requirements for measurement management systems*. [Ficha oficial da ISO](https://committee.iso.org/standard/10012). **Nota histórica:** a versão vigente quando o artigo original foi escrito era a ISO 10012:2003.
+
+- **ISO/IEC 17025:2017.** *General requirements for the competence of testing and calibration laboratories*. Edição brasileira: ABNT NBR ISO/IEC 17025:2017.
+
+- **Albertazzi, A.; Sousa, A. R. de.** *Fundamentos de Metrologia Científica e Industrial*. 2ª edição. Manole, 2017. [Registro bibliográfico](https://minhabiblioteca.com.br/catalogo/livro/79470/fundamentos-de-metrologia-cient-fica-e-industrial/).
+
+## Leia mais
+
+- [A fascinante jornada da Metrologia: da antiguidade aos dias atuais](../a-fascinante-jornada-da-metrologia/index.qmd)
+- [Análise Crítica de Certificados de Calibração: um guia prático](../analise-critica-certificados-calibracao/index.qmd)
+- [Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?](../exatidao-e-precisao/index.qmd)
+- [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python](../incerteza-regressao-linear-python/index.qmd)
+- **Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição** *(este artigo)*

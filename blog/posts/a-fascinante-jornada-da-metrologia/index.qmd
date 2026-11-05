@@ -2,7 +2,7 @@
 title: "A fascinante jornada da Metrologia: da antiguidade aos dias atuais"
 author: "Ruan Mayworm"
 date: 2025-02-13
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "Uma viagem pela história da ciência da medição, das medidas antigas ao Sistema Internacional de Unidades e à metrologia contemporânea."
 categories:
   - Metrologia
@@ -74,17 +74,30 @@ No futuro, a metrologia continuará desempenhando um papel central no avanço te
 
 A história da metrologia é um reflexo do progresso humano, desde as medições rudimentares baseadas no corpo humano até a sofisticação dos padrões modernos baseados em constantes universais. Essa evolução não apenas transformou a ciência e a tecnologia, mas também moldou a maneira como interagimos com o mundo. E você, já parou para pensar em como a metrologia impacta a sua vida?
 
-## Referências e fontes de consulta
-
-- [Bureau Internacional de Pesos e Medidas (BIPM). *The International System of Units (SI)*, 9ª edição, atualizada.](https://www.bipm.org/en/publications/si-brochure/)
-- [JCGM. *Vocabulário Internacional de Metrologia (VIM)*, item 2.41 — rastreabilidade metrológica.](https://jcgm.bipm.org/vim/en/2.41.html)
-- [BIPM. *The Metre Convention* (1875).](https://www.bipm.org/en/metre-convention/)
-- [BIPM. *Historical perspective: metre*.](https://www.bipm.org/en/history-si/metre)
-- [Arquivo Nacional. *Sistema Métrico Decimal*: implantação no Brasil e Revolta dos Quebra-Quilos.](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article)
-- [Stone, R. J. *The Cubit: A History and Measurement Commentary* (2014).](https://doi.org/10.1155/2014/489757)
-- Alder, Ken. *A Medida de Todas as Coisas: A Extraordinária História da Busca pelo Metro Padrão*. Jorge Zahar Editor, 2004. Referência do artigo original; dados editoriais não revalidados nesta edição.
-- *Bíblia Sagrada*. Gênesis 6:15 (referência cultural, não evidência metrológica experimental).
-
----
-
 *Adaptação editorial de texto autoral previamente publicado; três figuras vetoriais e uma capa ilustrada original foram preparadas para esta versão. Não foram reproduzidas imagens de terceiros sem licença verificada.*
+
+## Referências e fontes
+
+- **BIPM.** *The International System of Units (SI)*, 9ª edição (2019, atualizada em 2026). [DOI: 10.59161/AUEZ1291](https://doi.org/10.59161/AUEZ1291).
+
+- **JCGM 200:2012.** *International Vocabulary of Metrology — Basic and general concepts and associated terms (VIM)*, 3ª edição. [DOI: 10.59161/JCGM200-2012](https://doi.org/10.59161/JCGM200-2012).
+
+- **BIPM.** *The Metre Convention* (1875). [Fonte oficial](https://www.bipm.org/en/metre-convention/).
+
+- **BIPM.** *Historical perspective: metre*. [Fonte oficial](https://www.bipm.org/en/history-si/metre).
+
+- **Arquivo Nacional.** *Sistema Métrico Decimal*: implantação no Brasil e Revolta dos Quebra-Quilos. [Fonte histórica](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
+
+- **Stone, M. H. (2014).** *The Cubit: A History and Measurement Commentary*. *Journal of Anthropology*, 2014, artigo 489757. [DOI: 10.1155/2014/489757](https://doi.org/10.1155/2014/489757).
+
+- **Alder, K. (2003).** *A medida de todas as coisas: a odisséia de sete anos e o erro encoberto que transformaram o mundo*. Rio de Janeiro: Objetiva. ISBN 85-7302-511-5. [Registro bibliográfico (BnF)](https://catalogue.bnf.fr/ark:/12148/cb39973400f).
+
+- **Bíblia Sagrada.** Gênesis 6:15 (referência cultural, não evidência metrológica experimental).
+
+## Leia mais
+
+- **A fascinante jornada da Metrologia: da antiguidade aos dias atuais** *(este artigo)*
+- [Análise Crítica de Certificados de Calibração: um guia prático](../analise-critica-certificados-calibracao/index.qmd)
+- [Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?](../exatidao-e-precisao/index.qmd)
+- [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python](../incerteza-regressao-linear-python/index.qmd)
+- [Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição](../intervalos-entre-calibracoes/index.qmd)

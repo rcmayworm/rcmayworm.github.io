@@ -2,7 +2,7 @@
 title: "The Fascinating Journey of Metrology: From Antiquity to the Present Day"
 author: "Ruan Mayworm"
 date: 2025-02-13
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "A journey through the history of measurement science, from ancient units to the International System of Units and contemporary metrology."
 categories:
   - Metrology
@@ -74,17 +74,30 @@ Metrology will continue to play a central role in technological development, par
 
 The history of metrology reflects human progress, from rudimentary measurements based on the human body to sophisticated modern standards defined through universal constants. This development has transformed science and technology and shaped the way we interact with the world. Have you considered the role metrology plays in your own life?
 
-## References and sources
-
-- [International Bureau of Weights and Measures (BIPM). *The International System of Units (SI)*, 9th edition, updated.](https://www.bipm.org/en/publications/si-brochure/)
-- [JCGM. *International Vocabulary of Metrology (VIM)*, entry 2.41 — metrological traceability.](https://jcgm.bipm.org/vim/en/2.41.html)
-- [BIPM. *The Metre Convention* (1875).](https://www.bipm.org/en/metre-convention/)
-- [BIPM. *Historical perspective: metre*.](https://www.bipm.org/en/history-si/metre)
-- [National Archives of Brazil. *Sistema Métrico Decimal*: introduction in Brazil and the Quebra-Quilos Revolt.](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article)
-- [Stone, R. J. *The Cubit: A History and Measurement Commentary* (2014).](https://doi.org/10.1155/2014/489757)
-- Alder, Ken. *A Medida de Todas as Coisas: A Extraordinária História da Busca pelo Metro Padrão*. Jorge Zahar Editor, 2004. Reference from the original article; publication details were not revalidated for this edition.
-- *The Holy Bible*. Genesis 6:15 (cultural reference, not experimental metrological evidence).
-
----
-
 *An editorial adaptation of previously published original work. Three vector figures and one original cover illustration were prepared for this version. No third-party imagery was reproduced without verification of its licence.*
+
+## References and Sources
+
+- **BIPM.** *The International System of Units (SI)*, 9th edition (2019, updated in 2026). [DOI: 10.59161/AUEZ1291](https://doi.org/10.59161/AUEZ1291).
+
+- **JCGM 200:2012.** *International Vocabulary of Metrology — Basic and general concepts and associated terms (VIM)*, 3rd edition. [DOI: 10.59161/JCGM200-2012](https://doi.org/10.59161/JCGM200-2012).
+
+- **BIPM.** *The Metre Convention* (1875). [Official source](https://www.bipm.org/en/metre-convention/).
+
+- **BIPM.** *Historical perspective: metre*. [Official source](https://www.bipm.org/en/history-si/metre).
+
+- **National Archives of Brazil.** *Sistema Métrico Decimal*: introduction in Brazil and the Quebra-Quilos Revolt. [Historical source (Portuguese)](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
+
+- **Stone, M. H. (2014).** *The Cubit: A History and Measurement Commentary*. *Journal of Anthropology*, 2014, article 489757. [DOI: 10.1155/2014/489757](https://doi.org/10.1155/2014/489757).
+
+- **Alder, K. (2003).** *A medida de todas as coisas: a odisséia de sete anos e o erro encoberto que transformaram o mundo*. Rio de Janeiro: Objetiva. ISBN 85-7302-511-5 (in Portuguese). [Bibliographic record (BnF)](https://catalogue.bnf.fr/ark:/12148/cb39973400f).
+
+- **The Holy Bible.** Genesis 6:15 (cultural reference, not experimental metrological evidence).
+
+## Further Reading
+
+- **The Fascinating Journey of Metrology: From Antiquity to the Present Day** *(this article)*
+- [Critical Review of Calibration Certificates: A Practical Guide](../analise-critica-certificados-calibracao/index.qmd)
+- [Accuracy vs Precision: What Is the Difference and Why Does It Matter in Measurement?](../exatidao-e-precisao/index.qmd)
+- [Uncertainty Estimation in Linear Regression: A Practical Guide with Python](../incerteza-regressao-linear-python/index.qmd)
+- [How to Determine Calibration Intervals for Measuring Equipment](../intervalos-entre-calibracoes/index.qmd)
