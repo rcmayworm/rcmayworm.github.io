@@ -26,7 +26,9 @@ for lang, prefix in (("pt", ""), ("en", "en/")):
         assert content.count(name) == 1, f"Imagem não referenciada uma vez: {post}, {name}"
         assert str(name.replace(".avif",".webp")) not in content
     assert content.count("::: {.metrology-history-figure}") == 4, f"Figuras sem classe de centralização: {post}"
-    assert content.count("fig-cap=") >= 4, f"Legendas ausentes: {post}"
+    assert content.count("<figcaption>") == 4, f"Legendas visíveis ausentes: {post}"
+    assert content.count("<figure>") == 4, f"Estrutura semântica ausente: {post}"
+    assert content.count(" loading=\"lazy\" decoding=\"async\"") == 4, f"Imagens sem otimização de carregamento: {post}"
     assert "1738087115334.jpeg" not in content, f"Imagem remota quebrada: {post}"
     if lang == "pt":
         assert "O côvado mestre real, com 52,9 cm, era o padrão primário esculpido em granito." in content
