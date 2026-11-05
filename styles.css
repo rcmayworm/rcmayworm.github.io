@@ -99,3 +99,36 @@ body:has(.academic-hero) #title-block-header { display: none; }
 .metrology-history-figure .figure-caption,
 .metrology-history-figure .quarto-figure-caption,
 .metrology-history-figure p.caption { text-align: center; }
+
+/* Bandeiras SVG locais: não dependem de suporte do sistema a emojis. */
+nav.navbar a.nav-link.language-switch-pt,
+nav.navbar a.nav-link.language-switch-en,
+nav.navbar a.nav-link[href="/"],
+nav.navbar a.nav-link[href="/en/"] {
+  display: inline-flex;
+  align-items: center;
+  gap: .42rem;
+}
+nav.navbar a.nav-link.language-switch-pt::before,
+nav.navbar a.nav-link.language-switch-en::before,
+nav.navbar a.nav-link[href="/"]::before,
+nav.navbar a.nav-link[href="/en/"]::before {
+  content: "";
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 1.22rem;
+  height: .87rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 1px;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.22);
+}
+nav.navbar a.nav-link.language-switch-pt::before,
+nav.navbar a.nav-link[href="/"]::before {
+  background-image: url("assets/flags/br.svg");
+}
+nav.navbar a.nav-link.language-switch-en::before,
+nav.navbar a.nav-link[href="/en/"]::before {
+  background-image: url("assets/flags/england.svg");
+}
