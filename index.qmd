@@ -6,8 +6,8 @@ toc: false
 listing:
   id: home-blog-listing
   contents:
-    - "blog/posts/*/index.qmd"
-    - "!blog/posts/modelo-de-post/index.qmd"
+    # O prefixo / ancora o glob na raiz; evita incluir en/blog/posts no Quarto.
+    - "/blog/posts/*/index.qmd"
   type: grid
   grid-columns: 3
   sort: "date desc"
