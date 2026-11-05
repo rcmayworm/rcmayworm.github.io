@@ -21,7 +21,7 @@ for lang, prefix in (("pt", ""), ("en", "en/")):
     post = ROOT / prefix / "blog" / "posts" / slug / "index.qmd"
     content = post.read_text(encoding="utf-8")
     assert "capa-historia.webp" in content, f"Capa alterada: {post}"
-    assert "msc-conf.com/history-of-metrology/" in content, f"Fonte de imagem egípcia ausente: {post}"
+    assert "https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg" in content, f"Fonte atual da imagem egípcia ausente: {post}"
     for name in local_assets:
         assert content.count(name) == 1, f"Imagem não referenciada uma vez: {post}, {name}"
         assert str(name.replace(".avif",".webp")) not in content
