@@ -2,7 +2,7 @@
 title: "A fascinante jornada da Metrologia: da antiguidade aos dias atuais"
 author: "Ruan Mayworm"
 date: 2025-02-13
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "Uma viagem pela história da ciência da medição, das medidas antigas ao Sistema Internacional de Unidades e à metrologia contemporânea."
 categories:
   - Metrologia
