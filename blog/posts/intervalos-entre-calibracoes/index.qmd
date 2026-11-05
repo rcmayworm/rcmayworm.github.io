@@ -2,7 +2,7 @@
 title: "Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição"
 author: "Ruan Mayworm"
 date: 2025-01-28
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Fatores e métodos para estabelecer e revisar intervalos de calibração com base em desempenho, risco e histórico."
 categories:
   - Metrologia
