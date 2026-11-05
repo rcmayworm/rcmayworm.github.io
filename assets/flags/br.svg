@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 21" aria-labelledby="title" role="img">
+<title>Bandeira do Brasil</title>
+<rect width="30" height="21" fill="#009739"/>
+<path d="M15 2.2 27.3 10.5 15 18.8 2.7 10.5Z" fill="#FFDF00"/>
+<circle cx="15" cy="10.5" r="5.25" fill="#002776"/>
+<path d="M9.95 8.95c3.6-.55 6.85.4 10.18 3.05" stroke="#fff" stroke-width="1.12" fill="none"/>
+<g fill="#fff"><circle cx="14.2" cy="7.6" r=".35"/><circle cx="16.45" cy="8.2" r=".35"/><circle cx="12.6" cy="11.5" r=".3"/><circle cx="17.7" cy="13" r=".32"/></g>
+</svg>
