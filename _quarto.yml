@@ -40,10 +40,10 @@ website:
             href: contact.qmd
     right:
       - text: "🇧🇷 PT"
-        href: /index.qmd
+        href: /
         aria-label: "Versão em português"
       - text: "🇬🇧 English"
-        href: /en/index.qmd
+        href: /en/
         aria-label: "English version"
       - text: "GitHub"
         href: https://github.com/rcmayworm
