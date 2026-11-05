@@ -2,7 +2,7 @@
 title: "Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python"
 author: "Ruan Mayworm"
 date: 2025-03-26
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "Entenda a regressão linear, a matriz de covariância e como estimar a incerteza de uma curva de calibração com Python."
 categories:
   - Estatística
