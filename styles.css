@@ -89,3 +89,13 @@ blockquote { border-left: 3px solid var(--accent); background: var(--wash); padd
 @media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto;} }
 /* O título HTML permanece nos metadados; na home o H1 visível está no hero. */
 body:has(.academic-hero) #title-block-header { display: none; }
+
+/* Legendas e fotografias centralizadas apenas no artigo histórico de metrologia. */
+.metrology-history-figure { text-align: center; margin: 1.35rem auto 1.75rem; }
+.metrology-history-figure figure,
+.metrology-history-figure .quarto-figure { margin-inline: auto; text-align: center; }
+.metrology-history-figure img { display: block; max-width: 100%; height: auto; margin-inline: auto; }
+.metrology-history-figure figcaption,
+.metrology-history-figure .figure-caption,
+.metrology-history-figure .quarto-figure-caption,
+.metrology-history-figure p.caption { text-align: center; }

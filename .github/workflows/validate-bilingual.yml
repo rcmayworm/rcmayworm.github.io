@@ -6,6 +6,7 @@ on:
       - feature/site-bilingue-pt-en
       - feature/revisao-blog-pt-en-2026-11-05
       - feature/blog-imagens-historia-metrologia-2026-11-05
+      - feature/corrigir-legendas-imagem-egipcia-2026-11-05
   workflow_dispatch:
 
 permissions:

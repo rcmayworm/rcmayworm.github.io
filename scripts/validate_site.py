@@ -95,7 +95,7 @@ else:
     if 'fig-cap="Evolução dos padrões de medição' in article_text:
         errors.append('Imagem de abertura não deve ter legenda visível')
     # Fotografias históricas locais substituem os três esquemas SVG anteriores.
-    figures = ['covado-egipcio.avif', 'rotulo-quebra-quilos.avif', 'relogio-atomico-ptb.avif']
+    figures = ['papiro-egipcio.avif', 'covado-egipcio.avif', 'rotulo-quebra-quilos.avif', 'relogio-atomico-ptb.avif']
     for figure in figures:
         asset = article_dir / 'images' / figure
         if not asset.is_file():
