@@ -123,7 +123,7 @@ An analogy involving a **shooting target** can help visualise the distinction.
 
 Imagine that the centre of the target represents the value we want to measure. Each mark represents one result. The location of the marks relative to the centre, and how closely they cluster, illustrate four situations.
 
-![Four targets with different illustrative combinations of accuracy and precision: A, B, C and D.](../../../../blog/posts/exatidao-e-precisao/images/figura1-exatidao-precisao-moderna.svg){#fig-alvos fig-cap="Figure 1 — Four illustrative combinations of accuracy and precision. The cross represents a reference and the dots repeated measurements. This analogy is not a substitute for a metrological evaluation."}
+![Four targets with different illustrative combinations of accuracy and precision: A, B, C and D.](images/figura1-exatidao-precisao-moderna.svg){#fig-alvos fig-cap="Figure 1 — Four illustrative combinations of accuracy and precision. The cross represents a reference and the dots repeated measurements. This analogy is not a substitute for a metrological evaluation."}
 
 The situations in @fig-alvos represent:
 
