@@ -18,10 +18,16 @@ published_posts = [
 ]
 cfg = yaml.safe_load((ROOT / "_quarto.yml").read_text(encoding="utf-8"))
 navbar = cfg["website"]["navbar"]["right"]
-if not any("🇧🇷" in item.get("text", "") for item in navbar):
+if not any(item.get("text") == "PT" and item.get("href") == "/" for item in navbar):
     errors.append("Missing Portuguese language switch")
-if not any("🇬🇧" in item.get("text", "") for item in navbar):
+if not any(item.get("text") == "English" and item.get("href") == "/en/" for item in navbar):
     errors.append("Missing English language switch")
+for flag in ("br.svg", "england.svg"):
+    if not (ROOT / "assets/flags" / flag).is_file():
+        errors.append(f"Missing local flag image: {flag}")
+for hero_file in (ROOT / "index.qmd", ROOT / "en/index.qmd"):
+    if '.academic-hero--profile' not in hero_file.read_text(encoding="utf-8"):
+        errors.append(f"Shared home hero missing: {hero_file}")
 if cfg["format"]["html"].get("include-after-body") != "language-switch.html":
     errors.append("Language-switch script not configured globally")
 if not (ROOT / "language-switch.html").is_file():
