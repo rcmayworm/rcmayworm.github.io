@@ -31,10 +31,9 @@ for lang, prefix in (("pt", ""), ("en", "en/")):
     assert content.count(" loading=\"lazy\" decoding=\"async\"") == 4, f"Imagens sem otimização de carregamento: {post}"
     assert "1738087115334.jpeg" not in content, f"Imagem remota quebrada: {post}"
     # As duas legendas devem terminar exatamente após o link do Wikimedia Commons.
-    import re
-    capt = re.search(r'<figcaption>([^\\n]*Wikimedia Commons</a>)</figcaption>', content)
-    assert capt, f"Legenda do papiro não encerra no link Wikimedia Commons: {post}"
-    assert "Hajor (2002)" in capt.group(1), f"Créditos da imagem ausentes no atributo title: {post}"
+    capt = next((line for line in content.splitlines() if "<figcaption>" in line and "Wikimedia Commons</a>" in line), "")
+    assert capt.endswith("Wikimedia Commons</a></figcaption>"), f"Legenda do papiro não encerra no link Wikimedia Commons: {post}"
+    assert "Hajor (2002)" in capt, f"Créditos da imagem ausentes no atributo title: {post}"
     assert content.count("(Physikalisch-Technische Bundesanstalt - PTB)") == 1, f"Nome oficial do PTB ausente: {post}"
     assert "Physical Technical Federal Institution" not in content, f"Nome antigo do PTB persistente: {post}"
     if lang == "pt":
