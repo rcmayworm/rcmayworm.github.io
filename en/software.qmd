@@ -1,0 +1,10 @@
+---
+title: "Software"
+description: "Scientific computing, public repositories and plans for reproducible code."
+---
+
+## Repositories and tools
+
+Public scientific software and computational resources will be listed here once reviewed versions have been approved for release.
+
+This page is dedicated to scientific code, Python examples and notebooks for consultation, learning and data visualisation. Larger computational projects, including source code, documentation and version control, may be found on my [GitHub](https://github.com/rcmayworm).
