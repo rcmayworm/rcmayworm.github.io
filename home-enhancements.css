@@ -1,5 +1,4 @@
 /* Página inicial: navegação, vitrine responsiva de postagens e perfis. */
-@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@600;700&display=swap");
 .academic-hero .cta-row { gap: .6rem; }
 .academic-hero .hero-btn { min-height: 42px; display: inline-flex; align-items: center; justify-content: center; }
 .blog-carousel-nav { display: flex; justify-content: flex-end; gap: .5rem; margin: -.5rem 0 .75rem; min-height: 40px; }
@@ -175,7 +174,7 @@ body:has(.academic-hero) #quarto-document-content h2.home-compact-heading {
   box-shadow: 0 10px 26px rgba(17, 44, 65, .18);
 }
 .academic-hero--profile h1.hero-title {
-  font-family: "Source Serif 4", Georgia, serif;
+  font-family: var(--site-title-font);
   font-weight: 700;
   font-size: clamp(2.55rem, 5.5vw, 3.65rem);
   line-height: 1.12;
@@ -223,13 +222,8 @@ body:has(.academic-hero) #quarto-document-content h2.home-compact-heading {
   filter: none;
   transform: translateY(-1px);
 }
-/* Fonte editorial apenas nos títulos das duas páginas iniciais. */
-body:has(.academic-hero--profile) #quarto-document-content h2,
-body:has(.academic-hero--profile) #quarto-document-content h3 {
-  font-family: "Source Serif 4", Georgia, serif;
-  font-weight: 650;
-  letter-spacing: -.025em;
-}
+/* A família tipográfica de todos os títulos do site é definida em styles.css.
+   Os espaçamentos específicos da home permanecem neste arquivo. */
 @media (max-width: 700px) {
   .academic-hero--profile .hero-photo { justify-content: center; margin-top: 1.25rem; }
   .academic-hero--profile .hero-portrait { width: 172px; height: 172px; }
