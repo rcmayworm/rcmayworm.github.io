@@ -32,7 +32,7 @@ Unidades definidas apenas por referências corporais individuais podiam variar d
 
 No Egito, a existência de réguas e padrões de côvado demonstra a preocupação com a uniformidade das medidas. Narrativas populares sobre punições com a morte pelo descumprimento da calibração não foram aqui tratadas como fatos históricos, por falta de documentação primária suficiente.
 
-![Fotografia de uma régua egípcia de côvado, com inscrições e subdivisões gravadas.](images/covado-egipcio.webp){fig-cap="Régua histórica de côvado egípcio com subdivisões gravadas. O côvado real tinha comprimento aproximado de 52,3 cm, sujeito a variações entre exemplares e períodos. A alegação de punição com morte por falta de conferência periódica não foi confirmada por fontes primárias. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+![Fotografia de uma régua egípcia de côvado, com inscrições e subdivisões gravadas.](images/covado-egipcio.avif){fig-cap="Régua histórica de côvado egípcio com subdivisões gravadas. O côvado real tinha comprimento aproximado de 52,3 cm, sujeito a variações entre exemplares e períodos. A alegação de punição com morte por falta de conferência periódica não foi confirmada por fontes primárias. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 Uma referência cultural antiga encontra-se na Bíblia, em Gênesis 6:15, que descreve a Arca de Noé com 300 côvados de comprimento, 50 de largura e 30 de altura. **Adotando hipoteticamente** um côvado de 45 cm, obtêm-se 135 m, 22,5 m e 13,5 m, respectivamente. Esses valores ilustram a conversão de unidades históricas e **não representam uma medição arqueológica**; outras convenções para o côvado levam a resultados diferentes.
 
@@ -50,7 +50,7 @@ No Brasil, a adoção do sistema métrico esteve fortemente ligada ao imperador 
 
 A resistência à adoção das novas medidas fez parte do contexto da **Revolta dos Quebra-Quilos**, ocorrida principalmente em **1874 e 1875** em províncias do Nordeste brasileiro. O movimento envolveu a destruição de pesos e medidas e expressou também insatisfações com tributos, recrutamento militar e ações das autoridades. A transição para padrões uniformes não ocorreu sem conflitos. [Fonte: Arquivo Nacional](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
 
-![Rótulo histórico com a inscrição Aos Quebra Kilos e referência a manufatura na Rua da Guia, nº 34, Pernambuco.](images/rotulo-quebra-quilos.webp){fig-cap="Rótulo comercial histórico intitulado *Aos Quebra Kilos*, associado ao contexto da Revolta dos Quebra-Quilos (1874–1875), em Pernambuco. Trata-se de propaganda comercial alusiva ao movimento, não necessariamente de um cartaz de convocação. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+![Rótulo histórico com a inscrição Aos Quebra Kilos e referência a manufatura na Rua da Guia, nº 34, Pernambuco.](images/rotulo-quebra-quilos.avif){fig-cap="Rótulo comercial histórico intitulado *Aos Quebra Kilos*, associado ao contexto da Revolta dos Quebra-Quilos (1874–1875), em Pernambuco. Trata-se de propaganda comercial alusiva ao movimento, não necessariamente de um cartaz de convocação. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 ## A metrologia na Revolução Industrial e no século XX
 
@@ -64,7 +64,7 @@ No século XX, com o advento da eletrônica e da óptica, a metrologia alcançou
 
 Relógios atômicos modernos oferecem estabilidade e exatidão extraordinárias, essenciais para aplicações como navegação por satélite, telecomunicações e sincronização de sistemas. Entretanto, a estimativa de quanto um relógio acumularia de erro ao longo de milhões de anos **depende do modelo e das condições de operação**; não é um desempenho universal de todos os relógios atômicos.
 
-![Fotografia de um relógio atômico de césio CS2, com instrumentação de controle, nas instalações do PTB na Alemanha.](images/relogio-atomico-ptb.webp){fig-cap="Relógio atômico de césio CS2, padrão primário de frequência da [Physikalisch-Technische Bundesanstalt (PTB)](https://www.ptb.de/), Alemanha. Os padrões de frequência de césio são utilizados na realização do segundo do SI. Fotografia da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+![Fotografia de um relógio atômico de césio CS2, com instrumentação de controle, nas instalações do PTB na Alemanha.](images/relogio-atomico-ptb.avif){fig-cap="Relógio atômico de césio CS2, padrão primário de frequência da [Physikalisch-Technische Bundesanstalt (PTB)](https://www.ptb.de/), Alemanha. Os padrões de frequência de césio são utilizados na realização do segundo do SI. Fotografia da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
 
 ## A metrologia no cotidiano e no futuro
 
