@@ -323,7 +323,7 @@ Residual standard deviation expresses the dispersion of observations around the 
 
 It is also essential to examine a **residual plot**. Systematic patterns, such as curvature or a trend, may indicate that the linear model does not represent the data adequately.
 
-![Residuals plotted as a function of thermocouple voltage.](../../../../blog/posts/incerteza-regressao-linear-python/figuras/02_residuos.svg){#fig-residuos fig-alt="Positive and negative residuals distributed around the horizontal zero line."}
+![Residuals plotted as a function of thermocouple voltage.](figuras/02_residuos.svg){#fig-residuos fig-alt="Positive and negative residuals distributed around the horizontal zero line."}
 
 In @fig-residuos, residuals appear on both sides of zero without an obvious trend. This supports the fit, although only 11 observations are available, so visual inspection alone cannot establish every statistical assumption.
 
