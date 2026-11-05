@@ -17,9 +17,11 @@ if yaml:
         config = yaml.safe_load(config_text)
         assert config["project"]["type"] == "website"
         links = str(config["website"]["navbar"])
-        for target in ["index.qmd", "research.qmd", "publications.qmd", "blog/index.qmd", "ebooks.qmd"]:
+        for target in ["research.qmd", "publications.qmd", "blog/index.qmd", "ebooks.qmd"]:
             if target not in links:
                 errors.append(f"Navegação ausente: {target}")
+        if not any(item.get("href") in ("/", "index.qmd") for item in config["website"]["navbar"]["right"]):
+            errors.append("Navegação ausente: página inicial")
     except Exception as ex:
         errors.append(f"Configuração YAML inválida: {ex}")
 else:
