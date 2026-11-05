@@ -2,7 +2,7 @@
 title: "Critical Review of Calibration Certificates: A Practical Guide"
 author: "Ruan Mayworm"
 date: 2025-10-14
-date-modified: 2026-11-03
+date-modified: 2026-11-05
 description: "Learn to review calibration certificates, check their content, interpret measurement error and uncertainty and assess instrument suitability."
 categories:
   - Metrology
