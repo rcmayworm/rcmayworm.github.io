@@ -98,8 +98,9 @@ for locale in ("pt", "en"):
                 errors.append(f"Referência recorrente sem identificador: {locale}/{slug} {name}")
             else:
                 # Additional item-specific definition links may follow a complete citation.
-                entries.append(line.split(". Definitions:")[0].split(". Definições:")[0].
-                               split(". [VIM definition")[0].split(". [Definição de calibração")[0])
+                # DOI links end the canonical citation; any topical definitions are optional.
+                match = re.match(r"^(.*?\]\(https://doi\.org/10\.59161/[^)]+\)\.)", line)
+                entries.append(match.group(1) if match else line)
         if len(entries) > 1 and len(set(entries)) != 1:
             errors.append(f"Referência com forma divergente: {locale} {name}")
 
