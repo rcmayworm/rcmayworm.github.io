@@ -39,7 +39,7 @@ website:
           - text: "Contato"
             href: contact.qmd
     right:
-      - text: "🇧🇷 Português"
+      - text: "🇧🇷 PT"
         href: /index.qmd
         aria-label: "Versão em português"
       - text: "🇬🇧 English"
