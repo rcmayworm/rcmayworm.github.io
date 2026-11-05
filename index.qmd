@@ -21,11 +21,11 @@ listing:
   max-description-length: 155
 ---
 
-::: {.academic-hero .academic-hero--pt}
+::: {.academic-hero .academic-hero--profile}
 <div class="hero-kicker">Metrologia · Qualidade · Análise de Dados</div>
 
 ::: {.hero-photo}
-<img class="hero-portrait" src="assets/images/ruan-mayworm-alta.jpeg" alt="Retrato de Ruan Mayworm em ambiente de laboratório" width="184" height="184" loading="eager" decoding="async">
+<img class="hero-portrait" src="assets/images/ruan-mayworm-alta.jpeg" alt="Retrato de Ruan Mayworm em ambiente de laboratório" width="216" height="216" loading="eager" decoding="async">
 :::
 
 <h1 class="hero-title">Ruan Mayworm</h1>
