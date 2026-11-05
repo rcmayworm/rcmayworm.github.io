@@ -27,6 +27,7 @@ jobs:
             "https://i0.wp.com/asmetro.org.br/portalsn/wp-content/uploads/2025/02/1738087115334.jpeg?ssl=1",
             "https://asmetro.org.br/portalsn/wp-content/uploads/2025/02/1738087115334-696x392.jpeg",
             "https://asmetro.org.br/portalsn/wp-content/uploads/2025/02/1738087115334-300x169.jpeg",
+            "https://upload.wikimedia.org/wikipedia/commons/e/e0/Egypt.Papyrus.01c.jpg",
           ]
           ok = False
           for url in urls:
