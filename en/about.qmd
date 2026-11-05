@@ -1,0 +1,35 @@
+---
+title: "About"
+description: "Academic background, professional experience and research interests."
+---
+
+## Profile
+
+I am a mechanical engineer with a master's degree and a PhD in Metrology. My applied research involves ultrasound, scientific instrumentation, calibration and measurement-system automation. My work combines experimental systems, signal processing, statistics and scientific programming.
+
+I also have professional experience in quality management systems, measurement systems analysis and auditing. I am currently pursuing further study and research interests in artificial intelligence and *machine learning* applied to measurement problems.
+
+## Education
+
+| Qualification | Institution | Completion / status |
+|---|---|---|
+| PhD in Metrology | Inmetro | 2022 |
+| Master's degree in Metrology | Inmetro | 2016 |
+| Postgraduate programme in Artificial Intelligence and Machine Learning | PUC Minas | 2027 (expected) |
+| Postgraduate specialisation in Project Management | Universidade Católica de Petrópolis | 2015 |
+| BEng in Mechanical Engineering | Universidade Católica de Petrópolis | 2013 |
+
+## Experience and skills
+
+- Metrology, scientific instrumentation, testing and calibration.
+- Design and integration of experimental and data-acquisition systems.
+- Measurement uncertainty evaluation and statistical methods.
+- Python, MATLAB and LabVIEW programming for scientific applications.
+- Additional experience in measurement systems analysis, quality management and auditing.
+
+## Academic profiles
+
+- [Lattes CV](http://lattes.cnpq.br/5951712664292058)
+- [ORCID](https://orcid.org/0000-0001-9518-4049)
+- [LinkedIn](https://www.linkedin.com/in/ruanmayworm/)
+- [GitHub](https://github.com/rcmayworm)
