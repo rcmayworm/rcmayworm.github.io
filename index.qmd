@@ -28,7 +28,7 @@ listing:
 
 <h1 class="hero-title">Ruan Mayworm</h1>
 
-<p class="hero-subtitle">Engenheiro mecânico · Mestre e doutor em Metrologia</p>
+<p class="hero-subtitle">Engenheiro Mecânico · Mestre e Doutor em Metrologia</p>
 
 <p class="hero-bio">Atuo na interface entre metrologia, estatística e análise de dados, com experiência em instrumentação científica, processamento de sinais, avaliação da incerteza de medição e gestão da qualidade. Desenvolvo aplicações em Python e investigo o uso de machine learning e otimização em sistemas de medição, especialmente em acústica e ultrassom.</p>
 
