@@ -2,7 +2,7 @@
 title: "Accuracy vs Precision: What Is the Difference and Why Does It Matter in Measurement?"
 author: "Ruan Mayworm"
 date: 2025-03-11
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Understand the difference between measurement accuracy and precision, measurement error and dispersion through everyday examples and calculations."
 categories:
   - Metrology
