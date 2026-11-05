@@ -1,0 +1,14 @@
+---
+title: "Contact"
+description: "Professional contact details and academic profiles for Ruan Mayworm."
+---
+
+For academic or professional enquiries, please use:
+
+- **Email:** [rcmayworm@gmail.com](mailto:rcmayworm@gmail.com)
+- **LinkedIn:** [Professional profile](https://www.linkedin.com/in/ruanmayworm/)
+- **ORCID:** [0000-0001-9518-4049](https://orcid.org/0000-0001-9518-4049)
+- **Lattes CV:** [View curriculum](http://lattes.cnpq.br/5951712664292058)
+- **GitHub:** [@rcmayworm](https://github.com/rcmayworm)
+
+This website does not currently have a contact form; email is the primary channel.
