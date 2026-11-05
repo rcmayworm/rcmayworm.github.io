@@ -85,10 +85,10 @@ where:
 Returning to the balance example:
 
 $$
-E=99{,}98-100{,}00=-0{,}02\ \mathrm{g}.
+E=99.98-100.00=-0.02\ \mathrm{g}.
 $$
 
-The negative sign indicates that the balance reading was **below** the reference. The absolute error, $|E|=0{,}02\ \mathrm{g}$, expresses the magnitude of the difference.
+The negative sign indicates that the balance reading was **below** the reference. The absolute error, $|E|=0.02\ \mathrm{g}$, expresses the magnitude of the difference.
 
 ### Dispersion of measurement results
 
@@ -157,15 +157,20 @@ An instrument may provide results that are **precise but not particularly accura
 
 Finally, evaluating **measurement uncertainty** complements this assessment and helps establish whether results are sufficiently reliable for the decision at hand.
 
-## References
+## References and Sources
 
-- **JCGM 200:2012.** *International Vocabulary of Metrology (VIM)*, 3rd edition. [Official definitions of accuracy](https://jcgm.bipm.org/vim/en/2.13.html), [precision](https://jcgm.bipm.org/vim/en/2.15.html) and [measurement error](https://jcgm.bipm.org/vim/en/2.16.html).
-- **BIPM.** *International System of Units (SI)*, 9th edition (2019).
-- **JCGM 100:2008.** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM)*.
-- **Mendes, A.; Rosário, P. P. N.** *Metrologia e Incerteza de Medição — Conceitos e Aplicações*. LTC, 2019 (Portuguese).
+- **JCGM 200:2012.** *International Vocabulary of Metrology — Basic and general concepts and associated terms (VIM)*, 3rd edition. [DOI: 10.59161/JCGM200-2012](https://doi.org/10.59161/JCGM200-2012). Definitions: [accuracy](https://jcgm.bipm.org/vim/en/2.13.html), [precision](https://jcgm.bipm.org/vim/en/2.15.html) and [measurement error](https://jcgm.bipm.org/vim/en/2.16.html).
 
-## Further reading
+- **BIPM.** *The International System of Units (SI)*, 9th edition (2019, updated in 2026). [DOI: 10.59161/AUEZ1291](https://doi.org/10.59161/AUEZ1291).
 
-- [How to determine calibration intervals for measuring equipment](../intervalos-entre-calibracoes/index.qmd)
-- [Uncertainty estimation in linear regression: a practical guide with Python](../incerteza-regressao-linear-python/index.qmd)
-- [The fascinating history of metrology: from antiquity to the present day](../a-fascinante-jornada-da-metrologia/index.qmd)
+- **JCGM 100:2008(E).** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).* [DOI: 10.59161/JCGM100-2008E](https://doi.org/10.59161/JCGM100-2008E).
+
+- **Mendes, A.; Rosário, P. P.** *Metrologia e Incerteza de Medição — Conceitos e Aplicações*. 1st edition. LTC, 2020. ISBN 9788521636755 (in Portuguese).
+
+## Further Reading
+
+- [The Fascinating Journey of Metrology: From Antiquity to the Present Day](../a-fascinante-jornada-da-metrologia/index.qmd)
+- [Critical Review of Calibration Certificates: A Practical Guide](../analise-critica-certificados-calibracao/index.qmd)
+- **Accuracy vs Precision: What Is the Difference and Why Does It Matter in Measurement?** *(this article)*
+- [Uncertainty Estimation in Linear Regression: A Practical Guide with Python](../incerteza-regressao-linear-python/index.qmd)
+- [How to Determine Calibration Intervals for Measuring Equipment](../intervalos-entre-calibracoes/index.qmd)
