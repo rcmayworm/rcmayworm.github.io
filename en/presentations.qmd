@@ -1,0 +1,15 @@
+---
+title: "Presentations and talks"
+description: "Research presentations, talks and technical materials."
+toc: false
+---
+
+<div class="section-eyebrow">Academic resources</div>
+
+## Presentations and talks
+
+This page will host research presentations, lectures and technical material **once reviewed and authorised for public release**.
+
+There are currently no presentations available to view or download.
+
+For articles and other publicly available material, see [Publications](publications.qmd) and the [Blog](blog/index.qmd).
