@@ -38,5 +38,8 @@ for lang, prefix in (("pt", ""), ("en", "en/")):
         assert "The royal master cubit, measuring 52.9 cm" in content
     css = (ROOT / "styles.css").read_text(encoding="utf-8")
     assert ".metrology-history-figure figcaption" in css
-    assert re.search(r"!\[[^\]]+\]\(images/", content) if lang == "pt" else "../../../../blog/posts/" in content
+    if lang == "pt":
+        assert 'src="images/papiro-egipcio.avif"' in content, f"Caminho local incorreto: {post}"
+    else:
+        assert 'src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/papiro-egipcio.avif"' in content, f"Caminho inglês incorreto: {post}"
 print("OK: quatro imagens locais com legendas centralizadas, capas preservadas em PT e EN.")
