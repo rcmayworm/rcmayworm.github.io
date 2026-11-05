@@ -2,7 +2,7 @@
 title: "The Fascinating Journey of Metrology: From Antiquity to the Present Day"
 author: "Ruan Mayworm"
 date: 2025-02-13
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "A journey through the history of measurement science, from ancient units to the International System of Units and contemporary metrology."
 categories:
   - Metrology
