@@ -2,7 +2,7 @@
 title: "Uncertainty Estimation in Linear Regression: A Practical Guide with Python"
 author: "Ruan Mayworm"
 date: 2025-03-26
-date-modified: 2026-11-01
+date-modified: 2026-11-05
 description: "Understand linear regression, the covariance matrix and uncertainty estimation for a calibration curve using Python."
 categories:
   - Statistics
