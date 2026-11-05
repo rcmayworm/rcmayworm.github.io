@@ -62,7 +62,7 @@ During the twentieth century, developments in electronics and optics made previo
 
 Modern atomic clocks offer extraordinary stability and accuracy, essential for satellite navigation, telecommunications and system synchronisation. However, statements about how much error a clock would accumulate over millions of years **depend on the clock model and operating conditions**; no such performance applies universally to all atomic clocks.
 
-![Diagram of physical constants used in defining the second, metre and kilogram in the International System of Units.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/padroes-si.svg){fig-cap="Quantities and constants underpinning current SI definitions. Original diagram, not a representation of a particular clock or instrument."}
+![Diagram of physical constants used in defining the second, metre and kilogram in the International System of Units.](images/padroes-si.svg){fig-cap="Quantities and constants underpinning current SI definitions. Original diagram, not a representation of a particular clock or instrument."}
 
 ## Metrology in everyday life and in the future
 
