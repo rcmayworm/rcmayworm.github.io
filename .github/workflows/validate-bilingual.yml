@@ -5,6 +5,7 @@ on:
     branches:
       - feature/site-bilingue-pt-en
       - feature/revisao-blog-pt-en-2026-11-05
+      - feature/blog-imagens-historia-metrologia-2026-11-05
   workflow_dispatch:
 
 permissions:
@@ -25,6 +26,7 @@ jobs:
           python scripts/validate_site.py
           python scripts/validate_bilingual.py
           python scripts/validate_blog_editorial.py
+          python scripts/validate_blog_images.py
       - name: Renderizar site sem deploy
         run: quarto render
       - name: Verificar HTML em português e inglês
