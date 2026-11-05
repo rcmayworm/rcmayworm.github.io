@@ -2,7 +2,7 @@
 title: "Análise Crítica de Certificados de Calibração: um guia prático"
 author: "Ruan Mayworm"
 date: 2025-10-14
-date-modified: 2026-11-03
+date-modified: 2026-11-05
 description: "Aprenda a analisar um certificado de calibração, conferir suas informações, interpretar erro e incerteza e avaliar se um instrumento atende ao uso pretendido."
 categories:
   - Metrologia
