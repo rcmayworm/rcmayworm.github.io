@@ -2,7 +2,7 @@
 title: "Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?"
 author: "Ruan Mayworm"
 date: 2025-03-11
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Entenda, com exemplos do dia a dia, a diferença entre exatidão e precisão, como avaliar o erro e a dispersão dos resultados e por que isso importa nas medições."
 categories:
   - Metrologia
