@@ -29,3 +29,10 @@ jobs:
         run: |
           python scripts/validate_rendered_carousel.py
           python scripts/validate_rendered_bilingual.py
+      - name: Gerar pacote HTML para prévia, sem publicação
+        uses: actions/upload-artifact@v4
+        with:
+          name: preview-site-pt-en
+          path: _site/
+          if-no-files-found: error
+          retention-days: 14
