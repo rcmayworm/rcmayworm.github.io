@@ -329,7 +329,7 @@ In @fig-residuos, residuals appear on both sides of zero without an obvious tren
 
 @fig-incerteza shows how uncertainty in the mean response varies across the voltage range.
 
-![Standard and expanded uncertainties of the mean response as a function of voltage.](../../../../blog/posts/incerteza-regressao-linear-python/figuras/03_incerteza_por_tensao.svg){#fig-incerteza fig-alt="Two uncertainty curves versus voltage, with an internal legend distinguishing standard uncertainty from expanded uncertainty for a pointwise 95% interval."}
+![Standard and expanded uncertainties of the mean response as a function of voltage.](figuras/03_incerteza_por_tensao.svg){#fig-incerteza fig-alt="Two uncertainty curves versus voltage, with an internal legend distinguishing standard uncertainty from expanded uncertainty for a pointwise 95% interval."}
 
 In linear regression, **uncertainty of the mean response** tends to be smallest near the mean of the fitted $x$ values and increases towards the ends of the range. This is related to the distribution of the calibration points.
 
