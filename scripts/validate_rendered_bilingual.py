@@ -36,7 +36,7 @@ for rel in PAGES + [f"blog/posts/{slug}/index.html" for slug in POSTS]:
     p = Page()
     p.feed(html)
     assert p.lang.lower().startswith("en"), f"Incorrect HTML language in {path}: {p.lang!r}"
-    assert "🇧🇷" in html and "🇬🇧" in html, f"Language switch missing from {path}"
+    assert "English" in html and "PT" in html, f"Language switch missing from {path}"
     assert "window.location.pathname" in html, f"Language navigation JS missing from {path}"
     for img in p.imgs:
         if img.startswith(("http:", "https:", "data:")):
@@ -49,4 +49,9 @@ for slug in POSTS:
     assert slug in english_home, f"Post {slug} missing from English home listing"
 assert (SITE / "index.html").is_file(), "Portuguese root page missing"
 assert (SITE / "blog/index.html").is_file(), "Portuguese blog missing"
+for flag in ("br.svg", "england.svg"):
+    assert (SITE / "assets/flags" / flag).is_file(), f"Local flag resource missing: {flag}"
+for home_path in (SITE / "index.html", SITE / "en/index.html"):
+    home_html = home_path.read_text(encoding="utf-8")
+    assert 'academic-hero--profile' in home_html, f"Home layout missing: {home_path}"
 print("OK: English HTML, five translated blog posts, flags, language tags, images and original routes.")
