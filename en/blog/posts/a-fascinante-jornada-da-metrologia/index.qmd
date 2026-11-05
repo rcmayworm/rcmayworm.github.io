@@ -30,7 +30,7 @@ Units defined solely by individual body measurements could vary from person to p
 
 The existence of cubit rods and standards in Egypt shows concern for uniformity in measurement. Popular stories about death sentences for failure to comply with calibration requirements are not presented here as historical facts, because sufficient primary documentation was not found.
 
-![Diagram of an Egyptian royal cubit standard approximately 52.3 cm long, divided into seven palms and 28 fingers.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/covado-real.svg){fig-cap="The Egyptian royal cubit and its subdivisions. Conceptual illustration, not to physical scale."}
+![Diagram of an Egyptian royal cubit standard approximately 52.3 cm long, divided into seven palms and 28 fingers.](images/covado-real.svg){fig-cap="The Egyptian royal cubit and its subdivisions. Conceptual illustration, not to physical scale."}
 
 An early cultural reference appears in the Bible, in Genesis 6:15, which describes Noah's Ark as 300 cubits long, 50 cubits wide and 30 cubits high. **Hypothetically assuming** a cubit of 45 cm gives dimensions of 135 m, 22.5 m and 13.5 m, respectively. These numbers illustrate the conversion of historical units and **are not archaeological measurements**. Other cubit conventions produce different results.
 
