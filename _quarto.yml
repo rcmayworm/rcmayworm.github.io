@@ -5,6 +5,8 @@ project:
     - "**/*.qmd"
     - "!livro-analise-certificados/**"
     - "!apresentacoes/modelo-v01/**"
+  resources:
+    - "assets/flags/*.svg"
 
 lang: pt-BR
 
@@ -39,10 +41,10 @@ website:
           - text: "Contato"
             href: contact.qmd
     right:
-      - text: "🇧🇷 PT"
+      - text: "PT"
         href: /
         aria-label: "Versão em português"
-      - text: "🇬🇧 English"
+      - text: "English"
         href: /en/
         aria-label: "English version"
       - text: "GitHub"
