@@ -343,11 +343,24 @@ Essa abordagem é importante em aplicações que dependem de medições, ajudand
 
 Seja na calibração de sensores, na análise de dados experimentais ou no controle de processos industriais, **combinar regressão linear com avaliação de incerteza** contribui para decisões técnicas mais fundamentadas.
 
-## Referências para se aprofundar
+## Referências e fontes
 
-- **NIST/SEMATECH:** [*e-Handbook of Statistical Methods*](https://www.itl.nist.gov/div898/handbook/) — explica os métodos estatísticos com exemplos práticos.
-- **Miller, J. N.; Miller, J. C.:** *Statistics and Chemometrics for Analytical Chemistry* — referência para aplicações em laboratórios e análise de dados.
-- **JCGM 100:2008:** [*Guide to the Expression of Uncertainty in Measurement*](https://www.bipm.org/en/committees/jc/jcgm/publications) — guia fundamental para a avaliação de incerteza de medição.
-- **NumPy e SciPy:** [`numpy.linalg.lstsq`](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html) e [distribuição t de Student](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+- **NIST/SEMATECH.** *e-Handbook of Statistical Methods*. [Manual de métodos estatísticos](https://www.itl.nist.gov/div898/handbook/).
 
-**Publicação original:** [Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python — LinkedIn (26/03/2025)](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/).
+- **Miller, J. N.; Miller, J. C.** *Statistics and Chemometrics for Analytical Chemistry*. Referência sobre aplicações em laboratórios e análise de dados (edição não especificada).
+
+- **JCGM 100:2008(E).** *Evaluation of measurement data — Guide to the expression of uncertainty in measurement (GUM).* [DOI: 10.59161/JCGM100-2008E](https://doi.org/10.59161/JCGM100-2008E).
+
+- **NumPy.** Documentação de [`numpy.linalg.lstsq`](https://numpy.org/doc/stable/reference/generated/numpy.linalg.lstsq.html).
+
+- **SciPy.** Documentação da [distribuição t de Student (`scipy.stats.t`)](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.t.html).
+
+- **Mayworm, R. (2025).** *Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python*. [Publicação original no LinkedIn, 26/03/2025](https://www.linkedin.com/pulse/estimativa-de-incerteza-em-regress%C3%B5es-lineares-um-guia-ruan-mayworm-oceuf/).
+
+## Leia mais
+
+- [A fascinante jornada da Metrologia: da antiguidade aos dias atuais](../a-fascinante-jornada-da-metrologia/index.qmd)
+- [Análise Crítica de Certificados de Calibração: um guia prático](../analise-critica-certificados-calibracao/index.qmd)
+- [Exatidão x Precisão: Qual a Diferença e Por Que Importa na Medição?](../exatidao-e-precisao/index.qmd)
+- **Estimativa de Incerteza em Regressões Lineares: Um Guia Prático com Python** *(este artigo)*
+- [Como Determinar os Intervalos Entre Calibrações dos Equipamentos de Medição](../intervalos-entre-calibracoes/index.qmd)
