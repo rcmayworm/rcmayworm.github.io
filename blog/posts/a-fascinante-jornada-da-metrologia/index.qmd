@@ -27,7 +27,7 @@ Desde os primórdios da civilização, a medição tem sido uma ferramenta essen
 ::: {.metrology-history-figure}
 <figure>
   <img src="images/papiro-egipcio.avif" alt="Papiro egípcio com figura sentada, hieróglifos e cenas históricas gravadas." loading="lazy" decoding="async">
-  <figcaption>Imagem de temática egípcia utilizada para ilustrar a história das medições. Fonte: <a href="https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg">Wikimedia Commons</a> (Hajor, 2002; JMCC1, 2011; licença <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>). A imagem da publicação original, atribuída à <a href="https://msc-conf.com/history-of-metrology/">Measurement Science Conference</a>, estava indisponível e foi substituída.</figcaption>
+  <figcaption>Imagem de temática egípcia utilizada para ilustrar a história das medições. Fonte: <a href="https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg" title="Fotografia: Hajor (2002); edição: JMCC1 (2011). Licença CC BY-SA 3.0; veja os detalhes de atribuição na página do arquivo.">Wikimedia Commons</a></figcaption>
 </figure>
 :::
 
@@ -82,7 +82,7 @@ Relógios atômicos modernos oferecem estabilidade e exatidão extraordinárias,
 ::: {.metrology-history-figure}
 <figure>
   <img src="images/relogio-atomico-ptb.avif" alt="Relógio atômico de césio CS2 e instrumentação associada, PTB, Alemanha." loading="lazy" decoding="async">
-  <figcaption>O relógio atômico do Instituto Nacional de Metrologia da Alemanha (Physical Technical Federal Institution - PTB). Fonte: https:// www.ptb.de</figcaption>
+  <figcaption>O relógio atômico do Instituto Nacional de Metrologia da Alemanha (Physikalisch-Technische Bundesanstalt - PTB). Fonte: https:// www.ptb.de</figcaption>
 </figure>
 :::
 

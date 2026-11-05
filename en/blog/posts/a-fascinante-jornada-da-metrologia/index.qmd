@@ -27,7 +27,7 @@ Since the beginnings of civilisation, measurement has been an essential tool for
 ::: {.metrology-history-figure}
 <figure>
   <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/papiro-egipcio.avif" alt="Egyptian papyrus with a seated figure, hieroglyphs and historical scenes." loading="lazy" decoding="async">
-  <figcaption>Egyptian-themed image illustrating the history of measurement. Source: <a href="https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg">Wikimedia Commons</a> (Hajor, 2002; JMCC1, 2011; <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>). The image from the original publication, attributed to the <a href="https://msc-conf.com/history-of-metrology/">Measurement Science Conference</a>, was unavailable and has been replaced.</figcaption>
+  <figcaption>Egyptian-themed image illustrating the history of measurement. Source: <a href="https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg" title="Photograph: Hajor (2002); edited by JMCC1 (2011). CC BY-SA 3.0 licence; see the file page for attribution details.">Wikimedia Commons</a></figcaption>
 </figure>
 :::
 
@@ -82,7 +82,7 @@ Modern atomic clocks offer extraordinary stability and accuracy, essential for s
 ::: {.metrology-history-figure}
 <figure>
   <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/relogio-atomico-ptb.avif" alt="Caesium atomic clock CS2 and related instrumentation, PTB, Germany." loading="lazy" decoding="async">
-  <figcaption>The atomic clock of Germany's National Metrology Institute (Physical Technical Federal Institution - PTB). Source: https:// www.ptb.de</figcaption>
+  <figcaption>The atomic clock of Germany's National Metrology Institute (Physikalisch-Technische Bundesanstalt - PTB). Source: https:// www.ptb.de</figcaption>
 </figure>
 :::
 
