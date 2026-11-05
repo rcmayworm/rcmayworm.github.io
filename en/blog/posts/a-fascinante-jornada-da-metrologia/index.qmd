@@ -25,7 +25,10 @@ Since the beginnings of civilisation, measurement has been an essential tool for
 ## Early measurements and standards in antiquity
 
 ::: {.metrology-history-figure}
-![Photograph of an Egyptian papyrus with figures and hieroglyphic inscriptions.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/papiro-egipcio.avif){fig-cap="Egyptian-themed image illustrating the history of measurement. An image in the original publication was credited to the [Measurement Science Conference — History of Metrology](https://msc-conf.com/history-of-metrology/). Since that file is no longer available, this photograph by Hajor (2002), colour-edited by JMCC1 (2011), is used instead, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg) under the [CC BY-SA 3.0 licence](https://creativecommons.org/licenses/by-sa/3.0/)."}
+<figure>
+  <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/papiro-egipcio.avif" alt="Egyptian papyrus with a seated figure, hieroglyphs and historical scenes." loading="lazy" decoding="async">
+  <figcaption>Egyptian-themed image illustrating the history of measurement. Source: <a href="https://commons.wikimedia.org/wiki/File:Egypt.Papyrus.01c.jpg">Wikimedia Commons</a> (Hajor, 2002; JMCC1, 2011; <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a>). The image from the original publication, attributed to the <a href="https://msc-conf.com/history-of-metrology/">Measurement Science Conference</a>, was unavailable and has been replaced.</figcaption>
+</figure>
 :::
 
 In antiquity, many units of length were based on parts of the human body. The cubit, for example, was associated with the length of the forearm, but its value varied across regions and periods. The **Egyptian royal cubit**, used in monumental construction, was approximately **52.3 cm** and was subdivided into seven palms of four fingers each. Other traditions used shorter cubits, of around 45 cm. Similarly, the foot and inch have been used historically in various systems of measurement. [Source: historical study of the cubit](https://doi.org/10.1155/2014/489757).
@@ -35,7 +38,10 @@ Units defined solely by individual body measurements could vary from person to p
 The existence of cubit rods and standards in Egypt shows concern for uniformity in measurement. Popular stories about death sentences for failure to comply with calibration requirements are not presented here as historical facts, because sufficient primary documentation was not found.
 
 ::: {.metrology-history-figure}
-![Photograph of an Egyptian cubit rod featuring engraved inscriptions and subdivisions.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/covado-egipcio.avif){fig-cap="The royal master cubit, measuring 52.9 cm, was the primary standard carved from granite. Workers received copies made of wood or granite, and accuracy was checked at every full moon, under penalty of death."}
+<figure>
+  <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/covado-egipcio.avif" alt="Photograph of an Egyptian cubit standard with engraved marks and subdivisions." loading="lazy" decoding="async">
+  <figcaption>The royal master cubit, measuring 52.9 cm, was the primary standard carved from granite. Workers received copies made of wood or granite, and accuracy was checked at every full moon, under penalty of death.</figcaption>
+</figure>
 :::
 
 An early cultural reference appears in the Bible, in Genesis 6:15, which describes Noah's Ark as 300 cubits long, 50 cubits wide and 30 cubits high. **Hypothetically assuming** a cubit of 45 cm gives dimensions of 135 m, 22.5 m and 13.5 m, respectively. These numbers illustrate the conversion of historical units and **are not archaeological measurements**. Other cubit conventions produce different results.
@@ -55,7 +61,10 @@ In Brazil, adoption of the metric system was strongly associated with Emperor Do
 Resistance to the new measures formed part of the **Quebra-Quilos Revolt**, which took place chiefly in **1874 and 1875** in provinces of northeastern Brazil. The protests included the destruction of weights and measuring instruments and also expressed dissatisfaction with taxation, military recruitment and the actions of public authorities. The transition to uniform standards was not free of conflict. [Source: Brazil's National Archives](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
 
 ::: {.metrology-history-figure}
-![Historical commercial label reading Aos Quebra Kilos, advertising manufacture at Rua da Guia No. 34, Pernambuco.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/rotulo-quebra-quilos.avif){fig-cap="Poster of the Quebra-Quilos Revolt."}
+<figure>
+  <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/rotulo-quebra-quilos.avif" alt="Historical graphic reading Aos Quebra Kilos, Pernambuco, Brazil." loading="lazy" decoding="async">
+  <figcaption>Poster of the Quebra-Quilos Revolt.</figcaption>
+</figure>
 :::
 
 ## Metrology during the Industrial Revolution and the twentieth century
@@ -71,7 +80,10 @@ During the twentieth century, developments in electronics and optics made previo
 Modern atomic clocks offer extraordinary stability and accuracy, essential for satellite navigation, telecommunications and system synchronisation. However, statements about how much error a clock would accumulate over millions of years **depend on the clock model and operating conditions**; no such performance applies universally to all atomic clocks.
 
 ::: {.metrology-history-figure}
-![Photograph of the CS2 caesium atomic clock and its control instrumentation at PTB in Germany.](../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/relogio-atomico-ptb.avif){fig-cap="The atomic clock of Germany's National Metrology Institute (Physical Technical Federal Institution - PTB). Source: https:// www.ptb.de"}
+<figure>
+  <img src="../../../../blog/posts/a-fascinante-jornada-da-metrologia/images/relogio-atomico-ptb.avif" alt="Caesium atomic clock CS2 and related instrumentation, PTB, Germany." loading="lazy" decoding="async">
+  <figcaption>The atomic clock of Germany's National Metrology Institute (Physical Technical Federal Institution - PTB). Source: https:// www.ptb.de</figcaption>
+</figure>
 :::
 
 ## Metrology in everyday life and in the future
