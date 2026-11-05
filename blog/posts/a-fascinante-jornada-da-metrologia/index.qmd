@@ -24,7 +24,9 @@ Desde os primórdios da civilização, a medição tem sido uma ferramenta essen
 
 ## As primeiras medidas e os padrões da Antiguidade
 
+::: {.metrology-history-figure}
 ![Imagem histórica de temática egípcia, utilizada na capa da publicação original sobre a história da metrologia.](https://asmetro.org.br/portalsn/wp-content/uploads/2025/02/1738087115334.jpeg){fig-cap="Imagem de temática egípcia utilizada na publicação original como ilustração da história das medições. Fonte atribuída à [Measurement Science Conference — History of Metrology](https://msc-conf.com/history-of-metrology/), reproduzida na [ASMETRO-SI](https://asmetro.org.br/portalsn/2025/02/14/a-fascinante-jornada-da-metrologia-da-antiguidade-aos-dias-atuais/)."}
+:::
 
 Na Antiguidade, diversas unidades de comprimento tinham origem em partes do corpo humano. O côvado, por exemplo, relacionava-se à medida do antebraço, mas seu valor variava entre regiões e períodos. O **côvado real egípcio**, empregado em construções monumentais, tinha aproximadamente **52,3 cm** e era subdividido em sete palmos de quatro dedos. Outras tradições empregaram côvados menores, próximos de 45 cm. De forma semelhante, o pé e a polegada foram utilizados historicamente em diferentes sistemas de medidas. [Fonte: estudo histórico sobre o côvado](https://doi.org/10.1155/2014/489757).
 
@@ -32,7 +34,9 @@ Unidades definidas apenas por referências corporais individuais podiam variar d
 
 No Egito, a existência de réguas e padrões de côvado demonstra a preocupação com a uniformidade das medidas. Narrativas populares sobre punições com a morte pelo descumprimento da calibração não foram aqui tratadas como fatos históricos, por falta de documentação primária suficiente.
 
-![Fotografia de uma régua egípcia de côvado, com inscrições e subdivisões gravadas.](images/covado-egipcio.avif){fig-cap="Régua histórica de côvado egípcio com subdivisões gravadas. O côvado real tinha comprimento aproximado de 52,3 cm, sujeito a variações entre exemplares e períodos. A alegação de punição com morte por falta de conferência periódica não foi confirmada por fontes primárias. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+::: {.metrology-history-figure}
+![Fotografia de uma régua egípcia de côvado, com inscrições e subdivisões gravadas.](images/covado-egipcio.avif){fig-cap="O côvado mestre real, com 52,9 cm, era o padrão primário esculpido em granito. Trabalhadores recebiam cópias em madeira ou granito, e a precisão era verificada a cada lua cheia, sob pena de morte."}
+:::
 
 Uma referência cultural antiga encontra-se na Bíblia, em Gênesis 6:15, que descreve a Arca de Noé com 300 côvados de comprimento, 50 de largura e 30 de altura. **Adotando hipoteticamente** um côvado de 45 cm, obtêm-se 135 m, 22,5 m e 13,5 m, respectivamente. Esses valores ilustram a conversão de unidades históricas e **não representam uma medição arqueológica**; outras convenções para o côvado levam a resultados diferentes.
 
@@ -50,7 +54,9 @@ No Brasil, a adoção do sistema métrico esteve fortemente ligada ao imperador 
 
 A resistência à adoção das novas medidas fez parte do contexto da **Revolta dos Quebra-Quilos**, ocorrida principalmente em **1874 e 1875** em províncias do Nordeste brasileiro. O movimento envolveu a destruição de pesos e medidas e expressou também insatisfações com tributos, recrutamento militar e ações das autoridades. A transição para padrões uniformes não ocorreu sem conflitos. [Fonte: Arquivo Nacional](https://historialuso.an.gov.br/index.php?Itemid=121&catid=2087&id=5734%3Asistema-metrico-decimal&option=com_content&view=article).
 
-![Rótulo histórico com a inscrição Aos Quebra Kilos e referência a manufatura na Rua da Guia, nº 34, Pernambuco.](images/rotulo-quebra-quilos.avif){fig-cap="Rótulo comercial histórico intitulado *Aos Quebra Kilos*, associado ao contexto da Revolta dos Quebra-Quilos (1874–1875), em Pernambuco. Trata-se de propaganda comercial alusiva ao movimento, não necessariamente de um cartaz de convocação. Imagem reutilizada da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+::: {.metrology-history-figure}
+![Rótulo histórico com a inscrição Aos Quebra Kilos e referência a manufatura na Rua da Guia, nº 34, Pernambuco.](images/rotulo-quebra-quilos.avif){fig-cap="Cartaz da Revolta do Quebra-Quilos."}
+:::
 
 ## A metrologia na Revolução Industrial e no século XX
 
@@ -64,7 +70,9 @@ No século XX, com o advento da eletrônica e da óptica, a metrologia alcançou
 
 Relógios atômicos modernos oferecem estabilidade e exatidão extraordinárias, essenciais para aplicações como navegação por satélite, telecomunicações e sincronização de sistemas. Entretanto, a estimativa de quanto um relógio acumularia de erro ao longo de milhões de anos **depende do modelo e das condições de operação**; não é um desempenho universal de todos os relógios atômicos.
 
-![Fotografia de um relógio atômico de césio CS2, com instrumentação de controle, nas instalações do PTB na Alemanha.](images/relogio-atomico-ptb.avif){fig-cap="Relógio atômico de césio CS2, padrão primário de frequência da [Physikalisch-Technische Bundesanstalt (PTB)](https://www.ptb.de/), Alemanha. Os padrões de frequência de césio são utilizados na realização do segundo do SI. Fotografia da [publicação original](https://www.linkedin.com/pulse/fascinante-jornada-da-metrologia-antiguidade-aos-dias-ruan-mayworm-9l8of/)."}
+::: {.metrology-history-figure}
+![Fotografia de um relógio atômico de césio CS2, com instrumentação de controle, nas instalações do PTB na Alemanha.](images/relogio-atomico-ptb.avif){fig-cap="O relógio atômico do Instituto Nacional de Metrologia da Alemanha (Physical Technical Federal Institution - PTB). Fonte: https:// www.ptb.de"}
+:::
 
 ## A metrologia no cotidiano e no futuro
 
