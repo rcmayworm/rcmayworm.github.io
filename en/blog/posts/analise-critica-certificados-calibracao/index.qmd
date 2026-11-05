@@ -92,7 +92,7 @@ The observed error, **+0.8 mg**, is within ±1.0 mg. However, this is not suffic
 
 One way of visualising the situation is to consider the interval **$E\pm U$**, which in this example ranges from **+0.3 mg to +1.3 mg**. This extends beyond the upper limit of +1.0 mg.
 
-![Balance indication error and expanded uncertainty compared with acceptance limits.](../../../../blog/posts/analise-critica-certificados-calibracao/images/exemplo-erro-balanca.svg){#fig-exemplo-balanca fig-cap="Illustrative example: an error of +0.8 mg, expanded uncertainty of 0.5 mg and limits of ±1.0 mg."}
+![Balance indication error and expanded uncertainty compared with acceptance limits.](images/exemplo-erro-balanca.svg){#fig-exemplo-balanca fig-cap="Illustrative example: an error of +0.8 mg, expanded uncertainty of 0.5 mg and limits of ±1.0 mg."}
 
 **Important:** the interval $E\pm U$ is not an absolute bound within which the true error must necessarily lie. The statistical interpretation of uncertainty depends on the assumptions and evaluation procedure used.
 
