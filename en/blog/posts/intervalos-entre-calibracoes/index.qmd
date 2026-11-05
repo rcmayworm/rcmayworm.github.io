@@ -2,7 +2,7 @@
 title: "How to Determine Calibration Intervals for Measuring Equipment"
 author: "Ruan Mayworm"
 date: 2025-01-28
-date-modified: 2026-11-02
+date-modified: 2026-11-05
 description: "Factors and methods for establishing and reviewing calibration intervals based on performance, risk and historical evidence."
 categories:
   - Metrology
