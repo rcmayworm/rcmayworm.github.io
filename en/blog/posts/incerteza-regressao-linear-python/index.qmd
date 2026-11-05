@@ -311,7 +311,7 @@ In the fitted equation, $T$ is **temperature in °C** and $V$ is **voltage in mV
 
 The fit is illustrated in @fig-ajuste.
 
-![Linear regression fitted to thermocouple calibration data, with pointwise 95% confidence intervals for the mean response.](../../../../blog/posts/incerteza-regressao-linear-python/figuras/01_regressao_e_incerteza.svg){#fig-ajuste fig-alt="Eleven calibration points, the fitted line and 95% confidence band, with a legend inside the chart."}
+![Linear regression fitted to thermocouple calibration data, with pointwise 95% confidence intervals for the mean response.](figuras/01_regressao_e_incerteza.svg){#fig-ajuste fig-alt="Eleven calibration points, the fitted line and 95% confidence band, with a legend inside the chart."}
 
 ## How can we assess goodness of fit?
 
