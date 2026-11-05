@@ -25,7 +25,7 @@
     next.setAttribute('aria-controls', track.id);
     track.tabIndex = 0;
     track.setAttribute('role', 'region');
-    track.setAttribute('aria-label', 'Artigos do blog: navegação horizontal');
+    track.setAttribute('aria-label', document.documentElement.lang.toLowerCase().startsWith('en') ? 'Blog articles: horizontal navigation' : 'Artigos do blog: navegação horizontal');
 
     const update = () => {
       const max = Math.max(0, track.scrollWidth - track.clientWidth);
