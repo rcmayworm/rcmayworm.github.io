@@ -66,7 +66,7 @@ For example, a favourable sequence may justify investigating a longer interval, 
 
 The following figure shows a **synthetic illustrative series** of changes in an instrument's error between successive calibrations. It is not a complete statistical control chart and does not represent real experimental data.
 
-![Synthetic series showing changes in an instrument's error over successive calibrations.](../../../../blog/posts/intervalos-entre-calibracoes/images/historico-sintetico.svg){#fig-historico-calibracao fig-cap="Synthetic example illustrating the monitoring of calibration results. It does not represent actual measurements or a complete control chart."}
+![Synthetic series showing changes in an instrument's error over successive calibrations.](images/historico-sintetico-en.svg){#fig-historico-calibracao fig-cap="Synthetic example illustrating the monitoring of calibration results. It does not represent actual measurements or a complete control chart."}
 
 **Further reading:** my e-book [*Análise Crítica de Certificados de Calibração*](https://rcmayworm.github.io/livro-analise-certificados/) provides guidance and examples on metrological management, interpreting calibration results and reviewing calibration intervals. The online edition is **free to read and currently available in Portuguese**.
 
@@ -91,8 +91,6 @@ In practice, ask:
 - **Does the instrument's history indicate stability or a changing trend?**
 
 **ISO 10012** addresses measurement management systems and supports the structured control of processes and equipment using records and performance assessment.
-
-*Standards update:* when this article was originally published in January 2025, **ISO 10012:2003** was the applicable edition. It was superseded by **ISO 10012:2026**, published in February 2026. The **OIML D 10:2007** edition cited in the original text has also been superseded by the joint **ILAC-G24:2022 / OIML D 10:2022** publication.
 
 ### 5. The tolerance-to-uncertainty relationship
 

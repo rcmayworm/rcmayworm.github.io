@@ -92,8 +92,6 @@ Na prática, convém perguntar:
 
 A **ISO 10012** aborda sistemas de gestão de medição e contribui para estruturar o controle dos processos e equipamentos, inclusive por meio de registros e avaliação de desempenho.
 
-*Atualização normativa:* quando este artigo foi publicado originalmente, em janeiro de 2025, a edição aplicável era a **ISO 10012:2003**. Ela foi substituída pela **ISO 10012:2026**, publicada em fevereiro de 2026. Já a referência **OIML D 10:2007** citada no texto original foi atualizada para a edição conjunta **ILAC-G24:2022 / OIML D 10:2022**.
-
 ### 5. Princípio da relação entre tolerância e incerteza
 
 A chamada **relação de exatidão**, utilizada em algumas práticas de gestão metrológica, compara a tolerância permitida com a incerteza associada à medição. É uma forma de avaliar se a capacidade de medição é adequada à aplicação.
