@@ -3,9 +3,11 @@ title: "Publicações"
 description: "Artigos e trabalhos científicos relacionados à metrologia, gestão da qualidade, instrumentação, estatística, métodos computacionais, análise de dados, acústica submarina, ultrassom e machine learning."
 ---
 
-Seleção de trabalhos científicos em ordem cronológica inversa. Consulte os DOI para verificar os metadados editoriais e acessar as publicações.
+Seleção de trabalhos científicos em ordem cronológica inversa. Consulte os links dos DOI ou das revistas para verificar os metadados editoriais e acessar as publicações.
 
-## Artigos e trabalhos com DOI
+## Artigos e trabalhos científicos
+
+- **2026.** *Techniques for Broadband Ultrasonic Hydrophones in Medical Applications*. **METRIS**. [Acessar artigo](https://metris.inmetro.gov.br/revista/index.php/metris/article/view/Artigo3).
 
 - **2025.** *The Kibble balance of the Ultrasound Laboratory of Inmetro*. **Acta IMEKO**, 14(2). [DOI: 10.21014/actaimeko.v14i2.1946](https://doi.org/10.21014/actaimeko.v14i2.1946).
 
